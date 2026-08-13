@@ -1,25 +1,8 @@
 import Link from "next/link";
 import { getHome } from "@/lib/content";
 import { ArrowRight } from "@/components/Icons";
+import Avatar from "@/components/Avatar";
 import Reveal from "@/components/Reveal";
-
-/** Initials avatar — member headshots can replace this once supplied via CMS. */
-function Initials({ name }: { name: string }) {
-  const initials = name
-    .split(" ")
-    .filter(Boolean)
-    .slice(0, 2)
-    .map((w) => w[0])
-    .join("");
-  return (
-    <span
-      aria-hidden="true"
-      className="flex h-12 w-12 flex-none items-center justify-center rounded-full bg-tie-red text-[15px] font-bold text-white"
-    >
-      {initials}
-    </span>
-  );
-}
 
 export default function Leadership() {
   const { leadership } = getHome();
@@ -47,10 +30,11 @@ export default function Leadership() {
           <Reveal className="lg:row-span-2">
             <article className="flex h-full flex-col justify-between bg-ink p-8 text-white lg:p-10">
               <div>
-                <span className="bg-tie-red px-3 py-1.5 text-[10.5px] font-bold tracking-[0.12em] text-white uppercase">
+                <Avatar src={president.photo} name={president.name} size={96} tone="dark" />
+                <span className="mt-7 inline-block bg-tie-red px-3 py-1.5 text-[10.5px] font-bold tracking-[0.12em] text-white uppercase">
                   {president.role}
                 </span>
-                <h3 className="mt-7 text-3xl leading-none font-extrabold !text-white lg:text-4xl">
+                <h3 className="mt-5 text-3xl leading-none font-extrabold !text-white lg:text-4xl">
                   {president.name}
                 </h3>
                 <p className="mt-4 text-[14px] leading-relaxed text-white/60">{president.company}</p>
@@ -66,7 +50,7 @@ export default function Leadership() {
             {rest.map((m, i) => (
               <Reveal as="li" key={m.name} delay={i * 60} className="bg-white">
                 <div className="flex h-full items-start gap-4 p-6 transition-colors hover:bg-paper-alt">
-                  <Initials name={m.name} />
+                  <Avatar src={m.photo} name={m.name} />
                   <div className="min-w-0">
                     <p className="text-[10.5px] font-bold tracking-[0.1em] text-tie-red uppercase">
                       {m.role}
@@ -87,7 +71,7 @@ export default function Leadership() {
             <ul className="mt-7 grid gap-8 sm:grid-cols-2 lg:gap-12">
               {leadership.mentors.map((m) => (
                 <li key={m.name} className="flex items-start gap-4">
-                  <Initials name={m.name} />
+                  <Avatar src={m.photo} name={m.name} />
                   <div>
                     <h3 className="text-[16px] leading-tight font-bold text-ink">{m.name}</h3>
                     <p className="mt-1.5 text-[12.5px] leading-snug font-normal text-ink-600">{m.role}</p>

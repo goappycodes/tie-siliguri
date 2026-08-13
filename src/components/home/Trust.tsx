@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getHome } from "@/lib/content";
 import { ArrowRight } from "@/components/Icons";
+import LogoSlot from "@/components/LogoSlot";
 import Reveal from "@/components/Reveal";
 
 export default function Trust() {
@@ -21,10 +22,13 @@ export default function Trust() {
             <ul className="grid grid-cols-2 gap-px border border-line bg-line sm:grid-cols-4">
               {trust.organisations.map((org) => (
                 <li
-                  key={org}
-                  className="flex min-h-[6.5rem] items-center justify-center bg-white p-4 text-center text-[12px] leading-tight font-bold text-ink-700 transition-colors hover:bg-paper-alt"
+                  key={org.name}
+                  className="flex min-h-[7.5rem] flex-col items-center justify-center gap-3 bg-white p-4 transition-colors hover:bg-paper-alt"
                 >
-                  {org}
+                  <LogoSlot src={org.logo} name={org.name} height={34} />
+                  <span className="text-center text-[11.5px] leading-tight font-semibold text-ink-700">
+                    {org.name}
+                  </span>
                 </li>
               ))}
             </ul>
@@ -45,13 +49,16 @@ export default function Trust() {
                     href={p.href}
                     className="group flex items-center justify-between gap-4 border border-line p-7 transition-all duration-300 hover:border-tie-red hover:shadow-[0_16px_40px_-18px_rgba(226,30,36,0.3)]"
                   >
-                    <div>
-                      <h3 className="text-[17px] leading-tight font-bold text-ink transition-colors group-hover:text-tie-red">
-                        {p.name}
-                      </h3>
-                      <p className="mt-1.5 text-[11px] font-bold tracking-[0.1em] text-slate uppercase">
-                        {p.role}
-                      </p>
+                    <div className="flex items-center gap-5">
+                      <LogoSlot src={p.logo} name={p.name} height={44} className="flex-none" />
+                      <div>
+                        <h3 className="text-[17px] leading-tight font-bold text-ink transition-colors group-hover:text-tie-red">
+                          {p.name}
+                        </h3>
+                        <p className="mt-1.5 text-[11px] font-bold tracking-[0.1em] text-slate uppercase">
+                          {p.role}
+                        </p>
+                      </div>
                     </div>
                     <ArrowRight className="h-4 w-4 flex-none text-tie-red transition-transform group-hover:translate-x-1" />
                   </Link>

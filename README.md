@@ -72,8 +72,31 @@ link comes from `content/`:
 | --- | --- |
 | `content/site.json` | Chapter details, contact, social links, **navigation tree**, footer |
 | `content/home.json` | Every homepage section |
-| `content/events.json` | Upcoming + past events |
+| `content/events.json` | Upcoming + past events, each with a cover image |
 | `content/pages.json` | All non-home routes and their "coming soon" copy |
+
+### Image slots waiting on artwork
+
+Three fields are `null` in the JSON and render a sized placeholder until real
+artwork is dropped in. Filling them needs no code change and causes no layout
+shift, because the placeholder already occupies the final dimensions.
+
+| Field | Placeholder | Component |
+| --- | --- | --- |
+| `leadership.members[].photo` | Circular silhouette | `Avatar` |
+| `leadership.mentors[].photo` | Circular silhouette | `Avatar` |
+| `trust.organisations[].logo` | Dashed "LOGO" plate | `LogoSlot` |
+| `trust.partners[].logo` | Dashed "LOGO" plate | `LogoSlot` |
+
+Set the field to a path under `public/` (e.g. `/images/team/arun-agarwal.webp`)
+and the real image replaces the placeholder.
+
+### Event covers
+
+Every event in `events.json` carries an `image` + `imageAlt`. These are the
+chapter's own event creatives, extracted from the members presentation deck and
+converted to WebP in `public/images/events/`. Cards crop them from the top so
+the artwork's title block stays in frame.
 
 Components read these through [`src/lib/content.ts`](src/lib/content.ts), which is the
 single seam to swap later. To move to a headless CMS (Sanity / Contentful / Payload),
