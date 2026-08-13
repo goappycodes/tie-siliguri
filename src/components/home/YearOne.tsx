@@ -58,15 +58,12 @@ export default function YearOne() {
 
           <dl className="mt-11 grid grid-cols-2 gap-x-8 gap-y-7 sm:grid-cols-3">
             {yearOne.stats.map((s) => (
-              <div key={s.label} className="border-l-2 border-tie-red pl-4">
-                <dt className="sr-only">{s.label}</dt>
-                <dd>
-                  <span className="block text-3xl leading-none font-extrabold text-white sm:text-4xl">
-                    {s.value}
-                  </span>
-                  <span className="mt-2 block text-[11px] leading-tight font-semibold tracking-[0.08em] text-white/50 uppercase">
-                    {s.label}
-                  </span>
+              <div key={s.label} className="grid border-l-2 border-tie-red pl-4">
+                <dt className="row-start-2 mt-2 text-[11px] leading-tight font-semibold tracking-[0.08em] text-white/50 uppercase">
+                  {s.label}
+                </dt>
+                <dd className="row-start-1 text-3xl leading-none font-extrabold text-white sm:text-4xl">
+                  {s.value}
                 </dd>
               </div>
             ))}

@@ -4,7 +4,7 @@ import { getHome, getSite } from "@/lib/content";
 import { ArrowRight } from "@/components/Icons";
 
 export default function Hero() {
-  const { hero, globalBar } = getHome();
+  const { hero } = getHome();
   const site = getSite();
 
   return (
@@ -56,7 +56,7 @@ export default function Hero() {
       />
 
       {/* Mobile pads down past the photo band before the copy begins. */}
-      <div className="shell relative pt-[47vw] pb-0 sm:pt-12 lg:pt-16">
+      <div className="shell relative pt-[47vw] pb-10 sm:pt-12 sm:pb-14 lg:pt-16 lg:pb-16">
         <div className="max-w-3xl">
           <p className="eyebrow !text-white/70 before:!bg-tie-red">{hero.eyebrow}</p>
 
@@ -95,15 +95,15 @@ export default function Hero() {
           <div className="mt-7 flex flex-wrap items-end gap-x-10 gap-y-5 sm:mt-8 sm:gap-x-12">
             <dl className="grid w-full grid-cols-3 gap-x-3 sm:flex sm:w-auto sm:flex-wrap sm:gap-x-11 sm:gap-y-5">
               {hero.stats.map((s) => (
-                <div key={s.label}>
-                  <dt className="sr-only">{s.label}</dt>
-                  <dd>
-                    <span className="block text-[1.5rem] leading-none font-extrabold text-white sm:text-[2.125rem]">
-                      {s.value}
-                    </span>
-                    <span className="mt-1.5 block text-[9.5px] leading-tight font-semibold tracking-[0.05em] text-white/60 uppercase sm:max-w-[8.5rem] sm:text-[10.5px]">
-                      {s.label}
-                    </span>
+                /* Explicit grid rows: the figure sits on row 1 while dt/dd
+                   keep DOM order, so the label is announced once and the
+                   figures stay top-aligned whatever the label wraps to. */
+                <div key={s.label} className="grid">
+                  <dt className="row-start-2 mt-1.5 text-[9.5px] leading-tight font-semibold tracking-[0.05em] text-white/60 uppercase sm:max-w-[8.5rem] sm:text-[10.5px]">
+                    {s.label}
+                  </dt>
+                  <dd className="row-start-1 text-[1.5rem] leading-none font-extrabold text-white sm:text-[2.125rem]">
+                    {s.value}
                   </dd>
                 </div>
               ))}
@@ -113,28 +113,6 @@ export default function Hero() {
             <p className="hidden text-[11px] font-medium text-white/45 uppercase sm:block">
               {site.chapter.foundedLabel} · Hub chapter: {site.chapter.hubChapter}
             </p>
-          </div>
-        </div>
-
-        {/* Global credibility bar, docked to the hero */}
-        <div className="mt-7 border-t border-white/12 sm:mt-8 lg:mt-10">
-          <div className="flex flex-col gap-4 py-4 sm:gap-5 sm:py-5 lg:flex-row lg:items-center lg:gap-10">
-            <p className="flex-none text-[11px] font-bold tracking-[0.14em] text-tie-red uppercase">
-              {globalBar.label}
-            </p>
-            <dl className="grid flex-1 grid-cols-2 gap-x-6 gap-y-3.5 sm:grid-cols-4 sm:gap-y-5">
-              {globalBar.stats.map((s) => (
-                <div key={s.label} className="flex items-baseline gap-2.5">
-                  <dt className="sr-only">{s.label}</dt>
-                  <dd className="flex items-baseline gap-2.5">
-                    <span className="text-xl font-extrabold text-white">{s.value}</span>
-                    <span className="text-[11.5px] leading-tight font-medium text-white/50">
-                      {s.label}
-                    </span>
-                  </dd>
-                </div>
-              ))}
-            </dl>
           </div>
         </div>
       </div>

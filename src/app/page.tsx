@@ -1,4 +1,5 @@
 import Hero from "@/components/home/Hero";
+import GlobalBar from "@/components/home/GlobalBar";
 import Intro from "@/components/home/Intro";
 import Pillars from "@/components/home/Pillars";
 import YearOne from "@/components/home/YearOne";
@@ -16,6 +17,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <GlobalBar />
       <Intro />
       <Pillars />
       <YearOne />
