@@ -56,7 +56,9 @@ export default function YearOne() {
           <h2 className="display-2 mt-5 !text-white">{yearOne.headline}</h2>
           <p className="lede mt-6 !text-white/65">{yearOne.body}</p>
 
-          <dl className="mt-11 grid grid-cols-2 gap-x-8 gap-y-7 sm:grid-cols-3">
+          {/* Four stats sit as an even 2x2 at every width; a 3-column layout
+              would strand the fourth on its own row. */}
+          <dl className="mt-9 grid grid-cols-2 gap-x-8 gap-y-6 lg:mt-11 lg:gap-y-7">
             {yearOne.stats.map((s) => (
               <div key={s.label} className="grid border-l-2 border-tie-red pl-4">
                 <dt className="row-start-2 mt-2 text-[11px] leading-tight font-semibold tracking-[0.08em] text-white/50 uppercase">

@@ -27,7 +27,7 @@ export default function EventsStrip() {
 
         <Carousel className="mt-10 lg:mt-12" gridClass="sm:grid sm:gap-6 lg:grid-cols-3">
           {upcoming.map((e, i) => (
-            <Reveal as="li" key={e.title} delay={i * 90} className="w-[82%] flex-none snap-start sm:w-auto">
+            <Reveal as="li" key={e.title} delay={i * 90} className="w-[74%] flex-none snap-start sm:w-auto">
               <Link
                 href={e.href}
                 className="group flex h-full flex-col border border-line transition-all duration-300 hover:-translate-y-1 hover:border-ink hover:shadow-[0_20px_50px_-20px_rgba(17,17,17,0.28)]"
@@ -49,22 +49,22 @@ export default function EventsStrip() {
                   </span>
                 </div>
 
-                <div className="flex flex-1 flex-col p-5 lg:p-7">
+                <div className="flex flex-1 flex-col p-5 max-sm:p-4 lg:p-7">
                   <span className="text-[10.5px] font-bold tracking-[0.08em] text-slate uppercase">
                     {e.audience}
                   </span>
 
-                  <h3 className="mt-3 text-[19px] leading-tight font-bold text-ink transition-colors group-hover:text-tie-red">
+                  <h3 className="mt-3 text-[19px] leading-tight font-bold text-ink transition-colors group-hover:text-tie-red max-sm:mt-2 max-sm:text-[16px]">
                     {e.title}
                   </h3>
 
-                  <p className="mt-4 text-[14.5px] leading-relaxed font-normal text-ink-600">
+                  <p className="mt-4 text-[14.5px] leading-relaxed font-normal text-ink-600 max-sm:mt-2 max-sm:text-[13px] max-sm:leading-[1.45]">
                     {e.summary}
                   </p>
 
                   {/* mt-auto keeps the date/venue block flush to the card
                       bottom so it lines up across all three cards. */}
-                  <dl className="mt-auto space-y-2 border-t border-line pt-5">
+                  <dl className="mt-auto space-y-2 border-t border-line pt-5 max-sm:space-y-1 max-sm:pt-3">
                     <div className="flex items-center gap-2.5 text-[13.5px] font-semibold text-ink">
                       <dt className="sr-only">Date</dt>
                       <Calendar className="h-3.5 w-3.5 flex-none text-tie-red" />

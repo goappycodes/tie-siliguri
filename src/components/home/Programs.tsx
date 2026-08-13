@@ -27,7 +27,7 @@ export default function Programs() {
 
         <Carousel className="mt-10 lg:mt-14" gridClass="sm:grid sm:gap-8 lg:grid-cols-2 lg:gap-10">
           {programs.items.map((p, i) => (
-            <Reveal as="li" key={p.name} delay={i * 100} className="group w-[86%] flex-none snap-start sm:w-auto">
+            <Reveal as="li" key={p.name} delay={i * 100} className="group w-[76%] flex-none snap-start sm:w-auto">
               <Link href={p.href} className="block">
                 <div className="relative aspect-[16/10] overflow-hidden bg-ink">
                   <Image
@@ -42,15 +42,15 @@ export default function Programs() {
                   </span>
                 </div>
 
-                <div className="border border-t-0 border-line p-5 transition-colors group-hover:border-line-strong lg:p-8">
-                  <h3 className="display-3 transition-colors group-hover:text-tie-red">{p.name}</h3>
-                  <p className="mt-4 text-[15.5px] leading-relaxed text-ink-600">{p.summary}</p>
+                <div className="border border-t-0 border-line p-5 transition-colors group-hover:border-line-strong max-sm:p-4 lg:p-8">
+                  <h3 className="display-3 transition-colors group-hover:text-tie-red max-sm:!text-[16px] max-sm:!leading-[1.2]">{p.name}</h3>
+                  <p className="mt-3 text-[15.5px] leading-relaxed text-ink-600 max-sm:mt-2 max-sm:text-[13px] max-sm:leading-[1.45]">{p.summary}</p>
 
-                  <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
+                  <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 max-sm:mt-3 max-sm:gap-x-3">
                     {p.meta.map((m) => (
                       <li
                         key={m}
-                        className="flex items-center gap-2 text-[12px] font-semibold text-slate"
+                        className="flex items-center gap-2 text-[12px] font-semibold text-slate max-sm:text-[11px]"
                       >
                         <span className="h-1 w-1 flex-none bg-tie-red" aria-hidden="true" />
                         {m}
@@ -58,7 +58,7 @@ export default function Programs() {
                     ))}
                   </ul>
 
-                  <span className="link-arrow mt-7">
+                  <span className="link-arrow mt-6 max-sm:mt-4">
                     Programme details
                     <ArrowRight className="h-3 w-3" />
                   </span>

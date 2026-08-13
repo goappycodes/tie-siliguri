@@ -125,10 +125,6 @@
       {
         "value": "2",
         "label": "Member Mixers"
-      },
-      {
-        "value": "1",
-        "label": "Flagship Residency"
       }
     ]
   },
@@ -427,6 +423,10 @@
     "compareCta": {
       "label": "Compare Membership Categories",
       "href": "/membership/categories"
+    },
+    "mobileCta": {
+      "label": "Join TiE Siliguri",
+      "href": "/membership/apply"
     }
   },
   "trust": {

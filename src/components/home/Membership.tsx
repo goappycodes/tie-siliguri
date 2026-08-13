@@ -16,7 +16,7 @@ export default function Membership() {
           <p className="lede mt-6">{membership.subhead}</p>
         </Reveal>
 
-        <Carousel className="mt-10 lg:mt-14" fadeFrom="from-paper-alt" gridClass="sm:grid sm:gap-8 lg:grid-cols-2 lg:gap-10">
+        <Carousel className="mt-10 hidden sm:block lg:mt-14" gridClass="sm:grid sm:gap-8 lg:grid-cols-2 lg:gap-10">
           {membership.tiers.map((tier, i) => (
             <Reveal as="li" key={tier.name} delay={i * 110} className="w-[88%] flex-none snap-start sm:w-auto">
               <div
@@ -144,7 +144,23 @@ export default function Membership() {
           ))}
         </Carousel>
 
-        <Reveal delay={80} className="mt-10 text-center">
+        {/* Mobile: the two tier cards carry too much detail for a phone, so
+            the section hands straight off to the membership pages. */}
+        <Reveal className="mt-8 sm:hidden">
+          <Link href={membership.mobileCta.href} className="btn btn-primary w-full">
+            {membership.mobileCta.label}
+            <ArrowRight />
+          </Link>
+          <Link
+            href={membership.compareCta.href}
+            className="link-arrow mt-6 flex justify-center"
+          >
+            {membership.compareCta.label}
+            <ArrowRight className="h-3 w-3" />
+          </Link>
+        </Reveal>
+
+        <Reveal delay={80} className="mt-10 hidden text-center sm:block">
           <Link href={membership.compareCta.href} className="link-arrow">
             {membership.compareCta.label}
             <ArrowRight className="h-3 w-3" />
