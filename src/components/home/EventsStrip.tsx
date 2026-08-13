@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { getEvents, getHome } from "@/lib/content";
 import { ArrowRight, Calendar, Clock, Pin } from "@/components/Icons";
+import Carousel from "@/components/Carousel";
 import Reveal from "@/components/Reveal";
 
 export default function EventsStrip() {
@@ -9,7 +10,7 @@ export default function EventsStrip() {
   const upcoming = getEvents().upcoming.slice(0, 3);
 
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section className="bg-white py-14 sm:py-20 lg:py-28">
       <div className="shell">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <Reveal>
@@ -24,9 +25,9 @@ export default function EventsStrip() {
           </Reveal>
         </div>
 
-        <ul className="mt-12 grid gap-6 lg:grid-cols-3">
+        <Carousel className="mt-10 lg:mt-12" gridClass="sm:grid sm:gap-6 lg:grid-cols-3">
           {upcoming.map((e, i) => (
-            <Reveal as="li" key={e.title} delay={i * 90}>
+            <Reveal as="li" key={e.title} delay={i * 90} className="w-[82%] flex-none snap-start sm:w-auto">
               <Link
                 href={e.href}
                 className="group flex h-full flex-col border border-line transition-all duration-300 hover:-translate-y-1 hover:border-ink hover:shadow-[0_20px_50px_-20px_rgba(17,17,17,0.28)]"
@@ -48,7 +49,7 @@ export default function EventsStrip() {
                   </span>
                 </div>
 
-                <div className="flex flex-1 flex-col p-7">
+                <div className="flex flex-1 flex-col p-5 lg:p-7">
                   <span className="text-[10.5px] font-bold tracking-[0.08em] text-slate uppercase">
                     {e.audience}
                   </span>
@@ -57,24 +58,24 @@ export default function EventsStrip() {
                     {e.title}
                   </h3>
 
-                  <p className="mt-4 text-[13.5px] leading-relaxed font-normal text-ink-600">
+                  <p className="mt-4 text-[14.5px] leading-relaxed font-normal text-ink-600">
                     {e.summary}
                   </p>
 
                   {/* mt-auto keeps the date/venue block flush to the card
                       bottom so it lines up across all three cards. */}
                   <dl className="mt-auto space-y-2 border-t border-line pt-5">
-                    <div className="flex items-center gap-2.5 text-[12.5px] font-semibold text-ink">
+                    <div className="flex items-center gap-2.5 text-[13.5px] font-semibold text-ink">
                       <dt className="sr-only">Date</dt>
                       <Calendar className="h-3.5 w-3.5 flex-none text-tie-red" />
                       <dd>{e.dateLabel}</dd>
                     </div>
-                    <div className="flex items-center gap-2.5 text-[12.5px] text-slate">
+                    <div className="flex items-center gap-2.5 text-[13.5px] text-slate">
                       <dt className="sr-only">Time</dt>
                       <Clock className="h-3.5 w-3.5 flex-none text-tie-red" />
                       <dd>{e.time}</dd>
                     </div>
-                    <div className="flex items-start gap-2.5 text-[12.5px] text-slate">
+                    <div className="flex items-start gap-2.5 text-[13.5px] text-slate">
                       <dt className="sr-only">Venue</dt>
                       <Pin className="mt-0.5 h-3.5 w-3.5 flex-none text-tie-red" />
                       <dd>{e.venue}</dd>
@@ -84,7 +85,7 @@ export default function EventsStrip() {
               </Link>
             </Reveal>
           ))}
-        </ul>
+        </Carousel>
       </div>
     </section>
   );

@@ -24,9 +24,9 @@ export default function Footer() {
             </span>
           </Link>
 
-          <p className="mt-6 max-w-md text-[13.5px] leading-relaxed font-normal">{site.footer.blurb}</p>
+          <p className="mt-6 max-w-md text-[14.5px] leading-relaxed font-normal">{site.footer.blurb}</p>
 
-          <dl className="mt-7 space-y-2.5 text-[13.5px]">
+          <dl className="mt-7 space-y-2.5 text-[14.5px]">
             <div>
               <dt className="sr-only">Email</dt>
               <dd>
@@ -85,7 +85,7 @@ export default function Footer() {
                     <li key={child.href}>
                       <Link
                         href={child.href}
-                        className="text-[13px] leading-snug font-normal transition-colors hover:text-white"
+                        className="text-[15px] leading-snug font-normal transition-colors hover:text-white"
                       >
                         {child.label}
                       </Link>
@@ -99,13 +99,13 @@ export default function Footer() {
             <h3 className="text-[11px] font-bold text-white uppercase">More</h3>
             <ul className="mt-4 space-y-2.5">
               <li>
-                <Link href="/contact" className="text-[13px] font-normal transition-colors hover:text-white">
+                <Link href="/contact" className="text-[15px] font-normal transition-colors hover:text-white">
                   Contact
                 </Link>
               </li>
               {site.footer.legal.map((l) => (
                 <li key={l.href}>
-                  <Link href={l.href} className="text-[13px] font-normal transition-colors hover:text-white">
+                  <Link href={l.href} className="text-[15px] font-normal transition-colors hover:text-white">
                     {l.label}
                   </Link>
                 </li>
@@ -115,7 +115,7 @@ export default function Footer() {
                   href={site.footer.globalLink.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[13px] font-normal transition-colors hover:text-white"
+                  className="text-[15px] font-normal transition-colors hover:text-white"
                 >
                   {site.footer.globalLink.label} ↗
                 </a>

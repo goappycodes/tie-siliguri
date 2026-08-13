@@ -65,7 +65,7 @@ export default function ComingSoon({ page }: { page: StubPage }) {
       </section>
 
       {/* Coming soon body */}
-      <section className="bg-white py-20 lg:py-28">
+      <section className="bg-white py-14 sm:py-20 lg:py-28">
         <div className="shell grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
           <div>
             <div className="inline-flex items-center gap-3 border border-line bg-paper-alt px-4 py-2.5">
@@ -93,7 +93,7 @@ export default function ComingSoon({ page }: { page: StubPage }) {
                   {page.bullets.map((b) => (
                     <li key={b} className="flex gap-3.5">
                       <span className="tick mt-1.5" aria-hidden="true" />
-                      <span className="text-[15px] leading-relaxed text-ink-700">{b}</span>
+                      <span className="text-[16px] leading-relaxed text-ink-700">{b}</span>
                     </li>
                   ))}
                 </ul>
@@ -158,7 +158,7 @@ export default function ComingSoon({ page }: { page: StubPage }) {
                     <li key={s.href}>
                       <Link
                         href={s.href}
-                        className="group flex items-center justify-between gap-3 py-3.5 text-[14px] font-medium text-ink-700 transition-colors hover:text-tie-red"
+                        className="group flex items-center justify-between gap-3 py-3.5 text-[15px] font-medium text-ink-700 transition-colors hover:text-tie-red"
                       >
                         {s.label}
                         <ArrowRight className="h-3.5 w-3.5 flex-none text-tie-red opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100" />

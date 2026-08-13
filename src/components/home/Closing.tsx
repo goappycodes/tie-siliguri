@@ -42,7 +42,7 @@ export default function Closing() {
             </Link>
           </div>
 
-          <div className="mt-8 space-y-1.5 border-t border-white/25 pt-7 text-[13.5px]">
+          <div className="mt-8 space-y-1.5 border-t border-white/25 pt-7 text-[14.5px]">
             <a
               href={`mailto:${site.contact.email}`}
               className="block font-bold text-white underline decoration-white/40 underline-offset-4 hover:decoration-white"

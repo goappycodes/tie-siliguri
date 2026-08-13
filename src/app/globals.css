@@ -61,8 +61,8 @@
     background: var(--color-paper);
     color: var(--color-ink-700);
     font-family: var(--font-app);
-    /* Body copy is light and normal case throughout. */
-    font-weight: 300;
+    /* Body copy is normal case throughout. */
+    font-weight: 400;
     letter-spacing: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -169,9 +169,9 @@
   }
   /* Body copy: light, normal case, generous leading to carry the low weight. */
   .lede {
-    font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
-    line-height: 1.7;
-    font-weight: 300;
+    font-size: clamp(1.125rem, 1.35vw, 1.3125rem);
+    line-height: 1.65;
+    font-weight: 400;
     letter-spacing: 0;
     color: var(--color-ink-600);
   }

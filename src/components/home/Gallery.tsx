@@ -8,7 +8,7 @@ export default function Gallery() {
   const { gallery } = getHome();
 
   return (
-    <section className="border-t border-line bg-paper-alt py-20 lg:py-28">
+    <section className="border-t border-line bg-paper-alt py-14 sm:py-20 lg:py-28">
       <div className="shell">
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <Reveal>

@@ -38,7 +38,46 @@ export default function Community() {
           </Reveal>
         </div>
 
-        <ul className="mt-14 grid gap-px border border-white/12 bg-white/12 sm:grid-cols-2 lg:grid-cols-4">
+        {/* Mobile: collapsed accordion, so eight sectors do not become a long
+            scroll. Native <details>, so it works without JavaScript. */}
+        <ul className="mt-9 border-t border-white/12 sm:hidden">
+          {community.sectors.map((sector) => (
+            <li key={sector.name} className="border-b border-white/12">
+              <details className="group/acc">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-3.5">
+                  <span className="text-[11px] font-bold text-tie-red uppercase">
+                    {sector.name}
+                  </span>
+                  <span className="flex items-center gap-3">
+                    <span className="text-[11px] font-medium text-white/40">
+                      {sector.companies.length}
+                    </span>
+                    <svg
+                      viewBox="0 0 12 12"
+                      aria-hidden="true"
+                      className="h-3 w-3 flex-none fill-none stroke-white/50 transition-transform group-open/acc:rotate-180"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M3 4.5 6 7.5 9 4.5" />
+                    </svg>
+                  </span>
+                </summary>
+                <ul className="space-y-1.5 pb-4">
+                  {sector.companies.map((c) => (
+                    <li key={c} className="text-[15px] leading-snug font-normal text-white/75">
+                      {c}
+                    </li>
+                  ))}
+                </ul>
+              </details>
+            </li>
+          ))}
+        </ul>
+
+        {/* Desktop: the full grid. */}
+        <ul className="mt-14 hidden gap-px border border-white/12 bg-white/12 sm:grid sm:grid-cols-2 lg:grid-cols-4">
           {community.sectors.map((sector, i) => (
             <Reveal as="li" key={sector.name} delay={i * 50} className="bg-ink">
               <div className="flex h-full flex-col p-7 transition-colors duration-300 hover:bg-white/[0.04]">
@@ -47,7 +86,7 @@ export default function Community() {
                 </h3>
                 <ul className="mt-4 space-y-1.5">
                   {sector.companies.map((c) => (
-                    <li key={c} className="text-[13px] leading-snug font-normal text-white/75">
+                    <li key={c} className="text-[15px] leading-snug font-normal text-white/75">
                       {c}
                     </li>
                   ))}

@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { getHome } from "@/lib/content";
 import { ArrowRight } from "@/components/Icons";
+import Carousel from "@/components/Carousel";
 import Reveal from "@/components/Reveal";
 
 export default function Programs() {
   const { programs } = getHome();
 
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section className="bg-white py-14 sm:py-20 lg:py-28">
       <div className="shell">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <Reveal className="max-w-2xl">
@@ -24,9 +25,9 @@ export default function Programs() {
           </Reveal>
         </div>
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-2 lg:gap-10">
+        <Carousel className="mt-10 lg:mt-14" gridClass="sm:grid sm:gap-8 lg:grid-cols-2 lg:gap-10">
           {programs.items.map((p, i) => (
-            <Reveal as="article" key={p.name} delay={i * 100} className="group">
+            <Reveal as="li" key={p.name} delay={i * 100} className="group w-[86%] flex-none snap-start sm:w-auto">
               <Link href={p.href} className="block">
                 <div className="relative aspect-[16/10] overflow-hidden bg-ink">
                   <Image
@@ -41,9 +42,9 @@ export default function Programs() {
                   </span>
                 </div>
 
-                <div className="border border-t-0 border-line p-7 transition-colors group-hover:border-line-strong lg:p-8">
+                <div className="border border-t-0 border-line p-5 transition-colors group-hover:border-line-strong lg:p-8">
                   <h3 className="display-3 transition-colors group-hover:text-tie-red">{p.name}</h3>
-                  <p className="mt-4 text-[14.5px] leading-relaxed text-ink-600">{p.summary}</p>
+                  <p className="mt-4 text-[15.5px] leading-relaxed text-ink-600">{p.summary}</p>
 
                   <ul className="mt-6 flex flex-wrap gap-x-5 gap-y-2">
                     {p.meta.map((m) => (
@@ -65,7 +66,7 @@ export default function Programs() {
               </Link>
             </Reveal>
           ))}
-        </div>
+        </Carousel>
       </div>
     </section>
   );

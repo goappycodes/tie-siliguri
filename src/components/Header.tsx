@@ -46,7 +46,7 @@ function DesktopItem({ item, active }: { item: NavItem; active: boolean }) {
     return (
       <Link
         href={item.href}
-        className={`relative px-3.5 py-2 text-[13.5px] font-semibold transition-colors after:absolute after:bottom-0 after:left-3.5 after:h-[2px] after:bg-tie-red after:transition-all ${
+        className={`relative px-3.5 py-2 text-[14.5px] font-semibold transition-colors after:absolute after:bottom-0 after:left-3.5 after:h-[2px] after:bg-tie-red after:transition-all ${
           active ? "text-ink after:right-3.5" : "text-ink-700 hover:text-tie-red after:right-full"
         }`}
       >
@@ -68,7 +68,7 @@ function DesktopItem({ item, active }: { item: NavItem; active: boolean }) {
       <Link
         href={item.href}
         aria-expanded={open}
-        className={`relative flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-semibold transition-colors after:absolute after:bottom-0 after:left-3.5 after:h-[2px] after:bg-tie-red after:transition-all ${
+        className={`relative flex items-center gap-1.5 px-3.5 py-2 text-[14.5px] font-semibold transition-colors after:absolute after:bottom-0 after:left-3.5 after:h-[2px] after:bg-tie-red after:transition-all ${
           active ? "text-ink after:right-3.5" : "text-ink-700 hover:text-tie-red after:right-full"
         }`}
       >
@@ -86,7 +86,7 @@ function DesktopItem({ item, active }: { item: NavItem; active: boolean }) {
             <Link
               key={child.href}
               href={child.href}
-              className="group flex items-center justify-between gap-3 border-b border-line px-5 py-3.5 text-[13.5px] font-medium text-ink-700 transition-colors last:border-b-0 hover:bg-paper-alt hover:text-tie-red"
+              className="group flex items-center justify-between gap-3 border-b border-line px-5 py-3.5 text-[14.5px] font-medium text-ink-700 transition-colors last:border-b-0 hover:bg-paper-alt hover:text-tie-red"
             >
               <span>
                 {child.label}
@@ -223,7 +223,7 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-3">
-            <Link href={site.cta.href} className="btn btn-primary hidden !px-5 !py-3 !text-[12.5px] sm:inline-flex">
+            <Link href={site.cta.href} className="btn btn-primary hidden !px-5 !py-3 !text-[13.5px] sm:inline-flex">
               {site.cta.label}
             </Link>
 
@@ -272,7 +272,7 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                   <Link
                     href={item.href}
-                    className="flex-1 py-4 text-[15px] font-bold text-ink"
+                    className="flex-1 py-4 text-[16px] font-bold text-ink"
                   >
                     {item.label}
                   </Link>
@@ -294,7 +294,7 @@ export default function Header() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block border-l-2 border-line py-2.5 pl-4 text-[13.5px] font-medium text-ink-600 hover:border-tie-red hover:text-tie-red"
+                        className="block border-l-2 border-line py-2.5 pl-4 text-[14.5px] font-medium text-ink-600 hover:border-tie-red hover:text-tie-red"
                       >
                         {child.label}
                         {child.badge ? <Badge>{child.badge}</Badge> : null}
@@ -310,7 +310,7 @@ export default function Header() {
             {site.cta.label}
           </Link>
 
-          <div className="mt-8 space-y-1.5 text-[13px] text-slate">
+          <div className="mt-8 space-y-1.5 text-[15px] text-slate">
             <a href={`mailto:${site.contact.email}`} className="block font-semibold text-ink">
               {site.contact.email}
             </a>

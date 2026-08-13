@@ -9,7 +9,7 @@ export default function Leadership() {
   const [president, ...rest] = leadership.members;
 
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section className="bg-white py-14 sm:py-20 lg:py-28">
       <div className="shell">
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <Reveal className="max-w-2xl">
@@ -37,7 +37,7 @@ export default function Leadership() {
                 <h3 className="mt-5 text-3xl leading-none font-extrabold !text-white lg:text-4xl">
                   {president.name}
                 </h3>
-                <p className="mt-4 text-[14px] leading-relaxed text-white/60">{president.company}</p>
+                <p className="mt-4 text-[15px] leading-relaxed text-white/60">{president.company}</p>
               </div>
               <p className="mt-10 border-t border-white/12 pt-6 text-[12px] font-medium text-white/40 uppercase">
                 Executive Committee 2026–27
@@ -56,7 +56,7 @@ export default function Leadership() {
                       {m.role}
                     </p>
                     <h3 className="mt-1.5 text-[16px] leading-tight font-bold text-ink">{m.name}</h3>
-                    <p className="mt-1.5 text-[12.5px] leading-snug font-normal text-slate">{m.company}</p>
+                    <p className="mt-1.5 text-[13.5px] leading-snug font-normal text-slate">{m.company}</p>
                   </div>
                 </div>
               </Reveal>
@@ -74,8 +74,8 @@ export default function Leadership() {
                   <Avatar src={m.photo} name={m.name} />
                   <div>
                     <h3 className="text-[16px] leading-tight font-bold text-ink">{m.name}</h3>
-                    <p className="mt-1.5 text-[12.5px] leading-snug font-normal text-ink-600">{m.role}</p>
-                    <p className="mt-1 text-[12.5px] leading-snug font-normal text-slate">{m.company}</p>
+                    <p className="mt-1.5 text-[13.5px] leading-snug font-normal text-ink-600">{m.role}</p>
+                    <p className="mt-1 text-[13.5px] leading-snug font-normal text-slate">{m.company}</p>
                   </div>
                 </li>
               ))}

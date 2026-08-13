@@ -8,7 +8,7 @@ export default function Intro() {
   const { intro } = getHome();
 
   return (
-    <section className="bg-white py-20 lg:py-28">
+    <section className="bg-white py-14 sm:py-20 lg:py-28">
       <div className="shell grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
         <Reveal>
           <p className="eyebrow">{intro.eyebrow}</p>

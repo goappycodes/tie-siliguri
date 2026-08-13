@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { getHome } from "@/lib/content";
 import { ArrowRight } from "@/components/Icons";
+import Carousel from "@/components/Carousel";
 import Reveal from "@/components/Reveal";
 
 export default function Membership() {
   const { membership } = getHome();
 
   return (
-    <section className="border-y border-line bg-paper-alt py-20 lg:py-28">
+    <section className="border-y border-line bg-paper-alt py-14 sm:py-20 lg:py-28">
       <div className="shell">
         <Reveal className="max-w-3xl">
           <p className="eyebrow">{membership.eyebrow}</p>
@@ -15,11 +16,11 @@ export default function Membership() {
           <p className="lede mt-6">{membership.subhead}</p>
         </Reveal>
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-2 lg:gap-10">
+        <Carousel className="mt-10 lg:mt-14" fadeFrom="from-paper-alt" gridClass="sm:grid sm:gap-8 lg:grid-cols-2 lg:gap-10">
           {membership.tiers.map((tier, i) => (
-            <Reveal as="article" key={tier.name} delay={i * 110}>
+            <Reveal as="li" key={tier.name} delay={i * 110} className="w-[88%] flex-none snap-start sm:w-auto">
               <div
-                className={`flex h-full flex-col p-8 lg:p-10 ${
+                className={`flex h-full flex-col p-6 lg:p-10 ${
                   tier.featured
                     ? "bg-ink text-white shadow-[0_28px_70px_-28px_rgba(17,17,17,0.5)]"
                     : "border border-line bg-white"
@@ -43,8 +44,26 @@ export default function Membership() {
                   )}
                 </div>
 
+                <details className="group/tier mt-5 sm:mt-7 sm:[&>summary]:hidden" open={false}>
+                  <summary
+                    className={`flex cursor-pointer list-none items-center justify-between gap-3 border-t pt-4 text-[11px] font-bold tracking-[0.1em] uppercase sm:pt-0 ${
+                      tier.featured ? "border-white/12 text-white/60" : "border-line text-slate"
+                    }`}
+                  >
+                    What you get
+                    <svg
+                      viewBox="0 0 12 12"
+                      aria-hidden="true"
+                      className="h-3 w-3 flex-none fill-none stroke-current transition-transform group-open/tier:rotate-180"
+                      strokeWidth="1.8"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path d="M3 4.5 6 7.5 9 4.5" />
+                    </svg>
+                  </summary>
                 <dl
-                  className={`mt-7 space-y-3 border-t pt-6 text-[13.5px] ${
+                  className={`mt-4 space-y-3 border-t pt-5 text-[14.5px] sm:mt-0 sm:pt-6 ${
                     tier.featured ? "border-white/12" : "border-line"
                   }`}
                 >
@@ -75,7 +94,7 @@ export default function Membership() {
                     <li key={h} className="flex gap-3">
                       <span className="tick mt-1.5" aria-hidden="true" />
                       <span
-                        className={`text-[13.5px] leading-relaxed ${
+                        className={`text-[14.5px] leading-relaxed ${
                           tier.featured ? "text-white/75" : "text-ink-600"
                         }`}
                       >
@@ -84,9 +103,12 @@ export default function Membership() {
                     </li>
                   ))}
                 </ul>
+                </details>
 
+                {/* Fees are desktop-only; on mobile the card stays to the
+                    proposition and the CTA. */}
                 <dl
-                  className={`mt-auto grid grid-cols-2 gap-6 border-t pt-7 ${
+                  className={`mt-auto hidden grid-cols-2 gap-6 border-t pt-7 sm:grid ${
                     tier.featured ? "border-white/12" : "border-line"
                   }`}
                 >
@@ -112,7 +134,7 @@ export default function Membership() {
 
                 <Link
                   href={tier.cta.href}
-                  className={`btn mt-8 w-full ${tier.featured ? "btn-primary" : "btn-dark"}`}
+                  className={`btn mt-6 w-full sm:mt-8 ${tier.featured ? "btn-primary" : "btn-dark"}`}
                 >
                   {tier.cta.label}
                   <ArrowRight />
@@ -120,7 +142,7 @@ export default function Membership() {
               </div>
             </Reveal>
           ))}
-        </div>
+        </Carousel>
 
         <Reveal delay={80} className="mt-10 text-center">
           <Link href={membership.compareCta.href} className="link-arrow">

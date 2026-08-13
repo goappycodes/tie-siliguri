@@ -31,7 +31,8 @@
         "value": "8",
         "label": "Sectors Represented"
       }
-    ]
+    ],
+    "subheadShort": "The world's largest entrepreneurial network, now in North Bengal — connecting the region's founders to mentorship, capital and a global stage."
   },
   "globalBar": {
     "label": "Part of TiE Global",
@@ -70,7 +71,7 @@
   },
   "pillars": {
     "eyebrow": "What makes TiE different",
-    "headline": "A platform built for entrepreneurs",
+    "headline": "A platform made for entrepreneurs",
     "subhead": "There are many ways to gather business leaders. TiE is designed for one sharper outcome: entrepreneurial transformation.",
     "punchline": "Helping entrepreneurs become better entrepreneurs.",
     "cta": {
