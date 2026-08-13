@@ -1,0 +1,89 @@
+{
+  "chapter": {
+    "name": "TiE Siliguri",
+    "tagline": "Fostering Entrepreneurship",
+    "shortName": "TiE Siliguri",
+    "region": "Siliguri & North Bengal",
+    "hubChapter": "TiE Kolkata",
+    "foundedLabel": "Launched 30 July 2025",
+    "logo": "/tie-siliguri-logo.png",
+    "logoStacked": "/tie-siliguri-logo-stacked.png"
+  },
+  "contact": {
+    "email": "president@siliguri.tie.org",
+    "phones": ["+91 93392 25458", "+91 79088 40815"],
+    "city": "Siliguri, West Bengal, India"
+  },
+  "social": [
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/company/tie-siliguri/", "icon": "linkedin" },
+    { "label": "Instagram", "href": "https://www.instagram.com/tiesiliguri/", "icon": "instagram" },
+    { "label": "Facebook", "href": "https://www.facebook.com/tiesiliguri/", "icon": "facebook" }
+  ],
+  "nav": [
+    {
+      "label": "About TiE Siliguri",
+      "href": "/about",
+      "children": [
+        { "label": "About TiE Global", "href": "/about/tie-global" },
+        { "label": "Our Chapter", "href": "/about/our-chapter" },
+        { "label": "Leadership Team", "href": "/about/leadership" },
+        { "label": "Chapter Manager", "href": "/about/chapter-manager" }
+      ]
+    },
+    {
+      "label": "Programs",
+      "href": "/programs",
+      "children": [
+        { "label": "AI Immersion Residency", "href": "/programs/ai-immersion-residency", "badge": "Flagship" },
+        { "label": "Founders' Immersion — Masters' Union", "href": "/programs/founders-immersion", "badge": "Flagship" },
+        { "label": "TiE Young Entrepreneurs (TYE)", "href": "/programs/tye", "badge": "Coming Soon" },
+        { "label": "TiE Women", "href": "/programs/tie-women", "badge": "Coming Soon" }
+      ]
+    },
+    {
+      "label": "Events",
+      "href": "/events",
+      "children": [
+        { "label": "Upcoming Events", "href": "/events/upcoming" },
+        { "label": "Past Events", "href": "/events/past" }
+      ]
+    },
+    {
+      "label": "Membership",
+      "href": "/membership",
+      "children": [
+        { "label": "Why Join TiE", "href": "/membership/why-join" },
+        { "label": "Membership Benefits", "href": "/membership/benefits" },
+        { "label": "Membership Categories", "href": "/membership/categories" },
+        { "label": "Apply for Membership", "href": "/membership/apply" }
+      ]
+    },
+    {
+      "label": "Community",
+      "href": "/community",
+      "children": [
+        { "label": "Charter Members", "href": "/community/charter-members" },
+        { "label": "Associate Members", "href": "/community/associate-members" }
+      ]
+    },
+    {
+      "label": "Partners",
+      "href": "/partners",
+      "children": [
+        { "label": "INSPIRIA", "href": "/partners/inspiria" },
+        { "label": "SmartHub", "href": "/partners/smarthub" }
+      ]
+    },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "cta": { "label": "Join TiE Siliguri", "href": "/membership/apply" },
+  "footer": {
+    "blurb": "TiE Siliguri is the North Bengal chapter of TiE — the world's largest network of entrepreneurs. We exist to help entrepreneurs become better entrepreneurs, through mentoring, learning, networking, funding and incubation.",
+    "legal": [
+      { "label": "Privacy Policy", "href": "/privacy-policy" },
+      { "label": "Terms of Use", "href": "/terms-of-use" }
+    ],
+    "globalLink": { "label": "TiE Global", "href": "https://tie.org" },
+    "copyrightHolder": "TiE Siliguri"
+  }
+}

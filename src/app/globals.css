@@ -1,26 +1,325 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ==========================================================================
+   TiE Siliguri — brand tokens
+
+   Measured directly off TiE Global (tie.org) so this chapter site sits in the
+   same visual system as the parent brand:
+     · Brand red         #E21E24
+     · Section headings  Lato 800, UPPERCASE, letter-spacing 2px/35px
+     · Body / UI / stats Montserrat 400–700
+     · Buttons           red fill, white text, 12px radius, uppercase
+     · Illustrations     halftone dotted globe + topographic contour lines
+   ========================================================================== */
+
+@theme {
+  /* Brand */
+  --color-tie-red: #e21e24;
+  --color-tie-red-dark: #b8151b;
+  --color-tie-red-light: #fdecec;
+
+  /* Neutrals */
+  --color-ink: #111111;
+  --color-ink-800: #242424;
+  --color-ink-700: #333741;
+  --color-ink-600: #4a4f5a;
+  --color-slate: #697280;
+  --color-line: #e3e5e9;
+  --color-line-strong: #cfd3da;
+  --color-paper: #ffffff;
+  --color-paper-alt: #f7f8fa;
+  --color-paper-warm: #faf9f8;
+
+  /* Type */
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-lato), var(--font-montserrat), ui-sans-serif, sans-serif;
+
+  /* Motion */
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  * {
+    border-color: var(--color-line);
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink-700);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink);
+    font-weight: 700;
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background: var(--color-tie-red);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-tie-red);
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  /* Section shell -------------------------------------------------------- */
+  .shell {
+    width: 100%;
+    max-width: 84rem;
+    margin-inline: auto;
+    padding-inline: 1.25rem;
+  }
+  @media (min-width: 640px) {
+    .shell {
+      padding-inline: 2rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .shell {
+      padding-inline: 3rem;
+    }
+  }
+
+  /* Red caps eyebrow — the TiE deck signature ---------------------------- */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-tie-red);
+  }
+  .eyebrow::before {
+    content: "";
+    width: 1.75rem;
+    height: 2px;
+    background: var(--color-tie-red);
+    flex: none;
+  }
+  .eyebrow-plain {
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-tie-red);
+  }
+
+  /* Display headings ------------------------------------------------------
+     TiE Global sets every section heading in Lato 800, uppercase, tracked
+     +2px at 35px (≈0.057em). display-1/2 mirror that; display-3 drops to
+     Montserrat 700 sentence case for card titles, as tie.org does. */
+  .display-1 {
+    font-family: var(--font-display);
+    font-size: clamp(2.25rem, 5.4vw, 4.25rem);
+    line-height: 1.02;
+    font-weight: 900;
+    letter-spacing: 0.012em;
+    text-transform: uppercase;
+  }
+  /* Matches tie.org's section heading exactly: 35px / 2px tracking / 1.3 lh. */
+  .display-2 {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 2.7vw, 2.1875rem);
+    line-height: 1.3;
+    font-weight: 900;
+    letter-spacing: 0.057em;
+    text-transform: uppercase;
+  }
+  .display-3 {
+    font-size: clamp(1.25rem, 1.9vw, 1.625rem);
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .lede {
+    font-size: clamp(1rem, 1.25vw, 1.1875rem);
+    line-height: 1.65;
+    color: var(--color-ink-600);
+  }
+
+  /* Buttons ---------------------------------------------------------------
+     tie.org: red fill, white text, Montserrat, uppercase, 12px radius. */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.78125rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 0.9375rem 1.75rem;
+    border-radius: 12px;
+    transition: all 0.22s var(--ease-out-quint);
+    white-space: nowrap;
+  }
+  .btn-primary {
+    background: var(--color-tie-red);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: var(--color-tie-red-dark);
+    transform: translateY(-1px);
+  }
+  .btn-dark {
+    background: var(--color-ink);
+    color: #fff;
+  }
+  .btn-dark:hover {
+    background: var(--color-ink-800);
+    transform: translateY(-1px);
+  }
+  .btn-outline {
+    border: 1.5px solid var(--color-line-strong);
+    color: var(--color-ink);
+    background: transparent;
+  }
+  .btn-outline:hover {
+    border-color: var(--color-ink);
+    background: var(--color-ink);
+    color: #fff;
+  }
+  .btn-ghost-light {
+    border: 1.5px solid rgb(255 255 255 / 0.35);
+    color: #fff;
+    background: rgb(255 255 255 / 0.06);
+    backdrop-filter: blur(6px);
+  }
+  .btn-ghost-light:hover {
+    background: #fff;
+    color: var(--color-ink);
+    border-color: #fff;
+  }
+
+  /* Text link with arrow ------------------------------------------------- */
+  .link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4375rem;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-tie-red);
+  }
+  .link-arrow svg {
+    transition: transform 0.22s var(--ease-out-quint);
+  }
+  .link-arrow:hover svg {
+    transform: translateX(4px);
+  }
+
+  /* Red corner tick — from the TiE deck bullet style --------------------- */
+  .tick {
+    width: 0.6875rem;
+    height: 0.6875rem;
+    flex: none;
+    background: var(--color-tie-red);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+  }
+
+  /* Brand illustrations ---------------------------------------------------
+     Both assets come from TiE Global. The contour artwork ships as an alpha
+     mask so a single file can be tinted per surface: dark lines over red,
+     white lines over ink. Set the colour with `background-color`. */
+  .contours {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    -webkit-mask-image: url("/brand/tie-contours.webp");
+    mask-image: url("/brand/tie-contours.webp");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+  .contours-dark {
+    background-color: #0d0d0d;
+    opacity: 0.22;
+  }
+  .contours-light {
+    background-color: #ffffff;
+    opacity: 0.14;
+  }
+  .contours-red {
+    background-color: var(--color-tie-red);
+    opacity: 0.16;
+  }
+
+  /* Halftone dotted globe — the TiE signature motif. */
+  .globe-motif {
+    position: absolute;
+    pointer-events: none;
+    background-image: url("/brand/tie-globe-halftone.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}
+
+/* Reveal on scroll -------------------------------------------------------
+   Applied only by the Reveal component after mount, and only to elements
+   still below the fold. Server-rendered markup carries no class at all, so
+   content is visible without JavaScript. */
+@layer utilities {
+  .reveal-hidden {
+    opacity: 0;
+    transform: translateY(18px);
+    transition:
+      opacity 0.7s var(--ease-out-quint),
+      transform 0.7s var(--ease-out-quint);
+  }
+  .reveal-shown {
+    opacity: 1;
+    transform: none;
+    transition:
+      opacity 0.7s var(--ease-out-quint),
+      transform 0.7s var(--ease-out-quint);
+  }
+  .hide-scrollbar {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal-hidden,
+  .reveal-shown {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

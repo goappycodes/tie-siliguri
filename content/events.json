@@ -1,0 +1,48 @@
+{
+  "upcoming": [
+    {
+      "title": "The Art of Fine Dining & Table Etiquette",
+      "type": "Masterclass",
+      "date": "2026-08-20",
+      "dateLabel": "20 August 2026",
+      "time": "6:30 PM",
+      "venue": "IIAS Campus, Dagapur, Siliguri",
+      "summary": "An interactive, premium dining masterclass led by IIAS School of Management's hospitality faculty — five-course French classical dinner, live demonstration, corporate grooming and the confidence that sets exceptional leaders apart.",
+      "audience": "Members exclusive",
+      "href": "/events/upcoming"
+    },
+    {
+      "title": "Define Your Entrepreneurial Edge",
+      "type": "Masterclass",
+      "date": "2026-09-16",
+      "dateLabel": "16 September 2026",
+      "time": "11 AM – 7 PM",
+      "venue": "Inspiria Knowledge Campus, Siliguri",
+      "summary": "Executive strategies for aspiring entrepreneurs, startups and SMEs with Dr Rajeev Roy — Director of First Bridge Business School, former Dean at XLRI and author of Entrepreneurship (Oxford).",
+      "audience": "Open to members",
+      "href": "/events/upcoming"
+    },
+    {
+      "title": "Masters' Union Founders' Immersion",
+      "type": "Flagship Program",
+      "date": "2026-09-25",
+      "dateLabel": "25–26 September 2026",
+      "time": "2-day intensive",
+      "venue": "Masters' Union School of Business, Gurugram",
+      "summary": "An exclusive, practitioner-led programme for founders and family business owners covering business growth, AI for business and family business succession — taught inside an ecosystem of Fortune 500 companies.",
+      "audience": "TiE members only",
+      "href": "/programs/founders-immersion"
+    }
+  ],
+  "past": [
+    { "title": "TiE Siliguri Chapter Launch", "type": "Chapter Launch", "dateLabel": "30 July 2025", "venue": "Montana Vista, Siliguri", "speaker": "Mr. Murali Bukkapatnam, Chairman, TiE Global Board of Trustees" },
+    { "title": "Designing Your GTM & Organizing Sales", "type": "Masterclass", "dateLabel": "7 August 2025", "venue": "Hotel Hiland, Siliguri", "speaker": "Mr. Kiran Deshpande, TiE Global Board Member & Co-Founder, Mojo Networks" },
+    { "title": "Marketing & Branding for Entrepreneurs", "type": "Masterclass", "dateLabel": "12 September 2025", "venue": "Hotel Hiland, Siliguri", "speaker": "Prof. Chandradeep Mitra, Founder & CEO, PipalMajik" },
+    { "title": "Understanding the Business Model Canvas", "type": "Workshop", "dateLabel": "22 December 2025", "venue": "Siliguri", "speaker": "Mr. Advait Kurlekar" },
+    { "title": "Diagnose Your Business Problem with Clarity", "type": "Mentorship Clinic", "dateLabel": "11 June 2026", "venue": "Hotel Hiland, Siliguri", "speaker": "Mr. Sumit Sinhal & Mr. Neeraj Sancheti" },
+    { "title": "How to Position Your Business for Success", "type": "Masterclass", "dateLabel": "21 May 2026", "venue": "Hotel Hiland, Siliguri", "speaker": "Mr. Matthew John, Co-founder & CEO, Typito AI" },
+    { "title": "Building Your AI Edge", "type": "AI Workshop", "dateLabel": "17 July 2026", "venue": "Inspiria Knowledge Campus", "speaker": "Mr. Ajay Binani & Ms. Poulomi Ghosh, AI Vidya" },
+    { "title": "Mastering Sales Execution", "type": "Workshop", "dateLabel": "25 July 2026", "venue": "Hotel Hiland, Siliguri", "speaker": "Mr. Dinkar Suri, Founder, GASP Sales Academy" },
+    { "title": "AI Immersion Residency", "type": "Flagship · Residential", "dateLabel": "19–20 June 2026", "venue": "Inspiria Knowledge Campus", "speaker": "Charter Members exclusive, 2-day residential" }
+  ]
+}

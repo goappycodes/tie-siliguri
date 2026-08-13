@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "TiE Siliguri — Fostering Entrepreneurship in North Bengal",
+    "description": "TiE Siliguri is the North Bengal chapter of TiE, the world's largest network of entrepreneurs. Mentoring, learning, networking, funding and incubation for the entrepreneurs of Siliguri."
+  },
+  "hero": {
+    "eyebrow": "The Indus Entrepreneurs · Siliguri Chapter",
+    "headline": "Where Siliguri's entrepreneurs",
+    "headlineAccent": "come to grow.",
+    "subhead": "TiE Siliguri brings the world's largest entrepreneurial network to North Bengal — connecting the region's most ambitious founders and business leaders to mentorship, capital, and a global stage.",
+    "image": "/images/hero-charter-members.webp",
+    "imageAlt": "Charter Members of TiE Siliguri together at a chapter gathering",
+    "primaryCta": { "label": "Become a Member", "href": "/membership/apply" },
+    "secondaryCta": { "label": "Explore Our Programs", "href": "/programs" },
+    "stats": [
+      { "value": "60+", "label": "Charter & Associate Members" },
+      { "value": "22", "label": "Sessions in Year One" },
+      { "value": "8", "label": "Sectors Represented" }
+    ]
+  },
+  "globalBar": {
+    "label": "Part of TiE Global",
+    "stats": [
+      { "value": "60+", "label": "Chapters worldwide" },
+      { "value": "14", "label": "Countries" },
+      { "value": "500K+", "label": "Global community" },
+      { "value": "50K+", "label": "Entrepreneurs & mentors" }
+    ]
+  },
+  "intro": {
+    "eyebrow": "Global credibility, local mission",
+    "headline": "A global movement. A local mission",
+    "body": [
+      "TiE brings together entrepreneurs, mentors, investors and business leaders through a global ecosystem built around education, networking, investing, incubation and mentoring.",
+      "In Siliguri, that global philosophy is being translated into a platform for North Bengal's entrepreneurs to learn, collaborate and grow — and to put this region firmly on India's entrepreneurial map."
+    ],
+    "cta": { "label": "About Our Chapter", "href": "/about/our-chapter" },
+    "image": "/images/launch-chapter-group.webp",
+    "imageAlt": "TiE Siliguri chapter launch on stage, 30 July 2025"
+  },
+  "pillars": {
+    "eyebrow": "What makes TiE different",
+    "headline": "A platform built for entrepreneurs",
+    "subhead": "There are many ways to gather business leaders. TiE is designed for one sharper outcome: entrepreneurial transformation.",
+    "punchline": "Helping entrepreneurs become better entrepreneurs.",
+    "cta": {
+      "title": "See why North Bengal's founders are joining TiE Siliguri.",
+      "label": "Why join TiE",
+      "href": "/membership/why-join"
+    },
+    "items": [
+      { "title": "Mentoring", "body": "One-on-one guidance from founders who have already built at scale — through mentorship clinics and our Charter Member network." },
+      { "title": "Learning", "body": "Practitioner-led masterclasses on sales, strategy, branding, AI and growth. Nine in our first year alone." },
+      { "title": "Networking", "body": "Curated coffee meets, member mixers and cross-chapter access that turn introductions into real partnerships." },
+      { "title": "Funding", "body": "Pathways to angel capital and investor readiness through TiE Angels and the wider TiE investing network." },
+      { "title": "Incubation", "body": "Structured support for early-stage ventures — from problem diagnosis to go-to-market execution." }
+    ]
+  },
+  "yearOne": {
+    "eyebrow": "Year one snapshot",
+    "headline": "One year. Real momentum",
+    "body": "TiE Siliguri launched on 30 July 2025 with Mr. Murali Bukkapatnam, Chairman of the TiE Global Board of Trustees, as Chief Guest. From early ecosystem conversations to flagship residencies, the community has moved well beyond intent.",
+    "video": "/video/tie-siliguri-year-one.mp4",
+    "poster": "/images/year-one-poster.webp",
+    "videoLabel": "Watch the film — 3 min 32 sec",
+    "stats": [
+      { "value": "9", "label": "Masterclasses" },
+      { "value": "8", "label": "Coffee Meets" },
+      { "value": "2", "label": "Mentorship Clinics" },
+      { "value": "2", "label": "Member Mixers" },
+      { "value": "1", "label": "Flagship Residency" }
+    ]
+  },
+  "programs": {
+    "eyebrow": "Programs",
+    "headline": "Built for founders, not audiences",
+    "subhead": "Deep, practitioner-led formats that give members something a conference never can — time, access and application.",
+    "cta": { "label": "See All Programs", "href": "/programs" },
+    "items": [
+      {
+        "name": "AI Immersion Residency",
+        "kicker": "Flagship · Residential",
+        "summary": "A two-day residential immersion built to take founders from AI curiosity to AI capability — mindset, prompt engineering, workflow design and building your own AI edge.",
+        "meta": ["19–20 June 2026", "Inspiria Knowledge Campus", "Charter Members exclusive"],
+        "href": "/programs/ai-immersion-residency",
+        "image": "/images/launch-audience.webp",
+        "imageAlt": "Members at a TiE Siliguri workshop session"
+      },
+      {
+        "name": "Founders' Immersion — Masters' Union",
+        "kicker": "Flagship · Gurugram",
+        "summary": "An exclusive, practitioner-led programme for founders and family business owners, hosted inside an ecosystem of Fortune 500 companies at Masters' Union School of Business.",
+        "meta": ["25–26 September", "Masters' Union, Gurugram", "Members only"],
+        "href": "/programs/founders-immersion",
+        "image": "/images/launch-speaker.webp",
+        "imageAlt": "A speaker addressing TiE Siliguri members"
+      }
+    ]
+  },
+  "community": {
+    "eyebrow": "The TiE Siliguri community",
+    "headline": "An ecosystem of leaders",
+    "subhead": "Entrepreneurs, founders and business leaders across eight sectors — already part of the TiE Siliguri network.",
+    "cta": { "label": "Meet Our Members", "href": "/community/charter-members" },
+    "image": "/images/community-group.webp",
+    "imageAlt": "The TiE Siliguri member community together",
+    "sectors": [
+      { "name": "Healthcare", "companies": ["Reddy Healthcare", "Kins Health", "Retina Institute of Bengal"] },
+      { "name": "Education", "companies": ["Inspiria Knowledge Campus", "Sacred Heart School", "IIAS Education Group", "NEXIS School of Business", "Quizzora & Co."] },
+      { "name": "Finance & Investing", "companies": ["Probitas Capital", "Daughters Wealth Tech", "Prabin Agarwal Empowering Investors"] },
+      { "name": "Manufacturing & Trade", "companies": ["Clearstone Glass", "JK Enterprise", "CKIM Promoters", "Sinhal Brothers & Co"] },
+      { "name": "Technology & Media", "companies": ["Placewell Systems", "Fittronics Global", "Logic Fusion", "Blue Minch", "Cogito Digital", "Galaxynet Connections"] },
+      { "name": "Travel & Hospitality", "companies": ["Tripwizard Travel", "Crafty Kitchen Ventures", "Error Brew & Pubs"] },
+      { "name": "Real Estate", "companies": ["Sevoke Realty", "Maa Bhawani Heights"] },
+      { "name": "Creative & Consumer", "companies": ["Kreativ Street", "MTC Buildmart", "Shivalaya", "Premier Sports & Fitness", "Krishyam"] }
+    ]
+  },
+  "leadership": {
+    "eyebrow": "Leadership",
+    "headline": "Led by the region's operators",
+    "subhead": "The Executive Committee for 2026–27 — entrepreneurs who run businesses in this region, giving their time to build the ecosystem around them.",
+    "cta": { "label": "Meet the Leadership Team", "href": "/about/leadership" },
+    "members": [
+      { "name": "Arun Agarwal", "role": "President", "company": "CEO, Maa Bhawani Heights Pvt. Ltd." },
+      { "name": "Neeraj Sancheti", "role": "Vice-President", "company": "Founder & CEO, Kreativ Street" },
+      { "name": "Rahul Gupta", "role": "Secretary", "company": "Director, Inspiria Knowledge Campus" },
+      { "name": "Sangeeta Reddy", "role": "Executive Committee", "company": "Director, Reddy Healthcare & Retina Institute of Bengal" },
+      { "name": "Sumit Sinhal", "role": "Executive Committee", "company": "Director, Kins Health" },
+      { "name": "Manish Agarwal", "role": "Executive Committee", "company": "Founder, Placewell Systems & Solutions" },
+      { "name": "Sanjeev Gupta", "role": "Executive Committee", "company": "Founder & CEO, Sevoke Realty" }
+    ],
+    "mentorsLabel": "Guided by our hub chapter, TiE Kolkata",
+    "mentors": [
+      { "name": "Kamal Agarwala", "role": "TiE Global Board of Trustees · Immediate Past President, TiE Kolkata", "company": "Founder & CEO, La Exactlly Software" },
+      { "name": "Atul Gupta", "role": "President, TiE Kolkata", "company": "Founder & CEO, APPsCONNECT" }
+    ]
+  },
+  "cadence": {
+    "eyebrow": "How it works",
+    "headline": "Learning never happens in one event",
+    "headlineAccent": "It happens through consistency",
+    "subhead": "Every month. Every interaction. Designed to help entrepreneurs grow.",
+    "steps": [
+      { "name": "Masterclasses", "body": "Practitioner-led deep dives" },
+      { "name": "Coffee Meets", "body": "Small-group founder conversations" },
+      { "name": "Mentoring", "body": "Clinics with senior operators" },
+      { "name": "Networking", "body": "Mixers and member socials" },
+      { "name": "Cross-Chapter", "body": "Access to TiE chapters worldwide" },
+      { "name": "Retreat", "body": "Charter Member retreats" }
+    ]
+  },
+  "events": {
+    "eyebrow": "What's on",
+    "headline": "Upcoming at TiE Siliguri",
+    "cta": { "label": "All Upcoming Events", "href": "/events/upcoming" }
+  },
+  "membership": {
+    "eyebrow": "Membership",
+    "headline": "Two ways in. One community",
+    "subhead": "Whether you are building your first venture or running an established business, there is a seat at the table — and a role to play.",
+    "tiers": [
+      {
+        "name": "Associate Member",
+        "for": "Aspiring entrepreneurs, startup founders and professionals",
+        "stage": "Ideation, early stage and seed stage",
+        "access": "Open membership",
+        "role": "Learn, build and grow",
+        "highlights": [
+          "Access to workshops, masterclasses and chapter events",
+          "Mentorship from experienced entrepreneurs",
+          "Volunteer in chapter initiatives",
+          "Access to local events and select global programs"
+        ],
+        "fees": [
+          { "label": "One-time joining fee", "value": "₹5,000" },
+          { "label": "Annual membership", "value": "₹10,000" }
+        ],
+        "cta": { "label": "Apply as Associate Member", "href": "/membership/apply" },
+        "featured": false
+      },
+      {
+        "name": "Charter Member",
+        "for": "Established entrepreneurs, business owners and industry leaders",
+        "stage": "Established and growth-stage businesses",
+        "access": "Invitation-only membership",
+        "role": "Lead, mentor and shape the ecosystem",
+        "highlights": [
+          "Exclusive roundtables, leadership forums and premium learning",
+          "Mentor founders and shape the entrepreneurial ecosystem",
+          "Eligible for Executive Committee, SIGs and chapter leadership",
+          "Voting rights and participation in chapter governance",
+          "Complimentary access across TiE chapters worldwide, TiECon and TiE Global Summit"
+        ],
+        "fees": [
+          { "label": "One-time joining fee", "value": "₹25,000" },
+          { "label": "Annual membership", "value": "₹50,000" }
+        ],
+        "cta": { "label": "Request an Invitation", "href": "/membership/apply" },
+        "featured": true
+      }
+    ],
+    "compareCta": { "label": "Compare Membership Categories", "href": "/membership/categories" }
+  },
+  "trust": {
+    "eyebrow": "Institutional trust",
+    "headline": "Trusted by leading organisations",
+    "body": "Across TiE chapters and programs, leading organisations have partnered with TiE to strengthen entrepreneurial ecosystems.",
+    "punchline": "Great brands don't just market to entrepreneurs. They invest in entrepreneurial ecosystems.",
+    "organisations": ["Morgan Stanley", "IBM", "KPMG", "Cushman & Wakefield", "Latham & Watkins", "EMC", "WilmerHale", "i2k2 Networks"],
+    "partnersLabel": "Our chapter partners",
+    "partners": [
+      { "name": "INSPIRIA Knowledge Campus", "role": "Annual Sponsor", "href": "/partners/inspiria" },
+      { "name": "SmartHub", "role": "Annual Sponsor", "href": "/partners/smarthub" }
+    ]
+  },
+  "gallery": {
+    "eyebrow": "In the room",
+    "headline": "Moments from the chapter",
+    "cta": { "label": "See Past Events", "href": "/events/past" },
+    "images": [
+      { "src": "/images/launch-ceremony.webp", "alt": "Lamp lighting ceremony at the TiE Siliguri chapter launch" },
+      { "src": "/images/launch-felicitation.webp", "alt": "Charter Members felicitated at the TiE Siliguri launch" },
+      { "src": "/images/launch-stage-group.webp", "alt": "TiE Siliguri members and guests on stage" },
+      { "src": "/images/members-mixer.webp", "alt": "Members at a TiE Siliguri member mixer" },
+      { "src": "/images/launch-chapter-stage.webp", "alt": "The TiE Siliguri chapter launch stage" },
+      { "src": "/images/launch-audience.webp", "alt": "A full room at a TiE Siliguri session" }
+    ]
+  },
+  "closing": {
+    "eyebrow": "Join us",
+    "headline": "Siliguri's next generation is being built right now",
+    "subhead": "Be part of the network that is building it. Membership is how you get access to the mentors, the rooms and the opportunities that move a business forward.",
+    "primaryCta": { "label": "Apply for Membership", "href": "/membership/apply" },
+    "secondaryCta": { "label": "Talk to Us", "href": "/contact" }
+  }
+}
