@@ -42,7 +42,7 @@ export default function Community() {
           {community.sectors.map((sector, i) => (
             <Reveal as="li" key={sector.name} delay={i * 50} className="bg-ink">
               <div className="flex h-full flex-col p-7 transition-colors duration-300 hover:bg-white/[0.04]">
-                <h3 className="text-[11px] font-bold tracking-[0.12em] text-tie-red uppercase">
+                <h3 className="text-[11px] font-bold text-tie-red uppercase">
                   {sector.name}
                 </h3>
                 <ul className="mt-4 space-y-1.5">

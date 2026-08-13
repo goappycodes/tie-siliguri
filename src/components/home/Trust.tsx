@@ -22,7 +22,7 @@ export default function Trust() {
               {trust.organisations.map((org) => (
                 <li
                   key={org}
-                  className="flex min-h-[6.5rem] items-center justify-center bg-white p-4 text-center text-[12px] leading-tight font-bold tracking-[0.02em] text-ink-700 transition-colors hover:bg-paper-alt"
+                  className="flex min-h-[6.5rem] items-center justify-center bg-white p-4 text-center text-[12px] leading-tight font-bold text-ink-700 transition-colors hover:bg-paper-alt"
                 >
                   {org}
                 </li>

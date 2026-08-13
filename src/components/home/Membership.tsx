@@ -100,7 +100,7 @@ export default function Membership() {
                         {f.label}
                       </dt>
                       <dd
-                        className={`mt-1.5 text-2xl font-extrabold tracking-tight ${
+                        className={`mt-1.5 text-2xl font-extrabold ${
                           tier.featured ? "text-white" : "text-ink"
                         }`}
                       >

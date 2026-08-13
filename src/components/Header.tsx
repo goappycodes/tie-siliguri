@@ -149,7 +149,7 @@ export default function Header() {
       {/* Global affiliation strip */}
       <div className="hidden bg-ink lg:block">
         <div className="shell flex h-9 items-center justify-between">
-          <p className="text-[11px] font-medium tracking-[0.06em] text-white/60">
+          <p className="text-[11px] font-medium text-white/60">
             A chapter of{" "}
             <a
               href="https://tie.org"

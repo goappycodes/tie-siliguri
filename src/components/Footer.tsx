@@ -75,7 +75,7 @@ export default function Footer() {
             .filter((i) => i.children?.length)
             .map((item) => (
               <div key={item.href}>
-                <h3 className="text-[11px] font-bold tracking-[0.12em] text-white uppercase">
+                <h3 className="text-[11px] font-bold text-white uppercase">
                   <Link href={item.href} className="transition-colors hover:text-tie-red">
                     {item.label}
                   </Link>
@@ -96,7 +96,7 @@ export default function Footer() {
             ))}
 
           <div>
-            <h3 className="text-[11px] font-bold tracking-[0.12em] text-white uppercase">More</h3>
+            <h3 className="text-[11px] font-bold text-white uppercase">More</h3>
             <ul className="mt-4 space-y-2.5">
               <li>
                 <Link href="/contact" className="text-[13px] font-normal transition-colors hover:text-white">

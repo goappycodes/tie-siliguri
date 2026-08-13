@@ -31,7 +31,7 @@ export default function ComingSoon({ page }: { page: StubPage }) {
         />
         <div className="shell relative">
           <nav aria-label="Breadcrumb" className="mb-7">
-            <ol className="flex flex-wrap items-center gap-2 text-[11.5px] font-semibold tracking-[0.06em] text-white/45 uppercase">
+            <ol className="flex flex-wrap items-center gap-2 text-[11.5px] font-semibold text-white/45 uppercase">
               <li>
                 <Link href="/" className="transition-colors hover:text-white">
                   Home

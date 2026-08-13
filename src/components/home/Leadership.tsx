@@ -50,12 +50,12 @@ export default function Leadership() {
                 <span className="bg-tie-red px-3 py-1.5 text-[10.5px] font-bold tracking-[0.12em] text-white uppercase">
                   {president.role}
                 </span>
-                <h3 className="mt-7 text-3xl leading-none font-extrabold tracking-tight !text-white lg:text-4xl">
+                <h3 className="mt-7 text-3xl leading-none font-extrabold !text-white lg:text-4xl">
                   {president.name}
                 </h3>
                 <p className="mt-4 text-[14px] leading-relaxed text-white/60">{president.company}</p>
               </div>
-              <p className="mt-10 border-t border-white/12 pt-6 text-[12px] font-medium tracking-[0.05em] text-white/40 uppercase">
+              <p className="mt-10 border-t border-white/12 pt-6 text-[12px] font-medium text-white/40 uppercase">
                 Executive Committee 2026–27
               </p>
             </article>

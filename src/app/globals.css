@@ -63,6 +63,7 @@
     font-family: var(--font-app);
     /* Body copy is light and normal case throughout. */
     font-weight: 300;
+    letter-spacing: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -75,7 +76,7 @@
     color: var(--color-ink);
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
+    letter-spacing: 0;
     text-wrap: balance;
   }
 
@@ -141,14 +142,13 @@
     color: var(--color-tie-red);
   }
 
-  /* Display headings — Jost bold, uppercase, tracked. Tracking eases off as
-     size grows, since caps need less letter-spacing at display sizes. */
+  /* Display headings — Jost bold, uppercase, no letter-spacing. */
   .display-1 {
     font-family: var(--font-app);
     font-size: clamp(2.25rem, 5.4vw, 4.25rem);
     line-height: 1.06;
     font-weight: 700;
-    letter-spacing: 0.005em;
+    letter-spacing: 0;
     text-transform: uppercase;
   }
   .display-2 {
@@ -156,7 +156,7 @@
     font-size: clamp(1.5rem, 2.7vw, 2.25rem);
     line-height: 1.28;
     font-weight: 700;
-    letter-spacing: 0.045em;
+    letter-spacing: 0;
     text-transform: uppercase;
   }
   .display-3 {
@@ -164,7 +164,7 @@
     font-size: clamp(1.1875rem, 1.8vw, 1.5rem);
     line-height: 1.26;
     font-weight: 700;
-    letter-spacing: 0.035em;
+    letter-spacing: 0;
     text-transform: uppercase;
   }
   /* Body copy: light, normal case, generous leading to carry the low weight. */
@@ -172,6 +172,7 @@
     font-size: clamp(1.0625rem, 1.3vw, 1.25rem);
     line-height: 1.7;
     font-weight: 300;
+    letter-spacing: 0;
     color: var(--color-ink-600);
   }
 

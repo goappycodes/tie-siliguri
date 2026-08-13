@@ -49,7 +49,7 @@ export default function Programs() {
                     {p.meta.map((m) => (
                       <li
                         key={m}
-                        className="flex items-center gap-2 text-[12px] font-semibold tracking-[0.03em] text-slate"
+                        className="flex items-center gap-2 text-[12px] font-semibold text-slate"
                       >
                         <span className="h-1 w-1 flex-none bg-tie-red" aria-hidden="true" />
                         {m}

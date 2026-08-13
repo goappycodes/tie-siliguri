@@ -62,7 +62,7 @@ export default function Hero() {
               <div key={s.label}>
                 <dt className="sr-only">{s.label}</dt>
                 <dd>
-                  <span className="block text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                  <span className="block text-4xl font-extrabold text-white sm:text-5xl">
                     {s.value}
                   </span>
                   <span className="mt-1.5 block max-w-[9rem] text-[11.5px] leading-tight font-semibold tracking-[0.06em] text-white/55 uppercase">
@@ -73,7 +73,7 @@ export default function Hero() {
             ))}
           </dl>
 
-          <p className="mt-10 text-[12px] font-medium tracking-[0.05em] text-white/40 uppercase">
+          <p className="mt-10 text-[12px] font-medium text-white/40 uppercase">
             {site.chapter.foundedLabel} · Hub chapter: {site.chapter.hubChapter}
           </p>
         </div>
