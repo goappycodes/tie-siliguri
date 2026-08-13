@@ -25,7 +25,7 @@ export default function Cadence() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <h3 className="mt-5 text-[15px] leading-tight font-bold text-ink">{step.name}</h3>
-                <p className="mt-2 text-[12.5px] leading-relaxed text-slate">{step.body}</p>
+                <p className="mt-2 text-[12.5px] leading-relaxed font-normal text-slate">{step.body}</p>
               </div>
             </Reveal>
           ))}

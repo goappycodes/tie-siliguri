@@ -28,7 +28,7 @@ export default function Trust() {
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-[11.5px] leading-relaxed text-slate">
+            <p className="mt-4 text-[11.5px] leading-relaxed font-normal text-slate">
               Organisations that have partnered with TiE chapters and programs globally.
             </p>
           </Reveal>

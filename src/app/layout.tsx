@@ -1,24 +1,20 @@
 import type { Metadata } from "next";
-import { Lato, Montserrat } from "next/font/google";
+import { Jost } from "next/font/google";
 import "./globals.css";
 import { getHome, getSite } from "@/lib/content";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-/** Body, UI, nav, buttons and stats — as on tie.org. */
-const montserrat = Montserrat({
+/**
+ * Jost carries the whole site — headings in bold uppercase, body in light at
+ * normal case. Loaded as a variable font so every weight from 300 to 800 is
+ * available without shipping separate files. Jost is one of TiE Global's own
+ * webfonts, so this keeps the chapter site inside the parent brand.
+ */
+const jost = Jost({
   subsets: ["latin"],
-  variable: "--font-montserrat",
+  variable: "--font-jost",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-/** Section headings — Lato 800/900 uppercase, matching TiE Global. */
-const lato = Lato({
-  subsets: ["latin"],
-  variable: "--font-lato",
-  display: "swap",
-  weight: ["700", "900"],
 });
 
 const site = getSite();
@@ -45,8 +41,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={`${montserrat.variable} ${lato.variable} antialiased`}>
+    // The font variable goes on <html> so --font-jost is in scope at :root,
+    // where globals.css composes it into --font-app.
+    <html lang="en" className={jost.variable}>
+      <body className="antialiased">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:bg-tie-red focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-white"

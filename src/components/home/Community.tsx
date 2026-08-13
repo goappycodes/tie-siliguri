@@ -47,7 +47,7 @@ export default function Community() {
                 </h3>
                 <ul className="mt-4 space-y-1.5">
                   {sector.companies.map((c) => (
-                    <li key={c} className="text-[13px] leading-snug text-white/70">
+                    <li key={c} className="text-[13px] leading-snug font-normal text-white/75">
                       {c}
                     </li>
                   ))}

@@ -43,7 +43,7 @@ export default function EventsStrip() {
                   {e.title}
                 </h3>
 
-                <p className="mt-4 text-[13.5px] leading-relaxed text-ink-600">{e.summary}</p>
+                <p className="mt-4 text-[13.5px] leading-relaxed font-normal text-ink-600">{e.summary}</p>
 
                 <dl className="mt-6 space-y-2 border-t border-line pt-5">
                   <div className="flex items-center gap-2.5 text-[12.5px] font-semibold text-ink">

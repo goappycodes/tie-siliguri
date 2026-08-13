@@ -31,16 +31,18 @@ parent brand rather than beside it.
 | Element | Value |
 | --- | --- |
 | Brand red | `#E21E24` |
-| Section headings | Lato 900, UPPERCASE, `letter-spacing: 0.057em` (2px @ 35px) |
-| Body / UI / nav / stats | Montserrat 400–800 |
-| Buttons | Red fill, white text, uppercase, `12px` radius |
+| Typeface | **Jost** throughout — one of TiE Global's own webfonts, loaded as a variable font |
+| Headings | Bold (700), UPPERCASE, tracked (`0.005em`–`0.045em`, easing off as size grows) |
+| Body | Light (300), normal case, `1.7` leading |
+| Small text (≤13.5px) | Weight 400 — light at that size reads too thin, especially on dark |
+| Buttons | Red fill, white text, uppercase, `12px` radius, weight 600 |
 | Illustrations | Halftone dotted globe, topographic contour lines |
 
 Tokens are defined once in [`src/app/globals.css`](src/app/globals.css) under `@theme`,
 with reusable classes for the recurring patterns:
 
-- `.display-1` / `.display-2` — Lato uppercase headings
-- `.display-3` — Montserrat card titles
+- `.display-1` / `.display-2` / `.display-3` — bold uppercase headings
+- `.lede` — light body copy
 - `.eyebrow` — the red tracked caps label with a leading rule
 - `.btn` + `.btn-primary` / `.btn-dark` / `.btn-outline` / `.btn-ghost-light`
 - `.tick` — the red corner-triangle bullet

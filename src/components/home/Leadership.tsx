@@ -72,7 +72,7 @@ export default function Leadership() {
                       {m.role}
                     </p>
                     <h3 className="mt-1.5 text-[16px] leading-tight font-bold text-ink">{m.name}</h3>
-                    <p className="mt-1.5 text-[12.5px] leading-snug text-slate">{m.company}</p>
+                    <p className="mt-1.5 text-[12.5px] leading-snug font-normal text-slate">{m.company}</p>
                   </div>
                 </div>
               </Reveal>
@@ -90,8 +90,8 @@ export default function Leadership() {
                   <Initials name={m.name} />
                   <div>
                     <h3 className="text-[16px] leading-tight font-bold text-ink">{m.name}</h3>
-                    <p className="mt-1.5 text-[12.5px] leading-snug text-ink-600">{m.role}</p>
-                    <p className="mt-1 text-[12.5px] leading-snug text-slate">{m.company}</p>
+                    <p className="mt-1.5 text-[12.5px] leading-snug font-normal text-ink-600">{m.role}</p>
+                    <p className="mt-1 text-[12.5px] leading-snug font-normal text-slate">{m.company}</p>
                   </div>
                 </li>
               ))}
