@@ -1,0 +1,176 @@
+{
+  "index": {
+    "slug": "/programs",
+    "eyebrow": "Programs",
+    "title": "Where founders go deeper",
+    "summary": "Practitioner-led programmes with the time and access to change how a business runs — taught by operators who have built at scale.",
+    "intro": [
+      "Monthly masterclasses build the habit of learning. Our flagship programmes go further — immersive, high-access experiences designed to move a founder and their business a level up.",
+      "Alongside our own flagships, TiE Siliguri members can take part in TiE's global programmes for students and women entrepreneurs."
+    ],
+    "programs": [
+      {
+        "name": "AI Immersion Residency",
+        "badge": "Flagship",
+        "summary": "A two-day residential immersion that takes founders from AI curiosity to AI capability.",
+        "meta": ["19–20 June 2026", "Inspiria Knowledge Campus", "Charter Members exclusive"],
+        "href": "/programs/ai-immersion-residency",
+        "flagship": true
+      },
+      {
+        "name": "Founders' Immersion — Masters' Union",
+        "badge": "Flagship",
+        "summary": "A practitioner-led programme for founders and family businesses, hosted at Masters' Union, Gurugram.",
+        "meta": ["25–26 September", "Masters' Union, Gurugram", "Members only"],
+        "href": "/programs/founders-immersion",
+        "flagship": true
+      },
+      {
+        "name": "TiE Young Entrepreneurs (TYE)",
+        "badge": "Coming Soon",
+        "summary": "TiE's global entrepreneurship programme for high-school students, coming to North Bengal.",
+        "meta": ["Grades 9–12", "Global pitch finals", "Annual programme"],
+        "href": "/programs/tye",
+        "flagship": false
+      },
+      {
+        "name": "TiE Women",
+        "badge": "Coming Soon",
+        "summary": "TiE's global platform for women entrepreneurs — mentoring, learning and a global pitch stage.",
+        "meta": ["Women founders", "Global pitch competition", "Annual programme"],
+        "href": "/programs/tie-women",
+        "flagship": false
+      }
+    ]
+  },
+
+  "aiResidency": {
+    "slug": "/programs/ai-immersion-residency",
+    "eyebrow": "Flagship Programme",
+    "badge": "Flagship · Residential",
+    "title": "AI Immersion Residency",
+    "summary": "A two-day residential immersion built to take founders from AI curiosity to AI capability — mindset, prompt engineering, workflow design and building your own AI edge.",
+    "overview": [
+      "AI is moving faster than any single tool or course can keep up with. The Immersion Residency is designed differently: two focused days, away from the noise, that change how you think about AI in your business — not just which app you use.",
+      "You leave with a working grasp of how to put AI to work across your operations, and a first version of your own AI edge built during the programme."
+    ],
+    "details": [
+      { "label": "When", "value": "19–20 June 2026" },
+      { "label": "Where", "value": "Inspiria Knowledge Campus, Siliguri" },
+      { "label": "Format", "value": "Two-day residential immersion" },
+      { "label": "Who", "value": "Charter Members exclusive" }
+    ],
+    "modules": {
+      "eyebrow": "What you'll work through",
+      "items": [
+        { "title": "The AI mindset", "body": "Reframing AI from a novelty to a leverage tool — where it changes the economics of your business and where it doesn't." },
+        { "title": "Prompt engineering", "body": "The practical craft of getting reliable, useful output from AI models, hands-on with real business tasks." },
+        { "title": "Workflow design", "body": "Mapping the repeatable work in your business and redesigning it around AI so time goes back to the work that matters." },
+        { "title": "Building your AI edge", "body": "Leaving with a first working version of an AI advantage specific to your own business." }
+      ]
+    },
+    "forWho": {
+      "eyebrow": "Who it's for",
+      "body": "Founders and business leaders who know AI matters but haven't yet made it part of how their business actually runs. No technical background required — the residency meets you where you are."
+    },
+    "cta": {
+      "title": "Immersion places are limited and go to members first.",
+      "label": "Talk to us about a place",
+      "href": "/membership/apply"
+    }
+  },
+
+  "foundersImmersion": {
+    "slug": "/programs/founders-immersion",
+    "eyebrow": "Flagship Programme",
+    "badge": "Flagship · Gurugram",
+    "title": "Founders' Immersion — Masters' Union",
+    "summary": "An exclusive, practitioner-led programme for founders and family business owners, hosted inside an ecosystem of Fortune 500 companies at Masters' Union School of Business, Gurugram.",
+    "overview": [
+      "For two days, TiE Siliguri members step out of their day-to-day and into one of India's most talked-about business schools — Masters' Union — to learn directly from operators, investors and founders who have built at scale.",
+      "It is a rare chance for North Bengal's founders to plug into a national network, benchmark their thinking against the best, and bring frameworks home that they can put to work immediately."
+    ],
+    "details": [
+      { "label": "When", "value": "25–26 September" },
+      { "label": "Where", "value": "Masters' Union School of Business, Gurugram" },
+      { "label": "Format", "value": "Two-day immersion" },
+      { "label": "Who", "value": "TiE Siliguri members only" }
+    ],
+    "modules": {
+      "eyebrow": "What the immersion covers",
+      "items": [
+        { "title": "Practitioner sessions", "body": "Learning directly from founders and operators who have built and scaled real businesses." },
+        { "title": "Family business focus", "body": "Frameworks for the specific challenges of running and growing a family enterprise." },
+        { "title": "Fortune 500 ecosystem", "body": "Time inside an ecosystem built around Fortune 500 companies and India's fastest-moving startups." },
+        { "title": "National network", "body": "Connections with founders and mentors from across the wider TiE and Masters' Union networks." }
+      ]
+    },
+    "forWho": {
+      "eyebrow": "Who it's for",
+      "body": "Founders and family business owners ready to work on the business, not just in it — and to invest two days in the network and frameworks to do it."
+    },
+    "cta": {
+      "title": "This immersion is open to TiE Siliguri members.",
+      "label": "Become a member",
+      "href": "/membership/apply"
+    }
+  },
+
+  "tye": {
+    "slug": "/programs/tye",
+    "eyebrow": "TiE Global Programme",
+    "badge": "Coming Soon",
+    "title": "TiE Young Entrepreneurs",
+    "summary": "TiE's global entrepreneurship programme for high-school students — experiential, mentor-led, and culminating in a global pitch competition. Coming to North Bengal.",
+    "overview": [
+      "TiE Young Entrepreneurs (TYE) exists to start the next generation on the entrepreneurial pathway. It gives high-school students (grades 9–12) a real, hands-on experience of building a venture — from idea to pitch — guided by startup founders and industry experts.",
+      "We are working to bring TYE to Siliguri so that North Bengal's students can take part in a programme that has shaped young founders around the world."
+    ],
+    "stats": [
+      { "value": "2005", "label": "Programme founded" },
+      { "value": "30,000+", "label": "Students worldwide" },
+      { "value": "100+", "label": "Schools globally" },
+      { "value": "25+", "label": "Chapters each year" }
+    ],
+    "how": {
+      "eyebrow": "How TYE works",
+      "items": [
+        { "title": "Experiential curriculum", "body": "Students spend weekends across the programme learning the practical craft of turning an idea into a startup or small business." },
+        { "title": "Learn from founders", "body": "Sessions are led directly by startup founders and industry experts, not textbooks." },
+        { "title": "Team ventures", "body": "Students work in teams to build and shape a real business concept over the course of the programme." },
+        { "title": "Global pitch finals", "body": "The programme culminates in a global pitch competition — recent Global Finals have been held in Hyderabad, India and Silicon Valley, USA." }
+      ]
+    },
+    "cta": {
+      "title": "Want TYE at your school in North Bengal?",
+      "label": "Register your interest",
+      "href": "/contact"
+    }
+  },
+
+  "tieWomen": {
+    "slug": "/programs/tie-women",
+    "eyebrow": "TiE Global Programme",
+    "badge": "Coming Soon",
+    "title": "TiE Women",
+    "summary": "TiE's global platform dedicated to women entrepreneurs — mentoring, learning, networking and a global pitch stage. Coming to North Bengal.",
+    "overview": [
+      "TiE Women is TiE Global's initiative to find, mentor and elevate women entrepreneurs everywhere. It combines learning and mentorship with a global pitch competition that puts women founders in front of investors and the wider TiE network.",
+      "TiE Siliguri intends to run TiE Women locally so that women founders across North Bengal can access this platform, its mentors and its stage."
+    ],
+    "offers": {
+      "eyebrow": "What TiE Women brings",
+      "items": [
+        { "title": "Mentorship", "body": "Structured guidance from experienced founders and business leaders across the TiE network." },
+        { "title": "Learning", "body": "Practitioner-led sessions on the skills that decide whether a venture scales." },
+        { "title": "Global pitch competition", "body": "A stage to pitch to investors and mentors, from the local round through to the global finals." },
+        { "title": "Community", "body": "A network of women entrepreneurs supporting one another across chapters worldwide." }
+      ]
+    },
+    "cta": {
+      "title": "Are you a woman founder in North Bengal?",
+      "label": "Register your interest",
+      "href": "/contact"
+    }
+  }
+}

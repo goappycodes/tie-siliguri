@@ -10,6 +10,13 @@ import siteJson from "@/../content/site.json";
 import homeJson from "@/../content/home.json";
 import eventsJson from "@/../content/events.json";
 import pagesJson from "@/../content/pages.json";
+import aboutJson from "@/../content/about.json";
+import programsJson from "@/../content/programs.json";
+import membershipJson from "@/../content/membership.json";
+import communityJson from "@/../content/community.json";
+import partnersJson from "@/../content/partners.json";
+import contactJson from "@/../content/contact.json";
+import legalJson from "@/../content/legal.json";
 
 /* ---------------------------------------------------------------- primitives */
 
@@ -51,6 +58,13 @@ export type Site = {
 
 export type Home = typeof homeJson;
 export type Events = typeof eventsJson;
+export type About = typeof aboutJson;
+export type Programs = typeof programsJson;
+export type Membership = typeof membershipJson;
+export type Community = typeof communityJson;
+export type Partners = typeof partnersJson;
+export type Contact = typeof contactJson;
+export type Legal = typeof legalJson;
 
 /* -------------------------------------------------------------------- pages */
 
@@ -74,6 +88,34 @@ export function getHome(): Home {
 
 export function getEvents(): Events {
   return eventsJson;
+}
+
+export function getAbout(): About {
+  return aboutJson;
+}
+
+export function getPrograms(): Programs {
+  return programsJson;
+}
+
+export function getMembership(): Membership {
+  return membershipJson;
+}
+
+export function getCommunity(): Community {
+  return communityJson;
+}
+
+export function getPartners(): Partners {
+  return partnersJson;
+}
+
+export function getContact(): Contact {
+  return contactJson;
+}
+
+export function getLegal(): Legal {
+  return legalJson;
 }
 
 /** Every non-home page in the sitemap, keyed by its route path. */

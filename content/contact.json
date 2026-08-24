@@ -1,0 +1,17 @@
+{
+  "slug": "/contact",
+  "eyebrow": "Contact",
+  "title": "Get in touch",
+  "summary": "Whether you're weighing up membership, planning to attend an event, or exploring a partnership — the TiE Siliguri chapter team is here to help.",
+  "intro": "Reach us directly by email or phone, or follow the chapter on social media for the latest events and announcements. We usually respond within a couple of working days.",
+  "reasons": {
+    "eyebrow": "How we can help",
+    "items": [
+      { "title": "Membership", "body": "Questions about Charter or Associate Membership, or ready to apply.", "cta": "Apply for membership", "href": "/membership/apply" },
+      { "title": "Events", "body": "Registering for an upcoming session, or hosting one with us.", "cta": "See upcoming events", "href": "/events/upcoming" },
+      { "title": "Partnerships", "body": "Sponsoring the chapter or partnering on a programme.", "cta": "About our partners", "href": "/partners" }
+    ]
+  },
+  "directLabel": "Talk to the chapter team",
+  "followLabel": "Follow the chapter"
+}

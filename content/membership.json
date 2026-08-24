@@ -1,0 +1,125 @@
+{
+  "index": {
+    "slug": "/membership",
+    "eyebrow": "Membership",
+    "title": "Join TiE Siliguri",
+    "summary": "Become part of the world's largest network of entrepreneurs — right here in North Bengal. Two ways to join, one shared mission: helping entrepreneurs become better entrepreneurs.",
+    "intro": [
+      "TiE membership is your entry into a global ecosystem of mentors, founders and investors — and into an active local chapter running curated sessions every month.",
+      "Members join as either Charter Members or Associate Members. Both plug into the same community; the difference is the depth of access, governance and global privileges."
+    ],
+    "quickLinks": [
+      { "title": "Why Join TiE", "body": "What membership actually gives you — locally and globally.", "href": "/membership/why-join" },
+      { "title": "Membership Benefits", "body": "The concrete benefits members enjoy across TiE.", "href": "/membership/benefits" },
+      { "title": "Membership Categories", "body": "Charter vs Associate — access, governance and fees compared.", "href": "/membership/categories" },
+      { "title": "Apply for Membership", "body": "How to join, and who to talk to.", "href": "/membership/apply" }
+    ],
+    "cta": { "title": "Ready to join North Bengal's entrepreneurial network?", "label": "Apply for Membership", "href": "/membership/apply" }
+  },
+
+  "whyJoin": {
+    "slug": "/membership/why-join",
+    "eyebrow": "Why Join TiE",
+    "title": "Empowering entrepreneurs, globally and locally",
+    "summary": "TiE is the world's largest entrepreneurial network — 64 chapters across 14 countries — built to foster entrepreneurship through mentoring, networking, education, funding and incubation.",
+    "whatWeDo": {
+      "eyebrow": "What TiE does",
+      "items": [
+        { "title": "Inspire & Educate", "body": "Continuous learning through workshops, masterclasses, webinars and global events — insights from industry leaders and experienced entrepreneurs." },
+        { "title": "Mentor & Support", "body": "Unmatched mentorship from successful entrepreneurs and thought leaders, guiding you through every stage of the journey." },
+        { "title": "Network & Collaborate", "body": "Access to a global network of entrepreneurs, investors and professionals — opportunities for collaboration, partnerships and growth." },
+        { "title": "Fund & Incubate", "body": "Help securing funding through programs like TiE Angels, connecting startups with investors and structured acceleration." }
+      ]
+    },
+    "reasons": {
+      "eyebrow": "Why join",
+      "items": [
+        { "title": "Personal & professional growth", "body": "Sharpen your entrepreneurial skills through global-level mentoring and learning." },
+        { "title": "Global connectivity", "body": "Leverage TiE's international network for business opportunities and collaborations." },
+        { "title": "Impactful mentorship", "body": "Access mentorship from proven entrepreneurs dedicated to your success." },
+        { "title": "Leadership opportunities", "body": "Grow your influence, give back, and shape the future of entrepreneurship through active roles." }
+      ]
+    },
+    "signaturePrograms": {
+      "eyebrow": "TiE Global signature programs",
+      "items": [
+        { "name": "TiE Young Entrepreneurs (TYE)", "body": "Nurturing young entrepreneurial talent through real-world business challenges and mentorship." },
+        { "name": "TiE University", "body": "Empowering university entrepreneurs with the tools, network and mentorship to bring ideas to market." },
+        { "name": "TiE Women", "body": "Accelerating women-led enterprises with mentorship, networking and funding." },
+        { "name": "TiE Nurture", "body": "Structured mentorship and acceleration for early-stage startups." },
+        { "name": "TiE Members Retreat", "body": "Exclusive gatherings for Charter Members to network and exchange strategic ideas." },
+        { "name": "TiE Global Summit & TiECons", "body": "Flagship global events connecting entrepreneurs to investment and transformative learning." }
+      ]
+    },
+    "cta": { "title": "Join TiE. Shape your entrepreneurial future.", "label": "Apply for Membership", "href": "/membership/apply" }
+  },
+
+  "benefits": {
+    "slug": "/membership/benefits",
+    "eyebrow": "Membership Benefits",
+    "title": "What you get as a member",
+    "summary": "From a global network and world-class mentorship to a full local calendar of learning and connection — here's what membership brings.",
+    "items": [
+      { "title": "A global network", "body": "Connect with entrepreneurs, investors and professionals across 64 chapters in 14 countries." },
+      { "title": "Mentorship that moves you forward", "body": "Guidance from founders and operators who have already built at scale." },
+      { "title": "Continuous learning", "body": "Practitioner-led masterclasses, workshops and webinars — at least one session every month." },
+      { "title": "Funding pathways", "body": "Routes to angel capital and investor readiness through TiE Angels and the wider investing network." },
+      { "title": "Global event access", "body": "Charter Members attend any TiE chapter's events worldwide for free — including TiECons and the TiE Global Summit." },
+      { "title": "Recognition & visibility", "body": "Profile in TiE Global directories and chapter collateral, strengthening your personal and professional brand." },
+      { "title": "Leadership & giving back", "body": "Eligibility for Executive Committee, SIG Chair and program-leader roles that shape the ecosystem." },
+      { "title": "A local community", "body": "Monthly mixers, coffee meets and mentoring clinics with North Bengal's founders." }
+    ],
+    "cta": { "title": "See which membership fits you.", "label": "Compare categories", "href": "/membership/categories" }
+  },
+
+  "categories": {
+    "slug": "/membership/categories",
+    "eyebrow": "Membership Categories",
+    "title": "Charter Member or Associate Member",
+    "summary": "Both categories join the same community. Charter Membership is by invitation and carries voting rights, governance and global privileges; Associate Membership is an open, inclusive way in.",
+    "definitions": [
+      { "name": "Charter Member (CM)", "body": "Distinguished entrepreneurs and visionary business leaders who guide the strategic direction of the chapter. CMs exclusively hold voting rights and are eligible for leadership positions — Executive Committee, SIG Chairs and program leaders — influencing TiE's mission locally and globally." },
+      { "name": "Associate Member (AM)", "body": "Aspiring entrepreneurs and professionals who benefit from extensive learning, mentorship and networking. AMs don't hold voting rights or leadership positions, but engage actively in chapter activities as volunteers to accelerate their growth." }
+    ],
+    "compareLabel": "How they compare",
+    "comparison": [
+      { "feature": "Eligibility", "cm": "Established entrepreneurs and prominent business leaders", "am": "Aspiring entrepreneurs, startup founders and professionals" },
+      { "feature": "Membership type", "cm": "Exclusive, by invitation", "am": "Open registration, inclusive" },
+      { "feature": "Global access", "cm": "Complimentary access to all TiE chapters worldwide, incl. TiECons & the Global Summit", "am": "Primarily chapter-based; discounted entry to select global events" },
+      { "feature": "Voting & governance", "cm": "Exclusive right to vote and shape strategic decisions", "am": "No voting rights; not involved in governance" },
+      { "feature": "Leadership", "cm": "Eligible for EC member, SIG Chair and program-leader roles", "am": "Volunteer roles supporting chapter activities" },
+      { "feature": "Mentorship", "cm": "Mentors and guides AMs, startups and young entrepreneurs", "am": "Receives mentorship from experienced Charter Members" },
+      { "feature": "Networking", "cm": "Priority access to exclusive global CM mixers and closed-door forums", "am": "Chapter-level networking events and mixers" },
+      { "feature": "Recognition", "cm": "Featured in TiE Global directories and marketing collateral", "am": "General member recognition" },
+      { "feature": "Global programs", "cm": "Mentor, advisor and judge for TiE Women, TiE University, TYE", "am": "Participate as mentee, participant or contestant" }
+    ],
+    "feesLabel": "Membership fees",
+    "fees": [
+      { "category": "Charter Member", "admission": "₹25,000", "annual": "₹50,000", "featured": true },
+      { "category": "Associate Member", "admission": "₹5,000", "annual": "₹10,000", "featured": false }
+    ],
+    "feesNote": "Admission fee is one-time; annual fee recurs each year. The annual fee covers most chapter events.",
+    "cta": { "title": "Found the right fit?", "label": "Apply for Membership", "href": "/membership/apply" }
+  },
+
+  "apply": {
+    "slug": "/membership/apply",
+    "eyebrow": "Apply for Membership",
+    "title": "Become a member",
+    "summary": "Joining TiE Siliguri is a short conversation away. Tell us a little about you and the chapter team will guide you through the right membership for your stage.",
+    "steps": {
+      "eyebrow": "How it works",
+      "items": [
+        { "title": "Reach out", "body": "Email or call the chapter team, or send us your details — whichever is easiest." },
+        { "title": "Find your fit", "body": "We'll help you choose between Charter and Associate Membership based on your stage and goals." },
+        { "title": "Confirm & onboard", "body": "Complete your membership and get onboarded into the chapter, its events and the global network." }
+      ]
+    },
+    "feesLabel": "Membership at a glance",
+    "fees": [
+      { "category": "Charter Member", "admission": "₹25,000", "annual": "₹50,000", "featured": true },
+      { "category": "Associate Member", "admission": "₹5,000", "annual": "₹10,000", "featured": false }
+    ],
+    "contactLabel": "Talk to the chapter team"
+  }
+}

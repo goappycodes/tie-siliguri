@@ -1,0 +1,38 @@
+{
+  "privacy": {
+    "slug": "/privacy-policy",
+    "eyebrow": "Legal",
+    "title": "Privacy Policy",
+    "updated": "Last updated: August 2026",
+    "intro": "TiE Siliguri (\"we\", \"us\", \"the chapter\") respects your privacy. This policy explains what information we collect through this website, how we use it, and the choices you have. TiE Siliguri is the North Bengal chapter of TiE (The Indus Entrepreneurs).",
+    "sections": [
+      { "heading": "Information we collect", "body": "We only collect information you choose to share with us — for example, your name, email address, phone number and message when you contact us or apply for membership. We may also collect basic, non-identifying analytics about how visitors use the site." },
+      { "heading": "How we use your information", "body": "We use your information to respond to your enquiries, process membership applications, register you for events, and — where you've asked us to — send you chapter updates. We do not sell your personal information." },
+      { "heading": "Cookies & analytics", "body": "The site may use cookies and standard analytics tools to understand traffic and improve the experience. You can control cookies through your browser settings." },
+      { "heading": "Sharing your information", "body": "We may share limited information with the wider TiE network where it is necessary to process your membership, and with trusted service providers who help us operate the chapter. We do not share your details for unrelated marketing." },
+      { "heading": "Data retention & your rights", "body": "We keep your information only as long as needed for the purposes above. You may ask us to access, correct or delete your personal information at any time by contacting the chapter." },
+      { "heading": "External links", "body": "This site links to external websites (including TiE Global and partner sites). We are not responsible for the privacy practices or content of those sites." },
+      { "heading": "Changes to this policy", "body": "We may update this policy from time to time. Material changes will be reflected here with a revised date." },
+      { "heading": "Contact us", "body": "Questions about this policy or your data? Reach the chapter team using the contact details on our Contact page." }
+    ]
+  },
+
+  "terms": {
+    "slug": "/terms-of-use",
+    "eyebrow": "Legal",
+    "title": "Terms of Use",
+    "updated": "Last updated: August 2026",
+    "intro": "These terms govern your use of the TiE Siliguri website. By using this site, you agree to them. If you do not agree, please do not use the site.",
+    "sections": [
+      { "heading": "Use of the site", "body": "You agree to use this website lawfully and not to misuse it, attempt to disrupt it, or use it in any way that could harm the chapter or other users." },
+      { "heading": "Intellectual property", "body": "Content on this site — text, images, graphics and layout — is owned by or licensed to TiE Siliguri, except where noted. The TiE name and marks belong to TiE Global and are used under the chapter's affiliation. Please don't reproduce content without permission." },
+      { "heading": "Membership & events", "body": "Membership and event participation may be subject to their own terms, fees and eligibility criteria, which will be provided to you separately as part of the application or registration process." },
+      { "heading": "External links", "body": "Our site links to third-party websites for convenience. We do not control and are not responsible for their content or availability." },
+      { "heading": "Disclaimer", "body": "This website and its content are provided on an \"as is\" basis for general information. While we aim to keep it accurate and up to date, we make no warranties about its completeness or reliability." },
+      { "heading": "Limitation of liability", "body": "To the extent permitted by law, TiE Siliguri is not liable for any loss arising from your use of, or reliance on, this website." },
+      { "heading": "Governing law", "body": "These terms are governed by the laws of India, and any disputes are subject to the jurisdiction of the courts of West Bengal." },
+      { "heading": "Changes to these terms", "body": "We may update these terms from time to time. Continued use of the site means you accept the current version." },
+      { "heading": "Contact us", "body": "Questions about these terms? Reach the chapter team using the contact details on our Contact page." }
+    ]
+  }
+}

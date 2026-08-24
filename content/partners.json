@@ -1,0 +1,64 @@
+{
+  "index": {
+    "slug": "/partners",
+    "eyebrow": "Partners",
+    "title": "The organisations behind the chapter",
+    "summary": "TiE Siliguri is powered by partners who believe in North Bengal's entrepreneurs — sponsors and institutions that give the chapter its venues, its reach and its momentum.",
+    "intro": [
+      "A chapter is only as strong as the ecosystem around it. Our partners provide the spaces, the support and the networks that turn a calendar of events into a genuine community.",
+      "We are proud to be backed by leading institutions from across the region."
+    ],
+    "partners": [
+      {
+        "name": "INSPIRIA Knowledge Campus",
+        "role": "Annual Sponsor",
+        "blurb": "One of North Bengal's leading education campuses and a host venue for chapter events.",
+        "href": "/partners/inspiria"
+      },
+      {
+        "name": "SmartHub",
+        "role": "Annual Sponsor",
+        "blurb": "A chapter partner supporting TiE Siliguri's mission to grow the region's entrepreneurial ecosystem.",
+        "href": "/partners/smarthub"
+      }
+    ],
+    "ctaLabel": "Partner with TiE Siliguri",
+    "cta": {
+      "title": "Interested in partnering with the chapter?",
+      "label": "Talk to us",
+      "href": "/contact"
+    }
+  },
+
+  "inspiria": {
+    "slug": "/partners/inspiria",
+    "eyebrow": "Chapter Partner",
+    "role": "Annual Sponsor",
+    "title": "INSPIRIA Knowledge Campus",
+    "summary": "One of North Bengal's leading education campuses and a proud Annual Sponsor of TiE Siliguri — and a host venue for the chapter's flagship programmes.",
+    "body": [
+      "Established in 2015, Inspiria Knowledge Campus is a private college in Siliguri built with one aim: to make the region's youth genuinely employable. Affiliated with MAKAUT, NAAC-accredited and AICTE-approved, it spans a green five-acre campus with technology-enabled classrooms, media studios, a digital library and full sports facilities.",
+      "Inspiria runs four schools — Management, Computer Science, Design & Media, and Hospitality — offering BBA, BCA, B.Sc. and BHM programmes, with a placement network that includes recruiters like Amazon, Zomato, Raymond and The Leela.",
+      "As a chapter partner, Inspiria brings its campus, its students and its belief in enterprise to TiE Siliguri — and hosts chapter programmes including the AI Immersion Residency."
+    ],
+    "facts": [
+      { "value": "2015", "label": "Established" },
+      { "value": "5 acres", "label": "Campus" },
+      { "value": "4", "label": "Schools" }
+    ],
+    "link": { "label": "Visit inspiria.edu.in", "href": "https://inspiria.edu.in" }
+  },
+
+  "smarthub": {
+    "slug": "/partners/smarthub",
+    "eyebrow": "Chapter Partner",
+    "role": "Annual Sponsor",
+    "title": "SmartHub",
+    "summary": "A proud Annual Sponsor of TiE Siliguri, supporting the chapter's mission to grow North Bengal's entrepreneurial ecosystem.",
+    "body": [
+      "SmartHub partners with TiE Siliguri as an Annual Sponsor, standing behind the chapter's work to mentor founders, host learning sessions and connect the region's entrepreneurs to a global network.",
+      "Partnerships like this one are what make the chapter's calendar possible — and what turn TiE Siliguri from an idea into an active, growing community."
+    ],
+    "link": null
+  }
+}

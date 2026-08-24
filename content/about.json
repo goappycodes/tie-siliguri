@@ -1,0 +1,169 @@
+{
+  "index": {
+    "slug": "/about",
+    "eyebrow": "About",
+    "title": "About TiE Siliguri",
+    "summary": "The story of how the world's largest entrepreneurial network came to North Bengal — our chapter, our people and our mandate.",
+    "mission": {
+      "eyebrow": "Why we exist",
+      "headline": "Helping entrepreneurs become better entrepreneurs",
+      "body": [
+        "TiE Siliguri is the North Bengal chapter of TiE — a global movement built to help founders learn faster, grow further and reach opportunities that would otherwise stay out of reach.",
+        "We operate as a Spoke Chapter under TiE Kolkata, bringing a proven playbook of mentoring, learning, networking, funding and incubation to Siliguri and the wider region."
+      ]
+    },
+    "cards": [
+      {
+        "title": "About TiE Global",
+        "body": "The world's largest network of entrepreneurs — 60+ chapters, 14 countries, half a million people. Where TiE Siliguri belongs.",
+        "href": "/about/tie-global"
+      },
+      {
+        "title": "Our Chapter",
+        "body": "Why TiE came to North Bengal, how the chapter launched on 30 July 2025, and what we are building here.",
+        "href": "/about/our-chapter"
+      },
+      {
+        "title": "Leadership Team",
+        "body": "The Executive Committee for 2025–2027 — entrepreneurs who run businesses in this region, giving their time to build the ecosystem.",
+        "href": "/about/leadership"
+      },
+      {
+        "title": "Chapter Manager",
+        "body": "The team that runs the chapter day to day — your first point of contact for membership, events and everything in between.",
+        "href": "/about/chapter-manager"
+      }
+    ]
+  },
+
+  "tieGlobal": {
+    "slug": "/about/tie-global",
+    "eyebrow": "About TiE Global",
+    "title": "The world's largest network of entrepreneurs",
+    "summary": "Founded in Silicon Valley in 1992, TiE — The Indus Entrepreneurs — exists for one purpose: to help entrepreneurs become better entrepreneurs.",
+    "intro": [
+      "TiE was born in 1992 when a group of successful entrepreneurs and professionals of Indus origin came together in Silicon Valley to give back — to mentor the next generation the way they wished they had been mentored.",
+      "Three decades on, that idea has become a global institution: a non-profit network that turns the hard-won experience of established founders into a structured advantage for the ones coming up behind them."
+    ],
+    "stats": [
+      { "value": "1992", "label": "Founded in Silicon Valley" },
+      { "value": "60+", "label": "Chapters worldwide" },
+      { "value": "14", "label": "Countries" },
+      { "value": "500K+", "label": "Lives touched each year" }
+    ],
+    "pillars": {
+      "eyebrow": "The TiE model",
+      "headline": "Five ways TiE moves a founder forward",
+      "items": [
+        { "title": "Mentoring", "body": "One-on-one guidance from founders who have already built at scale." },
+        { "title": "Learning", "body": "Practitioner-led masterclasses on the skills that decide whether a venture grows." },
+        { "title": "Networking", "body": "Curated access to peers, partners and chapters across the world." },
+        { "title": "Funding", "body": "Pathways to angel capital and investor readiness through the TiE Angels network." },
+        { "title": "Incubation", "body": "Structured support for early-stage ventures, from idea to go-to-market." }
+      ]
+    },
+    "india": {
+      "eyebrow": "TiE in India",
+      "headline": "The largest founder network in the country",
+      "body": [
+        "India is home to the largest concentration of TiE chapters anywhere in the world — 32 active chapters and counting, from the metros to fast-rising Tier 2 and Tier 3 cities.",
+        "TiE Siliguri joins that map as North Bengal's chapter, mentored by TiE Kolkata — one of the network's most active and respected chapters, founded in 2002."
+      ]
+    },
+    "cta": {
+      "title": "See the global network for yourself.",
+      "label": "Visit TiE Global",
+      "href": "https://tie.org"
+    }
+  },
+
+  "ourChapter": {
+    "slug": "/about/our-chapter",
+    "eyebrow": "Our Chapter",
+    "title": "TiE comes to North Bengal",
+    "summary": "Launched on 30 July 2025 as a Spoke Chapter under TiE Kolkata, TiE Siliguri exists to put North Bengal firmly on India's entrepreneurial map.",
+    "purpose": {
+      "eyebrow": "Our purpose",
+      "headline": "What we are here to do",
+      "items": [
+        "Create a trusted platform for entrepreneurs, investors, professionals and students to connect and grow together.",
+        "Bridge the knowledge and network gap between local entrepreneurs and global opportunities.",
+        "Mentor and handhold first-generation founders who often lack structured support in Tier 2 and Tier 3 cities.",
+        "Bring global best practices to the region while keeping our local entrepreneurial strengths and culture alive."
+      ]
+    },
+    "hub": {
+      "eyebrow": "Hub & Spoke",
+      "headline": "Mentored by TiE Kolkata",
+      "body": [
+        "As per TiE Global policy, every new chapter begins as a Spoke Chapter under an established Hub Chapter for its first two years. TiE Kolkata — founded in 2002, with 125+ Charter Members and 300+ Associate Members — is our Hub.",
+        "That means Kolkata mentors, guides and supports us in setting up governance, programs, events and membership, so the chapter is built on a proven foundation. Once we meet TiE Global's criteria, TiE Siliguri applies for full independent chapter status."
+      ],
+      "facts": [
+        { "value": "2 yrs", "label": "As a Spoke Chapter" },
+        { "value": "15+", "label": "Charter Members to launch" },
+        { "value": "1:2", "label": "Charter-to-Associate ratio" }
+      ]
+    },
+    "momentum": {
+      "eyebrow": "How we got here",
+      "headline": "The road to launch",
+      "subhead": "Pre-launch sessions hosted with TiE Kolkata through 2025 built the energy and community that became TiE Siliguri.",
+      "events": [
+        { "date": "12 Feb 2025", "title": "Siliguri Meet-Up on TiE", "with": "with Kamal Agarwala" },
+        { "date": "22 Mar 2025", "title": "Storytelling for Growth", "with": "with Pradeep Yuvaraj" },
+        { "date": "19 Apr 2025", "title": "AI, Entrepreneurship & Career Opportunities", "with": "with Kashi K S" },
+        { "date": "10 May 2025", "title": "The 10X Leap", "with": "with Srish Agrawal" },
+        { "date": "14 Jun 2025", "title": "How to Build a $100M Pipeline", "with": "with Kapildev" },
+        { "date": "30 Jul 2025", "title": "TiE Siliguri Chapter Launch", "with": "North Bengal's chapter goes live" }
+      ]
+    },
+    "cadence": {
+      "eyebrow": "Chapter cadence",
+      "headline": "What a year at TiE Siliguri looks like",
+      "items": [
+        { "title": "Deep-Dive Workshops & Masterclasses", "freq": "Monthly" },
+        { "title": "Coffee Meets", "freq": "Monthly" },
+        { "title": "Mentoring Clinics", "freq": "Monthly" },
+        { "title": "Cross-Chapter Events & Networking", "freq": "Event-based" },
+        { "title": "All-Members Mixer", "freq": "Yearly" },
+        { "title": "Charter Members Retreat", "freq": "Yearly" }
+      ]
+    },
+    "cta": {
+      "title": "Come and see what North Bengal's founders are building.",
+      "label": "Join TiE Siliguri",
+      "href": "/membership/apply"
+    }
+  },
+
+  "leadership": {
+    "slug": "/about/leadership",
+    "eyebrow": "Leadership Team",
+    "title": "Led by the region's operators",
+    "summary": "The Executive Committee for 2025–2027 — entrepreneurs who run businesses in this region, giving their time to build the ecosystem around them.",
+    "ecLabel": "Executive Committee 2025–2027",
+    "note": "Guided by our Hub Chapter, TiE Kolkata — whose mentors sit alongside our EC through the chapter's first two years."
+  },
+
+  "chapterManager": {
+    "slug": "/about/chapter-manager",
+    "eyebrow": "Chapter Manager",
+    "title": "The team behind the chapter",
+    "summary": "Every TiE chapter runs on a small operational team that keeps the mission moving — the first people you talk to as a member or a prospective one.",
+    "intro": [
+      "The Chapter Manager is your day-to-day point of contact at TiE Siliguri. Where the Executive Committee sets direction, the manager makes it happen — coordinating events, onboarding members, answering questions and keeping the chapter running smoothly.",
+      "Whether you are weighing up membership, planning to attend an event, or want to get involved as a volunteer or partner, this is the desk to reach."
+    ],
+    "responsibilities": {
+      "eyebrow": "What the desk handles",
+      "items": [
+        "Membership enquiries, applications and onboarding for Charter and Associate Members.",
+        "Event scheduling, registrations and logistics across the monthly calendar.",
+        "The link between members and the Executive Committee.",
+        "Coordination with our Hub Chapter, TiE Kolkata, and the wider TiE Global network."
+      ]
+    },
+    "contactLabel": "Reach the chapter office"
+  }
+}

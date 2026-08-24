@@ -1,0 +1,87 @@
+{
+  "index": {
+    "slug": "/community",
+    "eyebrow": "Community",
+    "title": "An ecosystem of leaders",
+    "summary": "Entrepreneurs, founders and business leaders across North Bengal's key sectors — the people who make up the TiE Siliguri community.",
+    "intro": [
+      "TiE Siliguri brings together two kinds of members: Charter Members — established entrepreneurs who guide the chapter — and Associate Members — aspiring founders and professionals building their ventures.",
+      "Together they span healthcare, education, finance, manufacturing, technology, hospitality, real estate and more."
+    ],
+    "sectorsLabel": "The community by sector",
+    "sectors": [
+      { "name": "Healthcare", "companies": ["Reddy Healthcare", "Kins Health", "Retina Institute of Bengal"] },
+      { "name": "Education", "companies": ["Inspiria Knowledge Campus", "Sacred Heart School", "IIAS Education Group", "NEXIS School of Business", "Quizzora & Co."] },
+      { "name": "Finance & Investing", "companies": ["Probitas Capital", "Daughters Wealth Tech", "Prabin Agarwal Empowering Investors"] },
+      { "name": "Manufacturing & Trade", "companies": ["Clearstone Glass", "JK Enterprise", "CKIM Promoters", "Sinhal Brothers & Co"] },
+      { "name": "Technology & Media", "companies": ["Placewell Systems", "Fittronics Global", "Logic Fusion", "Blue Minch", "Cogito Digital", "Galaxynet Connections"] },
+      { "name": "Travel & Hospitality", "companies": ["Tripwizard Travel", "Crafty Kitchen Ventures", "Error Brew & Pubs"] },
+      { "name": "Real Estate", "companies": ["Sevoke Realty", "Maa Bhawani Heights"] },
+      { "name": "Creative & Consumer", "companies": ["Kreativ Street", "MTC Buildmart", "Shivalaya", "Premier Sports & Fitness", "Krishyam"] }
+    ],
+    "cards": [
+      { "title": "Charter Members", "body": "The established entrepreneurs and business leaders who guide TiE Siliguri.", "href": "/community/charter-members" },
+      { "title": "Associate Members", "body": "Aspiring founders and professionals growing within the TiE community.", "href": "/community/associate-members" }
+    ]
+  },
+
+  "charterMembers": {
+    "slug": "/community/charter-members",
+    "eyebrow": "Charter Members",
+    "title": "Our founding Charter Members",
+    "summary": "Distinguished entrepreneurs and business leaders who guide the strategic direction of TiE Siliguri — and mentor the founders coming up behind them.",
+    "members": [
+      { "name": "Arun Agarwal", "company": "Maa Bhawani Heights Pvt. Ltd.", "bio": "Education and career counsellor who has mentored 1,000+ students and helped 900+ secure admission to top global universities since 2014.", "photo": "/images/people/arun-agarwal.webp" },
+      { "name": "Sangeeta Reddy", "company": "Reddy Healthcare & Retina Institute of Bengal", "bio": "Leads pioneering healthcare ventures known for excellence in eye care and affordable diagnostics; a passionate educator and farmer.", "photo": "/images/people/sangeeta-reddy.webp" },
+      { "name": "Rahul Gupta", "company": "Inspiria Knowledge Campus", "bio": "Director of Operations and a founding member of Inspiria, blending corporate experience from Amazon with a passion for education.", "photo": "/images/people/rahul-gupta.webp" },
+      { "name": "Sumit Sinhal", "company": "Kins Health", "bio": "Directs a multidisciplinary healthcare enterprise; 15+ years in healthcare and a graduate of the Stanford Seed Transformation Program.", "photo": "/images/people/sumit-sinhal.webp" },
+      { "name": "Neeraj Sancheti", "company": "Kreativ Street", "bio": "Founder & CEO of Kreativ Street, a creative and inbound marketing agency he launched in 2016 after leading brand strategy at OYO.", "photo": "/images/people/neeraj-sancheti.webp" },
+      { "name": "Manish Agarwal", "company": "Placewell Systems & Solutions Pvt. Ltd.", "bio": "Leads Placewell Systems & Solutions (Placewell Retail), one of Siliguri's best-known IT and electronics retail businesses.", "photo": "/images/people/manish-agarwal.webp" },
+      { "name": "Sanjeev Gupta", "company": "Sevoke Realty", "bio": "Founder & CEO of Sevoke Realty, a Siliguri real-estate consultancy dealing in commercial and residential property.", "photo": "/images/people/sanjeev-gupta.webp" },
+      { "name": "Prabin Agarwal", "company": "Prabin Agarwal Empowering Investors", "bio": "Certified Financial Planner who since 2005 has guided 6,000+ clients with assets over ₹600 crore; host of Kuber Mantra.", "photo": "/images/people/prabin-agarwal.webp" },
+      { "name": "Pratik Garg", "company": "Tulsa Mercantile Pvt. Ltd.", "bio": "Leads a 20-year-old real estate firm with 25 lakh sq. ft. delivered; champions thoughtful, community-centric design.", "photo": "/images/people/pratik-garg.webp" },
+      { "name": "Shayan Saria", "company": "Blue Minch", "bio": "CEO of Siliguri's largest digital marketing agency, with an 80+ team and a presence in Kolkata, Guwahati and Canada.", "photo": "/images/people/shayan-saria.webp" },
+      { "name": "Achintya Gupta", "company": "Sacred Heart School, Siliguri", "bio": "Associate Director educated at Edinburgh and UCL; taught in London and Mumbai before driving innovation at Sacred Heart.", "photo": "/images/people/achintya-gupta.webp" },
+      { "name": "Sarabjeet Singh Chawla", "company": "JK Enterprise", "bio": "Runs JK Enterprise, a Siliguri trading firm dealing in petroleum and mineral-oil products.", "photo": "/images/people/sarabjeet-singh-chawla.webp" },
+      { "name": "Karan Bajla", "company": "Crafty Kitchen Ventures Pvt. Ltd.", "bio": "Founder of Crafty Kitchen Ventures, a food and hospitality business in Siliguri.", "photo": "/images/people/karan-bajla.webp" },
+      { "name": "Ritesh Agarwal", "company": "NEXIS School of Business", "bio": "Founder of NEXIS School of Business, an industry-led business school in Siliguri, and an IIM Bangalore alumnus.", "photo": "/images/people/ritesh-agarwal.webp" },
+      { "name": "Ankush Agarwal", "company": "GoFlySmart Holidays", "bio": "Owner of GoFlySmart Holidays, a Siliguri travel company offering flights and holiday packages across India and abroad.", "photo": "/images/people/ankush-agarwal.webp" },
+      { "name": "Shubham Lahoti", "company": "Quizzora & Co.", "bio": "Co-founder of Quizzora & Co., an edtech venture creating engaging quiz and general-knowledge content for schools.", "photo": "/images/people/shubham-lahoti.webp" },
+      { "name": "Anupam Saraf", "company": "ViiV Healthcare (GSK)", "bio": "Compliance Director at ViiV Healthcare (GSK), the global specialist company in HIV care.", "photo": "/images/people/anupam-saraf.webp" },
+      { "name": "Anup Goyal", "company": "Clearstone Glass Industry Ltd.", "bio": "Managing Director of Clearstone Glass Industry, a Siliguri manufacturer of tempered and laminated safety glass serving eastern India and its neighbours.", "photo": "/images/people/anup-goyal.webp" },
+      { "name": "Daman Ghai", "company": "Premier Sports & Fitness", "bio": "Owner of Premier Sports & Fitness and founder of SPORRTS BAE, supplying fitness and sports equipment across Siliguri.", "photo": "/images/people/daman-ghai.webp" }
+    ],
+    "criteria": {
+      "eyebrow": "What makes a Charter Member",
+      "items": [
+        "Distinguished leaders and innovators who have made a significant impact in the region.",
+        "Proven business success — actively managing businesses with demonstrated scale.",
+        "Dedication to mentorship, knowledge-sharing and collaboration.",
+        "Aligned with TiE Siliguri's vision of wealth creation and community contribution.",
+        "A belief in purpose-driven capitalism and supporting the next generation of founders."
+      ]
+    }
+  },
+
+  "associateMembers": {
+    "slug": "/community/associate-members",
+    "eyebrow": "Associate Members",
+    "title": "The next generation of founders",
+    "summary": "Aspiring entrepreneurs and professionals who benefit from learning, mentorship and networking within the TiE Siliguri community — and who bring its energy.",
+    "intro": [
+      "Associate Members are the growing heart of the chapter: startup founders, professionals and aspiring entrepreneurs who engage in every session, mixer and mentoring clinic.",
+      "While Charter Members guide the chapter, Associate Members drive its momentum — learning from experienced mentors and building the ventures that will shape North Bengal's economy."
+    ],
+    "criteria": {
+      "eyebrow": "Who becomes an Associate Member",
+      "items": [
+        "Promising entrepreneurs invited by Charter Members or recommended by seasoned Associate Members.",
+        "A growth-oriented vision — scalable startups and SMEs across sectors like e-commerce, hospitality, logistics, manufacturing and IT.",
+        "A demonstrated commitment to integrity and ethical business practices.",
+        "A genuine, long-term interest in personal and business growth within the ecosystem.",
+        "Willingness to contribute actively to events, mentorship programs and investor relations."
+      ]
+    },
+    "cta": { "title": "Ready to grow with North Bengal's founders?", "label": "Apply as an Associate Member", "href": "/membership/apply" }
+  }
+}
