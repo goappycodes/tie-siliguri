@@ -16,7 +16,8 @@ import { ArrowRight } from "@/components/Icons";
  * Spam is caught by Web3Forms' built-in `botcheck` honeypot (a hidden field a
  * real user never sees or fills).
  */
-const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "";
+// Trim so a stray space/newline in the env var can't invalidate the key.
+const ACCESS_KEY = (process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY ?? "").trim();
 
 type Status = "idle" | "submitting" | "success" | "error";
 
