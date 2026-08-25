@@ -60,7 +60,27 @@ npm run dev      # http://localhost:3000
 Next.js 16 has breaking changes vs older training data — see `AGENTS.md`; consult
 `node_modules/next/dist/docs/` before writing Next-specific code.
 
+## Contact form (Web3Forms)
+
+The Contact and Membership → Apply pages use a shared `ContactForm` component
+(`src/components/ContactForm.tsx`) that submits to [Web3Forms](https://web3forms.com)
+via AJAX — no backend of our own. **It needs one env var to go live:**
+
+1. Create a free access key at web3forms.com against the chapter inbox
+   (`president@siliguri.tie.org`). The key is a UUID and is public by design — it can
+   only send to that pre-configured inbox, never read submissions.
+2. Set it in Vercel (Project → Settings → Environment Variables) and in `.env.local`
+   for dev:
+   ```
+   NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY=your-uuid-key
+   ```
+3. Redeploy. Until the key is set, the form renders but submitting shows
+   "the form isn't configured yet — please email us directly".
+
+Spam is caught by Web3Forms' built-in `botcheck` honeypot (already wired in). For
+stronger protection later, add Cloudflare Turnstile (Web3Forms supports it).
+
 ## Known issues
 
 - `content/pages.json` has **mojibake**: em-dashes are double-encoded (show as `â€"`). Fix when editing those entries.
-- Image slots still `null` in JSON (leadership photos, partner/trust logos) render placeholders until real artwork is dropped in — see README "Image slots waiting on artwork".
+- Image slots still `null` in JSON (partner/trust logos) render placeholders until real artwork is dropped in — see README "Image slots waiting on artwork". (Leadership + charter-member headshots are now filled from the chapter deck.)

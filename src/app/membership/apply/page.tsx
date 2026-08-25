@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getMembership, getSite } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
+import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
-import { ArrowRight } from "@/components/Icons";
 
 const { apply: a } = getMembership();
 
@@ -14,16 +14,13 @@ export const metadata: Metadata = {
 
 export default function ApplyPage() {
   const site = getSite();
-  const mailto = `mailto:${site.contact.email}?subject=${encodeURIComponent(
-    "TiE Siliguri — Membership enquiry",
-  )}`;
 
   return (
     <>
       <PageHeader slug={a.slug} eyebrow={a.eyebrow} title={a.title} summary={a.summary} />
 
       <section className="bg-white py-14 sm:py-20 lg:py-28">
-        <div className="shell grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
+        <div className="shell grid gap-14 lg:grid-cols-2 lg:gap-16">
           {/* Steps + fees */}
           <div>
             <Reveal>
@@ -66,50 +63,30 @@ export default function ApplyPage() {
             </Reveal>
           </div>
 
-          {/* Contact card */}
+          {/* Application form */}
           <aside>
             <div className="border-t-2 border-tie-red bg-paper-alt p-8 lg:p-10">
               <p className="eyebrow-plain">{a.contactLabel}</p>
-              <dl className="mt-6 space-y-5 text-[14px]">
-                <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
-                    Email
-                  </dt>
-                  <dd className="mt-1">
-                    <a
-                      href={`mailto:${site.contact.email}`}
-                      className="font-bold text-ink underline decoration-tie-red decoration-2 underline-offset-4 hover:text-tie-red"
-                    >
-                      {site.contact.email}
-                    </a>
-                  </dd>
-                </div>
-                <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
-                    Phone
-                  </dt>
-                  {site.contact.phones.map((p) => (
-                    <dd key={p} className="mt-1">
-                      <a
-                        href={`tel:${p.replace(/\s/g, "")}`}
-                        className="text-ink-700 hover:text-tie-red"
-                      >
-                        {p}
-                      </a>
-                    </dd>
-                  ))}
-                </div>
-                <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
-                    Location
-                  </dt>
-                  <dd className="mt-1 text-ink-700">{site.contact.city}</dd>
-                </div>
-              </dl>
-              <a href={mailto} className="btn btn-primary mt-8 w-full">
-                Start your application
-                <ArrowRight />
-              </a>
+              <p className="mt-4 text-[15px] leading-relaxed text-ink-600">
+                Tell us a little about you and the chapter team will get back to you about the right
+                membership.
+              </p>
+              <div className="mt-7">
+                <ContactForm
+                  subject="TiE Siliguri — Membership application"
+                  interests={["Charter Member", "Associate Member", "Not sure yet"]}
+                  submitLabel="Submit application"
+                />
+              </div>
+              <p className="mt-6 text-[13px] text-slate">
+                Prefer email?{" "}
+                <a
+                  href={`mailto:${site.contact.email}`}
+                  className="font-semibold text-ink underline decoration-tie-red decoration-2 underline-offset-4 hover:text-tie-red"
+                >
+                  {site.contact.email}
+                </a>
+              </p>
             </div>
           </aside>
         </div>

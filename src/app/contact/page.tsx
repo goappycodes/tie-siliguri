@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getContact, getSite } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
+import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
 import { ArrowRight } from "@/components/Icons";
 
@@ -22,31 +23,18 @@ export default function ContactPage() {
 
       <section className="bg-white py-14 sm:py-20 lg:py-28">
         <div className="shell grid gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
-          {/* Reasons */}
+          {/* Form */}
           <div>
             <Reveal>
               <p className="lede max-w-2xl">{c.intro}</p>
             </Reveal>
-
-            <Reveal className="mt-12">
-              <p className="eyebrow">{c.reasons.eyebrow}</p>
+            <Reveal className="mt-10">
+              <ContactForm
+                subject="TiE Siliguri — website enquiry"
+                interests={["Membership", "Events", "Partnership", "Something else"]}
+                submitLabel="Send message"
+              />
             </Reveal>
-            <ul className="mt-8 space-y-4">
-              {c.reasons.items.map((r, i) => (
-                <Reveal as="li" key={r.title} delay={i * 60}>
-                  <div className="flex flex-col gap-4 border border-line p-6 sm:flex-row sm:items-center sm:justify-between">
-                    <div>
-                      <h2 className="text-[16.5px] font-bold text-ink">{r.title}</h2>
-                      <p className="mt-1.5 text-[14.5px] leading-relaxed text-ink-600">{r.body}</p>
-                    </div>
-                    <Link href={r.href} className="link-arrow flex-none">
-                      {r.cta}
-                      <ArrowRight />
-                    </Link>
-                  </div>
-                </Reveal>
-              ))}
-            </ul>
           </div>
 
           {/* Direct contact */}
@@ -90,11 +78,6 @@ export default function ContactPage() {
                 </div>
               </dl>
 
-              <a href={`mailto:${site.contact.email}`} className="btn btn-primary mt-8 w-full">
-                Email the chapter
-                <ArrowRight />
-              </a>
-
               <p className="mt-8 text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
                 {c.followLabel}
               </p>
@@ -113,6 +96,31 @@ export default function ContactPage() {
               </div>
             </div>
           </aside>
+        </div>
+      </section>
+
+      {/* Reasons */}
+      <section className="bg-paper-alt py-14 sm:py-20 lg:py-24">
+        <div className="shell">
+          <Reveal className="max-w-2xl">
+            <p className="eyebrow">{c.reasons.eyebrow}</p>
+          </Reveal>
+          <ul className="mt-8 space-y-4">
+            {c.reasons.items.map((r, i) => (
+              <Reveal as="li" key={r.title} delay={i * 60}>
+                <div className="flex flex-col gap-4 border border-line bg-white p-6 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <h2 className="text-[16.5px] font-bold text-ink">{r.title}</h2>
+                    <p className="mt-1.5 text-[14.5px] leading-relaxed text-ink-600">{r.body}</p>
+                  </div>
+                  <Link href={r.href} className="link-arrow flex-none">
+                    {r.cta}
+                    <ArrowRight />
+                  </Link>
+                </div>
+              </Reveal>
+            ))}
+          </ul>
         </div>
       </section>
     </>
