@@ -47,6 +47,16 @@ export default function ContactForm({
     // Honeypot: a real user never fills this hidden field.
     if (data.botcheck) return;
 
+    // Backstop validation in case native validation is bypassed.
+    const name = String(data.name ?? "").trim();
+    const email = String(data.email ?? "").trim();
+    const message = String(data.message ?? "").trim();
+    if (!name || !email || !message) {
+      setStatus("error");
+      setError("Please fill in your name, email and a message.");
+      return;
+    }
+
     if (!ACCESS_KEY) {
       setStatus("error");
       setError("The form isn't configured yet. Please email us directly for now.");
@@ -102,7 +112,7 @@ export default function ContactForm({
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+    <form onSubmit={handleSubmit} className="space-y-5">
       {/* Honeypot — visually hidden, off-screen, not focusable. */}
       <input
         type="checkbox"
