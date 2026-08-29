@@ -47,20 +47,25 @@ export default function Trust() {
                 <li key={p.name}>
                   <Link
                     href={p.href}
-                    className="group flex items-center justify-between gap-4 border border-line p-7 transition-all duration-300 hover:border-tie-red hover:shadow-[0_16px_40px_-18px_rgba(226,30,36,0.3)]"
+                    className="group flex h-full flex-col gap-5 border border-line p-7 transition-all duration-300 hover:border-tie-red hover:shadow-[0_16px_40px_-18px_rgba(226,30,36,0.3)]"
                   >
-                    <div className="flex items-center gap-5">
-                      <LogoSlot src={p.logo} name={p.name} height={44} className="flex-none" />
-                      <div>
-                        <h3 className="text-[17px] leading-tight font-bold text-ink transition-colors group-hover:text-tie-red">
-                          {p.name}
-                        </h3>
-                        <p className="mt-1.5 text-[11px] font-bold text-slate">
-                          {p.role}
-                        </p>
-                      </div>
+                    <div className="flex items-center justify-between gap-4">
+                      <LogoSlot
+                        src={p.logo}
+                        name={p.name}
+                        height={44}
+                        className="max-w-[62%] flex-none"
+                      />
+                      <ArrowRight className="h-4 w-4 flex-none text-tie-red transition-transform group-hover:translate-x-1" />
                     </div>
-                    <ArrowRight className="h-4 w-4 flex-none text-tie-red transition-transform group-hover:translate-x-1" />
+                    <div className="min-w-0">
+                      <h3 className="text-[17px] leading-tight font-bold text-ink transition-colors group-hover:text-tie-red">
+                        {p.name}
+                      </h3>
+                      <p className="mt-1.5 text-[11px] font-bold text-slate">
+                        {p.role}
+                      </p>
+                    </div>
                   </Link>
                 </li>
               ))}

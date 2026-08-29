@@ -26,7 +26,7 @@ export default function LogoSlot({
         width={height * 5}
         height={height}
         className={`w-auto object-contain ${className}`}
-        style={{ maxHeight: height }}
+        style={{ maxHeight: height, maxWidth: "100%" }}
       />
     );
   }
