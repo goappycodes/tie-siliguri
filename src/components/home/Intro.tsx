@@ -34,6 +34,7 @@ export default function Intro() {
                 alt={intro.imageAlt}
                 fill
                 sizes="(min-width: 1024px) 46vw, 100vw"
+                quality={90}
                 className="object-cover"
               />
             </div>

@@ -41,6 +41,8 @@
     "eyebrow": "About TiE Global",
     "title": "The world's largest network of entrepreneurs",
     "summary": "Founded in Silicon Valley in 1992, TiE — The Indus Entrepreneurs — exists for one purpose: to help entrepreneurs become better entrepreneurs.",
+    "image": "/images/about/tie-global.webp",
+    "imageAlt": "TiE Global — a worldwide network reaching India and North Bengal",
     "intro": [
       "TiE was born in 1992 when a group of successful entrepreneurs and professionals of Indus origin came together in Silicon Valley to give back — to mentor the next generation the way they wished they had been mentored.",
       "Three decades on, that idea has become a global institution: a non-profit network that turns the hard-won experience of established founders into a structured advantage for the ones coming up behind them."
@@ -116,6 +118,15 @@
         { "date": "10 May 2025", "title": "The 10X Leap", "with": "with Srish Agrawal" },
         { "date": "14 Jun 2025", "title": "How to Build a $100M Pipeline", "with": "with Kapildev" },
         { "date": "30 Jul 2025", "title": "TiE Siliguri Chapter Launch", "with": "North Bengal's chapter goes live" }
+      ],
+      "galleryLabel": "The pre-launch sessions",
+      "gallery": [
+        { "image": "/images/momentum/siliguri-meetup.webp", "alt": "Siliguri Meet-Up with Kamal Agarwala at Inspiria Knowledge Campus" },
+        { "image": "/images/momentum/storytelling.webp", "alt": "Storytelling for Growth workshop with Pradeep Yuvaraj" },
+        { "image": "/images/momentum/ai-careers.webp", "alt": "AI, Entrepreneurship & Career Opportunities with Kashi K S" },
+        { "image": "/images/momentum/10x-leap.webp", "alt": "The 10X Leap workshop with Srish Agrawal" },
+        { "image": "/images/momentum/100m-pipeline.webp", "alt": "How to Build a $100M Pipeline with Kapildev" },
+        { "image": "/images/momentum/gtm-sales.webp", "alt": "Designing Your GTM & Organizing Sales masterclass" }
       ]
     },
     "cadence": {

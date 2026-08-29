@@ -34,7 +34,7 @@ export default function LogoSlot({
   return (
     <span
       aria-hidden="true"
-      className={`flex items-center justify-center border border-dashed border-line-strong bg-paper-alt px-4 text-[9.5px] font-bold tracking-[0.18em] text-slate/60 uppercase ${className}`}
+      className={`flex items-center justify-center border border-dashed border-line-strong bg-paper-alt px-4 text-[9.5px] font-bold text-slate/60 ${className}`}
       style={{ height, minWidth: height * 2.4 }}
     >
       Logo

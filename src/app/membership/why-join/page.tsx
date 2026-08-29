@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getMembership } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
@@ -66,8 +67,17 @@ export default function WhyJoinPage() {
             {w.signaturePrograms.items.map((it, i) => (
               <Reveal as="li" key={it.name} delay={(i % 3) * 60}>
                 <div className="flex h-full flex-col border border-line p-7">
-                  <h3 className="text-[16px] leading-snug font-bold text-ink">{it.name}</h3>
-                  <p className="mt-3 text-[14.5px] leading-relaxed text-ink-600">{it.body}</p>
+                  <h3 className="sr-only">{it.name}</h3>
+                  <div className="flex h-9 items-center">
+                    <Image
+                      src={it.logo}
+                      alt={it.name}
+                      width={220}
+                      height={53}
+                      className="h-full w-auto object-contain object-left"
+                    />
+                  </div>
+                  <p className="mt-5 text-[14.5px] leading-relaxed text-ink-600">{it.body}</p>
                 </div>
               </Reveal>
             ))}

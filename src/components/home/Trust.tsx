@@ -55,7 +55,7 @@ export default function Trust() {
                         <h3 className="text-[17px] leading-tight font-bold text-ink transition-colors group-hover:text-tie-red">
                           {p.name}
                         </h3>
-                        <p className="mt-1.5 text-[11px] font-bold tracking-[0.1em] text-slate uppercase">
+                        <p className="mt-1.5 text-[11px] font-bold text-slate">
                           {p.role}
                         </p>
                       </div>

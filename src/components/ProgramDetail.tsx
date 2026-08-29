@@ -35,7 +35,7 @@ export default function ProgramDetail({ program: p }: { program: FlagshipProgram
         <div className="shell grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20">
           <div className="space-y-6">
             <Reveal>
-              <span className="inline-flex bg-tie-red-light px-3 py-1.5 text-[11px] font-bold tracking-[0.1em] text-tie-red uppercase">
+              <span className="inline-flex bg-tie-red-light px-3 py-1.5 text-[11px] font-bold text-tie-red">
                 {p.badge}
               </span>
             </Reveal>
@@ -53,7 +53,7 @@ export default function ProgramDetail({ program: p }: { program: FlagshipProgram
                   key={d.label}
                   className="flex flex-col gap-1 border-b border-line px-7 py-5 last:border-b-0"
                 >
-                  <dt className="text-[10.5px] font-bold tracking-[0.12em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     {d.label}
                   </dt>
                   <dd className="text-[16px] font-semibold text-ink">{d.value}</dd>

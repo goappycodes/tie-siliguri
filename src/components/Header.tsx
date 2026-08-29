@@ -28,7 +28,7 @@ function Badge({ children }: { children: string }) {
   const isSoon = children.toLowerCase().includes("soon");
   return (
     <span
-      className={`ml-2 inline-block px-1.5 py-0.5 align-middle text-[9px] leading-none font-bold tracking-[0.1em] uppercase ${
+      className={`ml-2 inline-block px-1.5 py-0.5 align-middle text-[9px] leading-none font-bold ${
         isSoon ? "bg-line text-slate" : "bg-tie-red-light text-tie-red"
       }`}
     >
@@ -327,7 +327,7 @@ export default function Header() {
                   href={s.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[11px] font-bold tracking-[0.1em] text-tie-red uppercase"
+                  className="text-[11px] font-bold text-tie-red"
                 >
                   {s.label}
                 </a>

@@ -18,7 +18,7 @@ export default function LegalDoc({ doc }: { doc: LegalDocument }) {
 
       <section className="bg-white py-14 sm:py-20 lg:py-24">
         <div className="shell max-w-3xl">
-          <p className="text-[12px] font-bold tracking-[0.1em] text-slate uppercase">
+          <p className="text-[12px] font-bold text-slate">
             {doc.updated}
           </p>
           <p className="lede mt-6">{doc.intro}</p>

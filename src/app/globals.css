@@ -3,13 +3,13 @@
 /* ==========================================================================
    TiE Siliguri — brand tokens
 
-   Measured directly off TiE Global (tie.org) so this chapter site sits in the
-   same visual system as the parent brand:
+   Follows the TiE Siliguri brand kit so the chapter site matches the brand
+   system:
      · Brand red      #E21E24
-     · Typeface       Jost throughout (one of TiE Global's own webfonts)
-     · Headings       BOLD UPPERCASE, tracked
-     · Body           Light (300), normal case
-     · Buttons        red fill, white text, 12px radius, uppercase
+     · Typeface       Poppins throughout (brand-kit primary typeface)
+     · Headings       Bold, title/sentence case (no all-caps)
+     · Body           Regular, normal case
+     · Buttons        red fill, white text, 12px radius, title case
      · Illustrations  halftone dotted globe + topographic contour lines
    ========================================================================== */
 
@@ -34,17 +34,17 @@
   /* Type — mirrors --font-app below so the `font-sans` utility matches.
      Do not read these in hand-written CSS: Tailwind tree-shakes unused @theme
      variables, so they may not be emitted. Use var(--font-app) instead. */
-  --font-sans: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 
   /* Motion */
   --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 /* The real font stack, declared in a plain :root block so it is always emitted
-   (unlike @theme variables, which Tailwind drops when unused). --font-jost is
+   (unlike @theme variables, which Tailwind drops when unused). --font-poppins is
    set on <html> by next/font, so it resolves here at :root. */
 :root {
-  --font-app: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-app: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
@@ -68,15 +68,14 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Every heading is bold and uppercase, tracked to stay legible in caps. */
+  /* Headings are bold, title/sentence case (per the brand kit — no all-caps). */
   h1,
   h2,
   h3,
   h4 {
     color: var(--color-ink);
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0;
+    letter-spacing: -0.01em;
     text-wrap: balance;
   }
 
@@ -121,10 +120,9 @@
     display: inline-flex;
     align-items: center;
     gap: 0.625rem;
-    font-size: 0.6875rem;
+    font-size: 0.8125rem;
     font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+    letter-spacing: 0.02em;
     color: var(--color-tie-red);
   }
   .eyebrow::before {
@@ -135,37 +133,33 @@
     flex: none;
   }
   .eyebrow-plain {
-    font-size: 0.6875rem;
+    font-size: 0.8125rem;
     font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
+    letter-spacing: 0.02em;
     color: var(--color-tie-red);
   }
 
-  /* Display headings — Jost bold, uppercase, no letter-spacing. */
+  /* Display headings — Poppins bold/extrabold, title case, tight tracking. */
   .display-1 {
     font-family: var(--font-app);
     font-size: clamp(2.25rem, 5.4vw, 4.25rem);
     line-height: 1.06;
-    font-weight: 700;
-    letter-spacing: 0;
-    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: -0.02em;
   }
   .display-2 {
     font-family: var(--font-app);
     font-size: clamp(1.5rem, 2.7vw, 2.25rem);
-    line-height: 1.28;
+    line-height: 1.2;
     font-weight: 700;
-    letter-spacing: 0;
-    text-transform: uppercase;
+    letter-spacing: -0.015em;
   }
   .display-3 {
     font-family: var(--font-app);
     font-size: clamp(1.1875rem, 1.8vw, 1.5rem);
     line-height: 1.26;
-    font-weight: 700;
-    letter-spacing: 0;
-    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: -0.01em;
   }
   /* Body copy: light, normal case, generous leading to carry the low weight. */
   .lede {
@@ -183,10 +177,9 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    font-size: 0.8125rem;
+    font-size: 0.9375rem;
     font-weight: 600;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
+    letter-spacing: 0;
     padding: 0.9375rem 1.75rem;
     border-radius: 12px;
     transition: all 0.22s var(--ease-out-quint);
@@ -235,10 +228,9 @@
     display: inline-flex;
     align-items: center;
     gap: 0.4375rem;
-    font-size: 0.8125rem;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0;
     color: var(--color-tie-red);
   }
   .link-arrow svg {

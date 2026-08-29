@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getAbout } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
@@ -56,7 +57,7 @@ export default function OurChapterPage() {
             <dl className="grid gap-px border border-white/12 bg-white/12">
               {c.hub.facts.map((f) => (
                 <div key={f.label} className="flex items-baseline justify-between gap-6 bg-ink px-7 py-6">
-                  <dt className="text-[13px] font-semibold tracking-[0.06em] text-white/55 uppercase">
+                  <dt className="text-[13px] font-semibold text-white/55">
                     {f.label}
                   </dt>
                   <dd className="text-3xl font-extrabold !text-white">{f.value}</dd>
@@ -86,7 +87,7 @@ export default function OurChapterPage() {
                       isLaunch ? "bg-tie-red" : "bg-line-strong"
                     }`}
                   />
-                  <p className="text-[11.5px] font-bold tracking-[0.1em] text-tie-red uppercase">
+                  <p className="text-[11.5px] font-bold text-tie-red">
                     {e.date}
                   </p>
                   <h3
@@ -101,6 +102,27 @@ export default function OurChapterPage() {
               );
             })}
           </ol>
+
+          {/* Pre-launch session creatives */}
+          <div className="mt-14">
+            <p className="eyebrow-plain">{c.momentum.galleryLabel}</p>
+            <ul className="mt-7 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-6">
+              {c.momentum.gallery.map((gm, i) => (
+                <Reveal as="li" key={gm.image} delay={(i % 3) * 60}>
+                  <div className="relative aspect-square overflow-hidden border border-line bg-paper-alt">
+                    <Image
+                      src={gm.image}
+                      alt={gm.alt}
+                      fill
+                      sizes="(min-width: 1024px) 30vw, 45vw"
+                      quality={90}
+                      className="object-contain"
+                    />
+                  </div>
+                </Reveal>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -115,7 +137,7 @@ export default function OurChapterPage() {
             {c.cadence.items.map((it) => (
               <li key={it.title} className="flex flex-col justify-between gap-4 bg-white p-7">
                 <span className="text-[16px] leading-snug font-semibold text-ink">{it.title}</span>
-                <span className="inline-flex w-fit bg-tie-red-light px-3 py-1 text-[11px] font-bold tracking-[0.1em] text-tie-red uppercase">
+                <span className="inline-flex w-fit bg-tie-red-light px-3 py-1 text-[11px] font-bold text-tie-red">
                   {it.freq}
                 </span>
               </li>

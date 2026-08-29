@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
-import { Jost } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { getHome, getSite } from "@/lib/content";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 /**
- * Jost carries the whole site — headings in bold uppercase, body in light at
- * normal case. Loaded as a variable font so every weight from 300 to 800 is
- * available without shipping separate files. Jost is one of TiE Global's own
- * webfonts, so this keeps the chapter site inside the parent brand.
+ * Poppins carries the whole site — the typeface named in the TiE Siliguri brand
+ * kit (Display/H1 ExtraBold/Bold, H2/H3 SemiBold/Bold, CTA & numbers Bold, body
+ * regular). next/font ships only the weights we name below, self-hosted.
  */
-const jost = Jost({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-jost",
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -36,14 +36,13 @@ export const metadata: Metadata = {
     images: [{ url: home.hero.image, width: 2400, height: 1600, alt: home.hero.imageAlt }],
   },
   twitter: { card: "summary_large_image" },
-  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    // The font variable goes on <html> so --font-jost is in scope at :root,
+    // The font variable goes on <html> so --font-poppins is in scope at :root,
     // where globals.css composes it into --font-app.
-    <html lang="en" className={jost.variable}>
+    <html lang="en" className={poppins.variable}>
       <body className="antialiased">
         <a
           href="#main"

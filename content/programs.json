@@ -122,6 +122,9 @@
     "badge": "Coming Soon",
     "title": "TiE Young Entrepreneurs",
     "summary": "TiE's global entrepreneurship programme for high-school students — experiential, mentor-led, and culminating in a global pitch competition. Coming to North Bengal.",
+    "logo": "/images/programs/logos/tye.webp",
+    "image": "/images/programs/tye-students.webp",
+    "imageAlt": "High-school students collaborating on a business idea",
     "overview": [
       "TiE Young Entrepreneurs (TYE) exists to start the next generation on the entrepreneurial pathway. It gives high-school students (grades 9–12) a real, hands-on experience of building a venture — from idea to pitch — guided by startup founders and industry experts.",
       "We are working to bring TYE to Siliguri so that North Bengal's students can take part in a programme that has shaped young founders around the world."
@@ -154,6 +157,9 @@
     "badge": "Coming Soon",
     "title": "TiE Women",
     "summary": "TiE's global platform dedicated to women entrepreneurs — mentoring, learning, networking and a global pitch stage. Coming to North Bengal.",
+    "logo": "/images/programs/logos/women.webp",
+    "image": "/images/programs/women-tie-leader.webp",
+    "imageAlt": "A woman entrepreneur in her workplace",
     "overview": [
       "TiE Women is TiE Global's initiative to find, mentor and elevate women entrepreneurs everywhere. It combines learning and mentorship with a global pitch competition that puts women founders in front of investors and the wider TiE network.",
       "TiE Siliguri intends to run TiE Women locally so that women founders across North Bengal can access this platform, its mentors and its stage."

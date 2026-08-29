@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getAbout } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
 import Reveal from "@/components/Reveal";
@@ -40,7 +41,7 @@ export default function TieGlobalPage() {
                   <span className="block text-4xl font-extrabold !text-white lg:text-5xl">
                     {s.value}
                   </span>
-                  <span className="mt-2 block text-[12px] font-semibold tracking-[0.08em] text-white/70 uppercase">
+                  <span className="mt-2 block text-[12px] font-semibold text-white/70">
                     {s.label}
                   </span>
                 </dd>
@@ -73,17 +74,28 @@ export default function TieGlobalPage() {
 
       {/* India */}
       <section className="bg-paper-alt py-14 sm:py-20 lg:py-24">
-        <div className="shell grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+        <div className="shell grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <Reveal>
+            <div className="relative aspect-[4/3] overflow-hidden border border-line bg-white">
+              <Image
+                src={g.image}
+                alt={g.imageAlt}
+                fill
+                sizes="(min-width: 1024px) 45vw, 100vw"
+                className="object-contain p-8"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={100}>
             <p className="eyebrow">{g.india.eyebrow}</p>
             <h2 className="display-2 mt-5">{g.india.headline}</h2>
-          </Reveal>
-          <Reveal delay={100} className="space-y-6">
-            {g.india.body.map((p) => (
-              <p key={p} className="lede">
-                {p}
-              </p>
-            ))}
+            <div className="mt-6 space-y-6">
+              {g.india.body.map((p) => (
+                <p key={p} className="lede">
+                  {p}
+                </p>
+              ))}
+            </div>
           </Reveal>
         </div>
       </section>

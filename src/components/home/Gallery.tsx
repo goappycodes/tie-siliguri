@@ -36,6 +36,7 @@ export default function Gallery() {
                     alt={img.alt}
                     fill
                     sizes={wide ? "(min-width: 1024px) 50vw, 100vw" : "(min-width: 1024px) 25vw, 50vw"}
+                    quality={90}
                     className="object-cover transition-transform duration-700 group-hover:scale-[1.05]"
                   />
                   <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-ink/90 to-transparent p-4 pt-10 text-[11.5px] leading-snug font-medium text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">

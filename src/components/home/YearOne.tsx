@@ -61,7 +61,7 @@ export default function YearOne() {
           <dl className="mt-9 grid grid-cols-2 gap-x-8 gap-y-6 lg:mt-11 lg:gap-y-7">
             {yearOne.stats.map((s) => (
               <div key={s.label} className="grid border-l-2 border-tie-red pl-4">
-                <dt className="row-start-2 mt-2 text-[11px] leading-tight font-semibold tracking-[0.08em] text-white/50 uppercase">
+                <dt className="row-start-2 mt-2 text-[11px] leading-tight font-semibold text-white/50">
                   {s.label}
                 </dt>
                 <dd className="row-start-1 text-3xl leading-none font-extrabold text-white sm:text-4xl">
@@ -87,6 +87,7 @@ export default function YearOne() {
                 alt="A still from the TiE Siliguri year one film"
                 fill
                 sizes="(min-width: 1024px) 56vw, 100vw"
+                quality={90}
                 className="object-cover transition-transform duration-700 group-hover:scale-[1.03]"
               />
               <div
@@ -103,7 +104,7 @@ export default function YearOne() {
             </span>
 
             <span className="absolute bottom-0 left-0 flex items-center gap-3 p-6">
-              <span className="text-[11px] font-bold tracking-[0.14em] text-white/80 uppercase">
+              <span className="text-[11px] font-bold text-white/80">
                 {yearOne.videoLabel}
               </span>
             </span>

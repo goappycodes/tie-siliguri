@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getPartners } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
@@ -43,7 +44,18 @@ export default function PartnersPage() {
                 href={p.href}
                 className="group flex h-full flex-col border border-line p-8 transition-colors hover:bg-paper-alt lg:p-10"
               >
-                <span className="inline-flex w-fit bg-tie-red-light px-3 py-1.5 text-[10.5px] font-bold tracking-[0.12em] text-tie-red uppercase">
+                {p.logo && (
+                  <span className="mb-6 flex h-12 w-full items-center">
+                    <Image
+                      src={p.logo}
+                      alt={p.logoAlt ?? `${p.name} logo`}
+                      width={260}
+                      height={96}
+                      className="h-full w-auto max-w-[70%] object-contain object-left"
+                    />
+                  </span>
+                )}
+                <span className="inline-flex w-fit bg-tie-red-light px-3 py-1.5 text-[10.5px] font-bold text-tie-red">
                   {p.role}
                 </span>
                 <h2 className="display-3 mt-5 transition-colors group-hover:text-tie-red">

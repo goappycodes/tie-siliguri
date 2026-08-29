@@ -31,7 +31,7 @@ export default function ComingSoon({ page }: { page: StubPage }) {
         />
         <div className="shell relative">
           <nav aria-label="Breadcrumb" className="mb-7">
-            <ol className="flex flex-wrap items-center gap-2 text-[11.5px] font-semibold text-white/45 uppercase">
+            <ol className="flex flex-wrap items-center gap-2 text-[11.5px] font-semibold text-white/45">
               <li>
                 <Link href="/" className="transition-colors hover:text-white">
                   Home
@@ -73,7 +73,7 @@ export default function ComingSoon({ page }: { page: StubPage }) {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-tie-red opacity-70" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-tie-red" />
               </span>
-              <span className="text-[11px] font-bold tracking-[0.14em] text-ink uppercase">
+              <span className="text-[11px] font-bold text-ink">
                 Coming soon
               </span>
             </div>
@@ -117,7 +117,7 @@ export default function ComingSoon({ page }: { page: StubPage }) {
               <p className="eyebrow-plain">Talk to us</p>
               <dl className="mt-5 space-y-4 text-[14px]">
                 <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     Email
                   </dt>
                   <dd className="mt-1">
@@ -130,7 +130,7 @@ export default function ComingSoon({ page }: { page: StubPage }) {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     Phone
                   </dt>
                   {site.contact.phones.map((p) => (
@@ -142,7 +142,7 @@ export default function ComingSoon({ page }: { page: StubPage }) {
                   ))}
                 </div>
                 <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     Location
                   </dt>
                   <dd className="mt-1 text-ink-700">{site.contact.city}</dd>

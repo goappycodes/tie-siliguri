@@ -19,7 +19,7 @@ export default function GlobalBar() {
 
       <div className="shell relative">
         <Reveal className="flex flex-col gap-6 lg:flex-row lg:items-center lg:gap-12">
-          <h2 className="flex-none text-[11px] font-bold tracking-[0.14em] !text-white uppercase">
+          <h2 className="flex-none text-[11px] font-bold !text-white">
             {globalBar.label}
           </h2>
 

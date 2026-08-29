@@ -148,5 +148,21 @@
    "image": "/images/events/mastering-sales-execution.webp",
    "imageAlt": "Event creative for the Mastering Sales Execution workshop"
   }
- ]
+ ],
+ "gallery": {
+  "eyebrow": "In the room",
+  "headline": "Moments from our events",
+  "summary": "A look at the chapter in action — from the launch to the masterclasses, mixers and mentoring sessions that have followed.",
+  "images": [
+   { "src": "/images/launch-ceremony.webp", "alt": "Lamp-lighting ceremony at the TiE Siliguri chapter launch", "w": 1600, "h": 1066 },
+   { "src": "/images/launch-felicitation.webp", "alt": "Charter Members felicitated on stage at the launch", "w": 1600, "h": 1067 },
+   { "src": "/images/launch-chapter-group.webp", "alt": "TiE Siliguri Charter Members and guests together at the launch", "w": 1600, "h": 1066 },
+   { "src": "/images/launch-speaker.webp", "alt": "A speaker addressing the audience at a TiE Siliguri session", "w": 891, "h": 1488 },
+   { "src": "/images/launch-stage-group.webp", "alt": "Members and dignitaries on stage at the chapter launch", "w": 1497, "h": 885 },
+   { "src": "/images/members-mixer.webp", "alt": "Members networking at a TiE Siliguri mixer", "w": 1600, "h": 1067 },
+   { "src": "/images/momentum/siliguri-meetup.webp", "alt": "Siliguri Meet-Up with Kamal Agarwala at Inspiria Knowledge Campus", "w": 867, "h": 867 },
+   { "src": "/images/launch-audience.webp", "alt": "A full room of founders and guests at a TiE Siliguri session", "w": 1600, "h": 1066 },
+   { "src": "/images/community-group.webp", "alt": "The TiE Siliguri community gathered together", "w": 1800, "h": 1200 }
+  ]
+ }
 }

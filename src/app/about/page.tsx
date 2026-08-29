@@ -50,7 +50,7 @@ export default function AboutPage() {
                   href={c.href}
                   className="group flex h-full flex-col p-8 transition-colors hover:bg-paper-alt lg:p-10"
                 >
-                  <span className="text-[11px] font-bold tracking-[0.14em] text-tie-red uppercase">
+                  <span className="text-[11px] font-bold text-tie-red">
                     0{i + 1}
                   </span>
                   <h3 className="display-3 mt-4 transition-colors group-hover:text-tie-red">

@@ -437,35 +437,35 @@
   "organisations": [
    {
     "name": "Morgan Stanley",
-    "logo": null
+    "logo": "/images/trust/morgan-stanley.webp"
    },
    {
     "name": "IBM",
-    "logo": null
+    "logo": "/images/trust/ibm.webp"
    },
    {
     "name": "KPMG",
-    "logo": null
+    "logo": "/images/trust/kpmg.webp"
    },
    {
     "name": "Cushman & Wakefield",
-    "logo": null
+    "logo": "/images/trust/cushman-wakefield.webp"
    },
    {
     "name": "Latham & Watkins",
-    "logo": null
+    "logo": "/images/trust/latham-watkins.webp"
    },
    {
     "name": "EMC",
-    "logo": null
+    "logo": "/images/trust/emc.webp"
    },
    {
     "name": "WilmerHale",
-    "logo": null
+    "logo": "/images/trust/wilmerhale.webp"
    },
    {
     "name": "i2k2 Networks",
-    "logo": null
+    "logo": "/images/trust/i2k2.webp"
    }
   ],
   "partnersLabel": "Our chapter partners",
@@ -474,13 +474,13 @@
     "name": "INSPIRIA Knowledge Campus",
     "role": "Annual Sponsor",
     "href": "/partners/inspiria",
-    "logo": null
+    "logo": "/images/partners/logo-inspiria.webp"
    },
    {
-    "name": "SmartHub",
+    "name": "SmartHub Automation",
     "role": "Annual Sponsor",
     "href": "/partners/smarthub",
-    "logo": null
+    "logo": "/images/partners/logo-smarthub.webp"
    }
   ]
  },

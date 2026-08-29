@@ -24,22 +24,23 @@ export type EventItem = {
 export default function EventCard({ event: e }: { event: EventItem }) {
   return (
     <article className="flex h-full flex-col border border-line bg-white">
-      <div className="relative aspect-[16/11] overflow-hidden bg-paper-alt">
+      <div className="relative aspect-square overflow-hidden bg-paper-alt">
         <Image
           src={e.image}
           alt={e.imageAlt}
           fill
           sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
-          className="object-cover object-top"
+          quality={90}
+          className="object-contain p-2.5"
         />
-        <span className="absolute bottom-0 left-0 bg-ink px-2.5 py-1.5 text-[10px] font-bold tracking-[0.1em] text-white uppercase">
+        <span className="absolute bottom-0 left-0 bg-ink px-2.5 py-1.5 text-[10px] font-bold tracking-[0.02em] text-white">
           {e.type}
         </span>
       </div>
 
       <div className="flex flex-1 flex-col p-5 lg:p-7">
         {e.audience && (
-          <span className="text-[10.5px] font-bold tracking-[0.08em] text-slate uppercase">
+          <span className="text-[10.5px] font-bold tracking-[0.02em] text-slate">
             {e.audience}
           </span>
         )}

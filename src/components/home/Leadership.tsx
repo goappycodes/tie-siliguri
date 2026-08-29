@@ -31,7 +31,7 @@ export default function Leadership() {
             <article className="flex h-full flex-col justify-between bg-ink p-8 text-white lg:p-10">
               <div>
                 <Avatar src={president.photo} name={president.name} size={96} tone="dark" />
-                <span className="mt-7 inline-block bg-tie-red px-3 py-1.5 text-[10.5px] font-bold tracking-[0.12em] text-white uppercase">
+                <span className="mt-7 inline-block bg-tie-red px-3 py-1.5 text-[10.5px] font-bold text-white">
                   {president.role}
                 </span>
                 <h3 className="mt-5 text-3xl leading-none font-extrabold !text-white lg:text-4xl">
@@ -39,7 +39,7 @@ export default function Leadership() {
                 </h3>
                 <p className="mt-4 text-[15px] leading-relaxed text-white/60">{president.company}</p>
               </div>
-              <p className="mt-10 border-t border-white/12 pt-6 text-[12px] font-medium text-white/40 uppercase">
+              <p className="mt-10 border-t border-white/12 pt-6 text-[12px] font-medium text-white/40">
                 Executive Committee 2026–27
               </p>
             </article>
@@ -52,7 +52,7 @@ export default function Leadership() {
                 <div className="flex h-full items-start gap-4 p-6 transition-colors hover:bg-paper-alt">
                   <Avatar src={m.photo} name={m.name} />
                   <div className="min-w-0">
-                    <p className="text-[10.5px] font-bold tracking-[0.1em] text-tie-red uppercase">
+                    <p className="text-[10.5px] font-bold text-tie-red">
                       {m.role}
                     </p>
                     <h3 className="mt-1.5 text-[16px] leading-tight font-bold text-ink">{m.name}</h3>

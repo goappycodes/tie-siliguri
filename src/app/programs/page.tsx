@@ -48,7 +48,7 @@ export default function ProgramsPage() {
                 }`}
               >
                 <span
-                  className={`inline-flex w-fit px-3 py-1.5 text-[10.5px] font-bold tracking-[0.12em] uppercase ${
+                  className={`inline-flex w-fit px-3 py-1.5 text-[10.5px] font-bold ${
                     p.flagship ? "bg-tie-red text-white" : "bg-tie-red-light text-tie-red"
                   }`}
                 >

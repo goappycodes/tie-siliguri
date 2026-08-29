@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getAbout, getHome } from "@/lib/content";
+import { getAbout, getHome, getCommunity } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
 import Avatar from "@/components/Avatar";
 import Reveal from "@/components/Reveal";
@@ -12,9 +12,24 @@ export const metadata: Metadata = {
   openGraph: { title: meta.title, description: meta.summary },
 };
 
+/**
+ * EC members are also Charter / Associate Members, so their notes are reused
+ * from the community roster rather than duplicated — a single source of truth,
+ * keyed by name. Anyone without a roster bio simply shows none.
+ */
+function buildBioLookup() {
+  const { charterMembers, associateMembers } = getCommunity();
+  const map = new Map<string, string>();
+  for (const m of [...charterMembers.members, ...associateMembers.members]) {
+    if ("bio" in m && m.bio) map.set(m.name, m.bio);
+  }
+  return map;
+}
+
 export default function LeadershipPage() {
   const { leadership } = getHome();
   const [president, ...rest] = leadership.members;
+  const bioByName = buildBioLookup();
 
   return (
     <>
@@ -34,7 +49,7 @@ export default function LeadershipPage() {
               <article className="flex h-full flex-col justify-between bg-ink p-8 text-white lg:p-10">
                 <div>
                   <Avatar src={president.photo} name={president.name} size={96} tone="dark" />
-                  <span className="mt-7 inline-block bg-tie-red px-3 py-1.5 text-[10.5px] font-bold tracking-[0.12em] text-white uppercase">
+                  <span className="mt-7 inline-block bg-tie-red px-3 py-1.5 text-[10.5px] font-bold text-white">
                     {president.role}
                   </span>
                   <h3 className="mt-5 text-3xl leading-none font-extrabold !text-white lg:text-4xl">
@@ -43,8 +58,13 @@ export default function LeadershipPage() {
                   <p className="mt-4 text-[15px] leading-relaxed text-white/60">
                     {president.company}
                   </p>
+                  {bioByName.get(president.name) && (
+                    <p className="mt-5 text-[14px] leading-relaxed text-white/50">
+                      {bioByName.get(president.name)}
+                    </p>
+                  )}
                 </div>
-                <p className="mt-10 border-t border-white/12 pt-6 text-[12px] font-medium text-white/40 uppercase">
+                <p className="mt-10 border-t border-white/12 pt-6 text-[12px] font-medium text-white/40">
                   {meta.ecLabel}
                 </p>
               </article>
@@ -57,7 +77,7 @@ export default function LeadershipPage() {
                   <div className="flex h-full items-start gap-4 p-6 transition-colors hover:bg-paper-alt">
                     <Avatar src={m.photo} name={m.name} />
                     <div className="min-w-0">
-                      <p className="text-[10.5px] font-bold tracking-[0.1em] text-tie-red uppercase">
+                      <p className="text-[10.5px] font-bold text-tie-red">
                         {m.role}
                       </p>
                       <h3 className="mt-1.5 text-[16px] leading-tight font-bold text-ink">
@@ -66,6 +86,11 @@ export default function LeadershipPage() {
                       <p className="mt-1.5 text-[13.5px] leading-snug font-normal text-slate">
                         {m.company}
                       </p>
+                      {bioByName.get(m.name) && (
+                        <p className="mt-3 text-[13px] leading-relaxed text-ink-600">
+                          {bioByName.get(m.name)}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </Reveal>

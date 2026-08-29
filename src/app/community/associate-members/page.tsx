@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getCommunity } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
+import Avatar from "@/components/Avatar";
 import Reveal from "@/components/Reveal";
 import { ArrowRight } from "@/components/Icons";
 
@@ -19,7 +20,7 @@ export default function AssociateMembersPage() {
       <PageHeader slug={am.slug} eyebrow={am.eyebrow} title={am.title} summary={am.summary} />
 
       {/* Intro */}
-      <section className="bg-white py-14 sm:py-20 lg:py-28">
+      <section className="bg-white pt-14 pb-4 sm:pt-20 sm:pb-8 lg:pt-28">
         <div className="shell max-w-3xl space-y-6">
           {am.intro.map((p) => (
             <Reveal key={p}>
@@ -28,6 +29,42 @@ export default function AssociateMembersPage() {
           ))}
         </div>
       </section>
+
+      {/* Member grid */}
+      {am.members?.length ? (
+        <section className="bg-white pb-14 sm:pb-20 lg:pb-24">
+          <div className="shell">
+            {am.membersTitle && (
+              <Reveal className="mb-10 max-w-2xl">
+                <h2 className="display-2">{am.membersTitle}</h2>
+              </Reveal>
+            )}
+            <ul className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
+              {am.members.map((m, i) => (
+                <Reveal as="li" key={m.name} delay={(i % 3) * 60} className="bg-white">
+                  <div className="flex h-full flex-col p-7 lg:p-8">
+                    <div className="flex items-center gap-4">
+                      <Avatar src={m.photo} name={m.name} size={64} />
+                      <div className="min-w-0">
+                        <h3 className="text-[17px] leading-tight font-bold text-ink">{m.name}</h3>
+                        <p className="mt-1 text-[13px] leading-snug font-semibold text-tie-red">
+                          {m.company}
+                        </p>
+                        {m.role && (
+                          <p className="mt-0.5 text-[12.5px] leading-snug text-slate">{m.role}</p>
+                        )}
+                      </div>
+                    </div>
+                    {m.bio && (
+                      <p className="mt-5 text-[14px] leading-relaxed text-ink-600">{m.bio}</p>
+                    )}
+                  </div>
+                </Reveal>
+              ))}
+            </ul>
+          </div>
+        </section>
+      ) : null}
 
       {/* Criteria */}
       <section className="bg-paper-alt py-14 sm:py-20 lg:py-24">

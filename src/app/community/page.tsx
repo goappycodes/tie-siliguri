@@ -73,7 +73,7 @@ export default function CommunityPage() {
             {index.sectors.map((s, i) => (
               <Reveal as="li" key={s.name} delay={(i % 4) * 50} className="bg-white">
                 <div className="flex h-full flex-col p-6">
-                  <h3 className="text-[11px] font-bold tracking-[0.12em] text-tie-red uppercase">
+                  <h3 className="text-[11px] font-bold text-tie-red">
                     {s.name}
                   </h3>
                   <ul className="mt-4 space-y-2">

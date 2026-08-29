@@ -43,7 +43,7 @@ export default function Pillars() {
                 </p>
                 <span
                   aria-hidden="true"
-                  className="mt-auto pt-6 text-[11px] max-sm:pt-4 font-bold tracking-[0.14em] text-line-strong transition-colors group-hover:text-tie-red"
+                  className="mt-auto pt-6 text-[11px] max-sm:pt-4 font-bold text-line-strong transition-colors group-hover:text-tie-red"
                 >
                   {String(i + 1).padStart(2, "0")}
                 </span>
@@ -57,7 +57,7 @@ export default function Pillars() {
               className="group/cta flex h-full flex-col justify-between p-6 transition-colors duration-300 hover:bg-tie-red-dark lg:p-9"
             >
               <p className="text-[1.25rem] leading-tight font-bold text-white">{pillars.cta.title}</p>
-              <span className="mt-8 inline-flex items-center gap-2.5 text-[11px] font-bold tracking-[0.14em] text-white uppercase">
+              <span className="mt-8 inline-flex items-center gap-2.5 text-[11px] font-bold text-white">
                 {pillars.cta.label}
                 <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover/cta:translate-x-1" />
               </span>

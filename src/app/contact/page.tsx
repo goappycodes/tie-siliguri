@@ -43,7 +43,7 @@ export default function ContactPage() {
               <p className="eyebrow-plain">{c.directLabel}</p>
               <dl className="mt-6 space-y-5 text-[14px]">
                 <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     Email
                   </dt>
                   <dd className="mt-1">
@@ -56,7 +56,7 @@ export default function ContactPage() {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     Phone
                   </dt>
                   {site.contact.phones.map((p) => (
@@ -71,14 +71,14 @@ export default function ContactPage() {
                   ))}
                 </div>
                 <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     Location
                   </dt>
                   <dd className="mt-1 text-ink-700">{site.contact.city}</dd>
                 </div>
               </dl>
 
-              <p className="mt-8 text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+              <p className="mt-8 text-[10.5px] font-bold text-slate">
                 {c.followLabel}
               </p>
               <div className="mt-4 flex flex-wrap gap-2.5">
@@ -88,7 +88,7 @@ export default function ContactPage() {
                     href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border border-line px-4 py-2 text-[11px] font-bold tracking-[0.1em] text-ink uppercase transition-colors hover:border-tie-red hover:bg-tie-red hover:text-white"
+                    className="border border-line px-4 py-2 text-[11px] font-bold text-ink transition-colors hover:border-tie-red hover:bg-tie-red hover:text-white"
                   >
                     {s.label}
                   </a>

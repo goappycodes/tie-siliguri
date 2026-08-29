@@ -30,7 +30,7 @@ export default function Membership() {
                   <div>
                     <h3 className={`display-3 ${tier.featured ? "!text-white" : ""}`}>{tier.name}</h3>
                     <p
-                      className={`mt-2 text-[11px] font-bold tracking-[0.1em] uppercase ${
+                      className={`mt-2 text-[11px] font-bold ${
                         tier.featured ? "text-tie-red" : "text-slate"
                       }`}
                     >
@@ -38,7 +38,7 @@ export default function Membership() {
                     </p>
                   </div>
                   {tier.featured && (
-                    <span className="flex-none bg-tie-red px-3 py-1.5 text-[10px] font-bold tracking-[0.12em] text-white uppercase">
+                    <span className="flex-none bg-tie-red px-3 py-1.5 text-[10px] font-bold text-white">
                       By invitation
                     </span>
                   )}
@@ -46,7 +46,7 @@ export default function Membership() {
 
                 <details className="group/tier mt-5 sm:mt-7 sm:[&>summary]:hidden" open={false}>
                   <summary
-                    className={`flex cursor-pointer list-none items-center justify-between gap-3 border-t pt-4 text-[11px] font-bold tracking-[0.1em] uppercase sm:pt-0 ${
+                    className={`flex cursor-pointer list-none items-center justify-between gap-3 border-t pt-4 text-[11px] font-bold sm:pt-0 ${
                       tier.featured ? "border-white/12 text-white/60" : "border-line text-slate"
                     }`}
                   >
@@ -74,7 +74,7 @@ export default function Membership() {
                   ].map((row) => (
                     <div key={row.k} className="grid gap-1 sm:grid-cols-[7.5rem_1fr] sm:gap-4">
                       <dt
-                        className={`text-[10.5px] font-bold tracking-[0.08em] uppercase ${
+                        className={`text-[10.5px] font-bold ${
                           tier.featured ? "text-white/40" : "text-slate"
                         }`}
                       >
@@ -115,7 +115,7 @@ export default function Membership() {
                   {tier.fees.map((f) => (
                     <div key={f.label}>
                       <dt
-                        className={`text-[10.5px] font-bold tracking-[0.08em] uppercase ${
+                        className={`text-[10.5px] font-bold ${
                           tier.featured ? "text-white/40" : "text-slate"
                         }`}
                       >

@@ -61,7 +61,7 @@ export default function Footer() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-white/15 px-4 py-2 text-[11px] font-bold tracking-[0.1em] uppercase transition-colors hover:border-tie-red hover:bg-tie-red hover:text-white"
+                className="border border-white/15 px-4 py-2 text-[11px] font-bold transition-colors hover:border-tie-red hover:bg-tie-red hover:text-white"
               >
                 {s.label}
               </a>
@@ -75,7 +75,7 @@ export default function Footer() {
             .filter((i) => i.children?.length)
             .map((item) => (
               <div key={item.href}>
-                <h3 className="text-[11px] font-bold text-white uppercase">
+                <h3 className="text-[11px] font-bold text-white">
                   <Link href={item.href} className="transition-colors hover:text-tie-red">
                     {item.label}
                   </Link>
@@ -96,7 +96,7 @@ export default function Footer() {
             ))}
 
           <div>
-            <h3 className="text-[11px] font-bold text-white uppercase">More</h3>
+            <h3 className="text-[11px] font-bold text-white">More</h3>
             <ul className="mt-4 space-y-2.5">
               <li>
                 <Link href="/contact" className="text-[15px] font-normal transition-colors hover:text-white">

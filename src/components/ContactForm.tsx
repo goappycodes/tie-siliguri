@@ -23,7 +23,7 @@ type Status = "idle" | "submitting" | "success" | "error";
 
 const inputClass =
   "w-full border border-line bg-white px-4 py-3 text-[15px] text-ink placeholder:text-slate/70 focus:border-tie-red focus:outline-none focus:ring-1 focus:ring-tie-red";
-const labelClass = "block text-[11px] font-bold tracking-[0.1em] text-slate uppercase";
+const labelClass = "block text-[11px] font-bold text-slate";
 
 export default function ContactForm({
   subject = "TiE Siliguri — website enquiry",
@@ -157,7 +157,7 @@ export default function ContactForm({
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="cf-phone" className={labelClass}>
-            Phone <span className="font-medium normal-case text-slate/70">(optional)</span>
+            Phone <span className="font-medium text-slate/70">(optional)</span>
           </label>
           <input
             id="cf-phone"

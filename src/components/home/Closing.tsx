@@ -18,7 +18,7 @@ export default function Closing() {
 
       <div className="shell relative grid gap-12 lg:grid-cols-[1.3fr_1fr] lg:items-center lg:gap-20">
         <Reveal>
-          <p className="text-[11px] font-bold tracking-[0.14em] text-white/70 uppercase">
+          <p className="text-[11px] font-bold text-white/70">
             {closing.eyebrow}
           </p>
           <h2 className="display-2 mt-5 !text-white">{closing.headline}</h2>

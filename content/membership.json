@@ -43,12 +43,12 @@
     "signaturePrograms": {
       "eyebrow": "TiE Global signature programs",
       "items": [
-        { "name": "TiE Young Entrepreneurs (TYE)", "body": "Nurturing young entrepreneurial talent through real-world business challenges and mentorship." },
-        { "name": "TiE University", "body": "Empowering university entrepreneurs with the tools, network and mentorship to bring ideas to market." },
-        { "name": "TiE Women", "body": "Accelerating women-led enterprises with mentorship, networking and funding." },
-        { "name": "TiE Nurture", "body": "Structured mentorship and acceleration for early-stage startups." },
-        { "name": "TiE Members Retreat", "body": "Exclusive gatherings for Charter Members to network and exchange strategic ideas." },
-        { "name": "TiE Global Summit & TiECons", "body": "Flagship global events connecting entrepreneurs to investment and transformative learning." }
+        { "name": "TiE Young Entrepreneurs (TYE)", "body": "Nurturing young entrepreneurial talent through real-world business challenges and mentorship.", "logo": "/images/programs/logos/tye.webp" },
+        { "name": "TiE University", "body": "Empowering university entrepreneurs with the tools, network and mentorship to bring ideas to market.", "logo": "/images/programs/logos/university.webp" },
+        { "name": "TiE Women", "body": "Accelerating women-led enterprises with mentorship, networking and funding.", "logo": "/images/programs/logos/women.webp" },
+        { "name": "TiE Nurture", "body": "Structured mentorship and acceleration for early-stage startups.", "logo": "/images/programs/logos/nurture.webp" },
+        { "name": "TiE Members Retreat", "body": "Exclusive gatherings for Charter Members to network and exchange strategic ideas.", "logo": "/images/programs/logos/retreat.webp" },
+        { "name": "TiE Global Summit & TiECons", "body": "Flagship global events connecting entrepreneurs to investment and transformative learning.", "logo": "/images/programs/logos/summit.webp" }
       ]
     },
     "cta": { "title": "Join TiE. Shape your entrepreneurial future.", "label": "Apply for Membership", "href": "/membership/apply" }

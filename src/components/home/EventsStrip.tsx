@@ -40,17 +40,18 @@ export default function EventsStrip() {
                     alt={e.imageAlt}
                     fill
                     sizes="(min-width: 1024px) 30vw, 100vw"
+                    quality={90}
                     className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
                   />
                   {/* Anchored bottom-left: the creatives carry the TiE logo
                       top-left, so a top chip would sit on top of it. */}
-                  <span className="absolute bottom-0 left-0 bg-ink px-2.5 py-1.5 text-[10px] font-bold tracking-[0.1em] text-white uppercase transition-colors group-hover:bg-tie-red">
+                  <span className="absolute bottom-0 left-0 bg-ink px-2.5 py-1.5 text-[10px] font-bold text-white transition-colors group-hover:bg-tie-red">
                     {e.type}
                   </span>
                 </div>
 
                 <div className="flex flex-1 flex-col p-5 max-sm:p-4 lg:p-7">
-                  <span className="text-[10.5px] font-bold tracking-[0.08em] text-slate uppercase">
+                  <span className="text-[10.5px] font-bold text-slate">
                     {e.audience}
                   </span>
 

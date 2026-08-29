@@ -50,7 +50,7 @@ export default function ChapterManagerPage() {
               <p className="eyebrow-plain">{m.contactLabel}</p>
               <dl className="mt-6 space-y-5 text-[14px]">
                 <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     Email
                   </dt>
                   <dd className="mt-1">
@@ -63,7 +63,7 @@ export default function ChapterManagerPage() {
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     Phone
                   </dt>
                   {site.contact.phones.map((p) => (
@@ -78,7 +78,7 @@ export default function ChapterManagerPage() {
                   ))}
                 </div>
                 <div>
-                  <dt className="text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase">
+                  <dt className="text-[10.5px] font-bold text-slate">
                     Location
                   </dt>
                   <dd className="mt-1 text-ink-700">{site.contact.city}</dd>

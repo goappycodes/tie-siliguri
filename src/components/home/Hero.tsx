@@ -20,7 +20,7 @@ export default function Hero() {
           fill
           priority
           sizes="100vw"
-          quality={82}
+          quality={90}
           className="object-cover object-[50%_42%]"
         />
         <div
@@ -37,7 +37,7 @@ export default function Hero() {
         fill
         priority
         sizes="100vw"
-        quality={82}
+        quality={90}
         className="hidden object-cover object-[50%_38%] sm:block"
       />
       {/* Left-to-right, keeping the right side open. */}
@@ -99,7 +99,7 @@ export default function Hero() {
                    keep DOM order, so the label is announced once and the
                    figures stay top-aligned whatever the label wraps to. */
                 <div key={s.label} className="grid">
-                  <dt className="row-start-2 mt-1.5 text-[9.5px] leading-tight font-semibold tracking-[0.05em] text-white/60 uppercase sm:max-w-[8.5rem] sm:text-[10.5px]">
+                  <dt className="row-start-2 mt-1.5 text-[9.5px] leading-tight font-semibold tracking-[0.05em] text-white/60 sm:max-w-[8.5rem] sm:text-[10.5px]">
                     {s.label}
                   </dt>
                   <dd className="row-start-1 text-[1.5rem] leading-none font-extrabold text-white sm:text-[2.125rem]">
@@ -110,7 +110,7 @@ export default function Hero() {
             </dl>
 
             {/* Detail line — desktop only, to keep the phone hero quiet. */}
-            <p className="hidden text-[11px] font-medium text-white/45 uppercase sm:block">
+            <p className="hidden text-[11px] font-medium text-white/45 sm:block">
               {site.chapter.foundedLabel} · Hub chapter: {site.chapter.hubChapter}
             </p>
           </div>

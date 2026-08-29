@@ -35,9 +35,10 @@ export default function Programs() {
                     alt={p.imageAlt}
                     fill
                     sizes="(min-width: 1024px) 46vw, 100vw"
+                    quality={90}
                     className="object-cover opacity-90 transition-all duration-700 group-hover:scale-[1.04] group-hover:opacity-100"
                   />
-                  <span className="absolute top-0 left-0 bg-tie-red px-4 py-2 text-[10.5px] font-bold tracking-[0.12em] text-white uppercase">
+                  <span className="absolute top-0 left-0 bg-tie-red px-4 py-2 text-[10.5px] font-bold text-white">
                     {p.kicker}
                   </span>
                 </div>

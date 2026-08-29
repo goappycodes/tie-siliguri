@@ -13,13 +13,17 @@
         "name": "INSPIRIA Knowledge Campus",
         "role": "Annual Sponsor",
         "blurb": "One of North Bengal's leading education campuses and a host venue for chapter events.",
-        "href": "/partners/inspiria"
+        "href": "/partners/inspiria",
+        "logo": "/images/partners/logo-inspiria.webp",
+        "logoAlt": "INSPIRIA Knowledge Campus logo"
       },
       {
-        "name": "SmartHub",
+        "name": "SmartHub Automation",
         "role": "Annual Sponsor",
-        "blurb": "A chapter partner supporting TiE Siliguri's mission to grow the region's entrepreneurial ecosystem.",
-        "href": "/partners/smarthub"
+        "blurb": "One of Siliguri's pioneering smart-home and automation companies, and an Annual Sponsor of the chapter.",
+        "href": "/partners/smarthub",
+        "logo": "/images/partners/logo-smarthub.webp",
+        "logoAlt": "SmartHub Automation logo"
       }
     ],
     "ctaLabel": "Partner with TiE Siliguri",
@@ -36,9 +40,12 @@
     "role": "Annual Sponsor",
     "title": "INSPIRIA Knowledge Campus",
     "summary": "One of North Bengal's leading education campuses and a proud Annual Sponsor of TiE Siliguri — and a host venue for the chapter's flagship programmes.",
+    "logo": "/images/partners/logo-inspiria.webp",
+    "logoAlt": "INSPIRIA Knowledge Campus logo",
     "body": [
       "Established in 2015, Inspiria Knowledge Campus is a private college in Siliguri built with one aim: to make the region's youth genuinely employable. Affiliated with MAKAUT, NAAC-accredited and AICTE-approved, it spans a green five-acre campus with technology-enabled classrooms, media studios, a digital library and full sports facilities.",
       "Inspiria runs four schools — Management, Computer Science, Design & Media, and Hospitality — offering BBA, BCA, B.Sc. and BHM programmes, with a placement network that includes recruiters like Amazon, Zomato, Raymond and The Leela.",
+      "It also runs InHub, an on-campus incubation and co-working space that gives early-stage founders mentorship, seed funding and a place to build — a natural fit for TiE's mission.",
       "As a chapter partner, Inspiria brings its campus, its students and its belief in enterprise to TiE Siliguri — and hosts chapter programmes including the AI Immersion Residency."
     ],
     "facts": [
@@ -53,12 +60,20 @@
     "slug": "/partners/smarthub",
     "eyebrow": "Chapter Partner",
     "role": "Annual Sponsor",
-    "title": "SmartHub",
-    "summary": "A proud Annual Sponsor of TiE Siliguri, supporting the chapter's mission to grow North Bengal's entrepreneurial ecosystem.",
+    "title": "SmartHub Automation",
+    "summary": "One of Siliguri's pioneering smart-home and automation companies, and a proud Annual Sponsor of TiE Siliguri — backing the chapter's mission to grow North Bengal's entrepreneurial ecosystem.",
+    "logo": "/images/partners/logo-smarthub.webp",
+    "logoAlt": "SmartHub Automation logo",
     "body": [
-      "SmartHub partners with TiE Siliguri as an Annual Sponsor, standing behind the chapter's work to mentor founders, host learning sessions and connect the region's entrepreneurs to a global network.",
-      "Partnerships like this one are what make the chapter's calendar possible — and what turn TiE Siliguri from an idea into an active, growing community."
+      "SmartHub Automation is a Siliguri-based smart-technology company — among the first to bring home automation and home-theatre experiences to the region. Founded in 2019 and based on Iskcon Road, it designs and installs intelligent lighting, climate, security, audio-visual and networking systems for homes and businesses.",
+      "Working with global brands such as Control4, Lutron, KNX and Sonos, SmartHub serves clients across Siliguri, Sikkim, Bhutan, Nepal and Guwahati — bringing the same appetite for innovation to its partnership with the chapter.",
+      "As an Annual Sponsor, SmartHub stands behind TiE Siliguri's work to mentor founders, host learning sessions and connect the region's entrepreneurs to a global network."
     ],
-    "link": null
+    "facts": [
+      { "value": "2019", "label": "Founded" },
+      { "value": "Siliguri", "label": "Headquarters" },
+      { "value": "5+", "label": "Markets served" }
+    ],
+    "link": { "label": "Visit smarthub.ac", "href": "https://smarthub.ac" }
   }
 }

@@ -29,7 +29,7 @@ export default function CategoriesPage() {
                 }`}
               >
                 <span
-                  className={`inline-flex w-fit px-3 py-1.5 text-[10.5px] font-bold tracking-[0.12em] uppercase ${
+                  className={`inline-flex w-fit px-3 py-1.5 text-[10.5px] font-bold ${
                     i === 0 ? "bg-tie-red text-white" : "bg-tie-red-light text-tie-red"
                   }`}
                 >
@@ -59,13 +59,13 @@ export default function CategoriesPage() {
           <div className="mt-10 border border-line bg-white">
             {/* Header row — desktop only */}
             <div className="hidden bg-ink text-white sm:grid sm:grid-cols-[1.1fr_1.6fr_1.6fr]">
-              <span className="p-4 text-[11px] font-bold tracking-[0.1em] text-white/50 uppercase">
+              <span className="p-4 text-[11px] font-bold text-white/50">
                 Feature
               </span>
-              <span className="p-4 text-[11px] font-bold tracking-[0.1em] uppercase">
+              <span className="p-4 text-[11px] font-bold">
                 Charter Member
               </span>
-              <span className="p-4 text-[11px] font-bold tracking-[0.1em] text-white/70 uppercase">
+              <span className="p-4 text-[11px] font-bold text-white/70">
                 Associate Member
               </span>
             </div>
@@ -73,17 +73,17 @@ export default function CategoriesPage() {
             <dl className="divide-y divide-line">
               {c.comparison.map((row) => (
                 <div key={row.feature} className="sm:grid sm:grid-cols-[1.1fr_1.6fr_1.6fr]">
-                  <dt className="bg-paper-alt px-4 pt-5 pb-2 text-[12px] font-bold tracking-[0.06em] text-ink uppercase sm:bg-transparent sm:py-4 sm:text-[13px] sm:normal-case">
+                  <dt className="bg-paper-alt px-4 pt-5 pb-2 text-[12px] font-bold text-ink sm:bg-transparent sm:py-4 sm:text-[13px]">
                     {row.feature}
                   </dt>
                   <dd className="px-4 pb-3 text-[14.5px] leading-relaxed text-ink-700 sm:border-l sm:border-line sm:py-4">
-                    <span className="mb-0.5 block text-[10.5px] font-bold tracking-[0.1em] text-tie-red uppercase sm:hidden">
+                    <span className="mb-0.5 block text-[10.5px] font-bold text-tie-red sm:hidden">
                       Charter
                     </span>
                     {row.cm}
                   </dd>
                   <dd className="px-4 pb-5 text-[14.5px] leading-relaxed text-slate sm:border-l sm:border-line sm:py-4">
-                    <span className="mb-0.5 block text-[10.5px] font-bold tracking-[0.1em] text-slate uppercase sm:hidden">
+                    <span className="mb-0.5 block text-[10.5px] font-bold text-slate sm:hidden">
                       Associate
                     </span>
                     {row.am}
@@ -113,7 +113,7 @@ export default function CategoriesPage() {
                 <dl className="mt-7 space-y-5">
                   <div className="flex items-baseline justify-between gap-4 border-b border-line/60 pb-4">
                     <dt
-                      className={`text-[12px] font-semibold tracking-[0.06em] uppercase ${
+                      className={`text-[12px] font-semibold ${
                         f.featured ? "text-white/55" : "text-slate"
                       }`}
                     >
@@ -125,7 +125,7 @@ export default function CategoriesPage() {
                   </div>
                   <div className="flex items-baseline justify-between gap-4">
                     <dt
-                      className={`text-[12px] font-semibold tracking-[0.06em] uppercase ${
+                      className={`text-[12px] font-semibold ${
                         f.featured ? "text-white/55" : "text-slate"
                       }`}
                     >

@@ -45,7 +45,7 @@ export default function Community() {
             <li key={sector.name} className="border-b border-white/12">
               <details className="group/acc">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-3.5">
-                  <span className="text-[11px] font-bold text-tie-red uppercase">
+                  <span className="text-[11px] font-bold text-tie-red">
                     {sector.name}
                   </span>
                   <span className="flex items-center gap-3">
@@ -81,7 +81,7 @@ export default function Community() {
           {community.sectors.map((sector, i) => (
             <Reveal as="li" key={sector.name} delay={i * 50} className="bg-ink">
               <div className="flex h-full flex-col p-7 transition-colors duration-300 hover:bg-white/[0.04]">
-                <h3 className="text-[11px] font-bold text-tie-red uppercase">
+                <h3 className="text-[11px] font-bold text-tie-red">
                   {sector.name}
                 </h3>
                 <ul className="mt-4 space-y-1.5">
