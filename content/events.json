@@ -27,16 +27,16 @@
  },
  "upcoming": [
   {
-   "title": "The Art of Fine Dining & Table Etiquette",
-   "type": "Masterclass",
-   "date": "2026-08-20",
-   "dateLabel": "20 August 2026",
-   "time": "6:30 PM",
-   "venue": "IIAS Campus, Dagapur, Siliguri",
-   "summary": "An interactive, premium dining masterclass led by IIAS School of Management's hospitality faculty — five-course French classical dinner, live demonstration, corporate grooming and the confidence that sets exceptional leaders apart.",
-   "audience": "Members exclusive",
-   "image": "/images/events/fine-dining-etiquette.webp",
-   "imageAlt": "Event creative for The Art of Fine Dining & Table Etiquette masterclass",
+   "title": "Introducing AI Roundtable",
+   "type": "Roundtable",
+   "date": "2026-09-09",
+   "dateLabel": "9 September 2026",
+   "time": "6:00 PM (Wed)",
+   "venue": "Hotel Hiland, Siliguri",
+   "summary": "A peer-learning session where entrepreneurs learn from each other, share how they're using AI, and solve real business use cases together. Bring a real AI challenge from your business and leave with ideas you can put to work.",
+   "audience": "Charter Members exclusive",
+   "image": "/images/events/ai-roundtable.jpg",
+   "imageAlt": "Event creative for the Introducing AI Roundtable session",
    "href": "/events/upcoming"
   },
   {
@@ -64,6 +64,19 @@
    "image": "/images/events/masters-union-immersion.webp",
    "imageAlt": "Event creative for the Masters' Union Founders' Immersion in Gurugram",
    "href": "/programs/founders-immersion"
+  },
+  {
+   "title": "DPDP Act Decoded: Data Privacy, Protection & Your Business",
+   "type": "Masterclass",
+   "date": "2026-10-09",
+   "dateLabel": "9 October 2026",
+   "time": "6:00 PM onwards",
+   "venue": "Hotel Hiland, Siliguri",
+   "summary": "Phone numbers, employee data, WhatsApp, Google Forms, vendor data-sharing — how many DPDP violations are already happening in your business? A practical masterclass on the Digital Personal Data Protection Act with CA Simran Saria Bansal, Partner at Bansal S S & Co.",
+   "audience": "Open to members",
+   "image": "/images/events/dpdp-act.jpg",
+   "imageAlt": "Event creative for the DPDP Act Decoded masterclass with CA Simran Saria Bansal",
+   "href": "/events/upcoming"
   }
  ],
  "past": [
@@ -147,6 +160,23 @@
    "speaker": "Mr. Dinkar Suri, Founder & UnConsultant, GASP Sales Academy",
    "image": "/images/events/mastering-sales-execution.webp",
    "imageAlt": "Event creative for the Mastering Sales Execution workshop"
+  },
+  {
+   "title": "The Art of Fine Dining & Table Etiquette",
+   "type": "Masterclass",
+   "dateLabel": "20 August 2026",
+   "venue": "IIAS Campus, Dagapur, Siliguri",
+   "speaker": "IIAS School of Management hospitality faculty",
+   "image": "/images/events/fine-dining-etiquette.webp",
+   "imageAlt": "Event creative for The Art of Fine Dining & Table Etiquette masterclass"
+  },
+  {
+   "title": "TiE Siliguri AGM & Gala",
+   "type": "Members' Evening",
+   "venue": "Siliguri",
+   "summary": "An evening bringing Charter and Associate Members together for the chapter's Annual General Meeting and a gala dinner.",
+   "image": "",
+   "imageAlt": ""
   }
  ],
  "gallery": {

@@ -61,12 +61,36 @@
       { "label": "Who", "value": "Charter Members exclusive" }
     ],
     "modules": {
-      "eyebrow": "What you'll work through",
+      "eyebrow": "What you'll walk away with",
       "items": [
-        { "title": "The AI mindset", "body": "Reframing AI from a novelty to a leverage tool — where it changes the economics of your business and where it doesn't." },
-        { "title": "Prompt engineering", "body": "The practical craft of getting reliable, useful output from AI models, hands-on with real business tasks." },
-        { "title": "Workflow design", "body": "Mapping the repeatable work in your business and redesigning it around AI so time goes back to the work that matters." },
-        { "title": "Building your AI edge", "body": "Leaving with a first working version of an AI advantage specific to your own business." }
+        { "title": "Brand book + social engine", "body": "Your identity, voice and a 30-day content calendar — a social system that keeps running on its own." },
+        { "title": "Your first website", "body": "A working homepage you own, built for humans and AI engines alike, plus a 7-day plan to finish it." },
+        { "title": "A live automation", "body": "At least one automation running on your real business — lead arrives, lands in your CRM, follow-up goes out on its own." },
+        { "title": "Your AI assistant", "body": "A personal AI assistant set up to how you actually work, configured live during the residency." }
+      ]
+    },
+    "agenda": {
+      "eyebrow": "The two-day agenda",
+      "note": "Six execution-first sessions across two days — you work live, validate each step as a group, and leave with real outputs. Networking dinner on Day 1; morning wellness on Day 2.",
+      "days": [
+        {
+          "label": "Day 1",
+          "date": "Friday, 19 June 2026",
+          "sessions": [
+            { "time": "12:30 – 2:30 PM", "title": "Build Your Brand Identity with AI", "facilitators": "Rakesh Mondal · Neeraj Sancheti", "takeaway": "A brand book and a complete Build-Sheet — look, voice, story and the facts AI engines read." },
+            { "time": "3:30 – 5:30 PM", "title": "Build Your Social Media Engine with AI", "facilitators": "Rakesh Mondal · Neeraj Sancheti", "takeaway": "A 30-day content calendar and a social system that keeps running on its own." },
+            { "time": "6:00 – 8:00 PM", "title": "Website Development", "facilitators": "Kamal Agarwal · Ritesh Agarwal", "takeaway": "Your first homepage — built for humans and AI engines — plus a 7-day plan to finish it." }
+          ]
+        },
+        {
+          "label": "Day 2",
+          "date": "Saturday, 20 June 2026",
+          "sessions": [
+            { "time": "10:00 AM – 12:00 PM", "title": "Business Automation", "facilitators": "Subhajit Goswami · Ritesh Agarwal", "takeaway": "At least one automation running on your real business — lead to CRM to follow-up, on its own." },
+            { "time": "12:30 – 2:30 PM", "title": "Building Utility Apps with AI", "facilitators": "Ritesh Agarwal", "takeaway": "A small working utility app your team can start using right away." },
+            { "time": "3:30 – 5:30 PM", "title": "Personal Productivity with AI", "facilitators": "Sumit Sinhal · Atul Gupta", "takeaway": "A personal AI assistant configured to your daily workflow." }
+          ]
+        }
       ]
     },
     "forWho": {

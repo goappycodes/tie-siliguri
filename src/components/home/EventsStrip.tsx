@@ -29,20 +29,33 @@ export default function EventsStrip() {
           {upcoming.map((e, i) => (
             <Reveal as="li" key={e.title} delay={i * 90} className="w-[74%] flex-none snap-start sm:w-auto">
               <Link
-                href={e.href}
+                href={e.href ?? "/events/upcoming"}
                 className="group flex h-full flex-col border border-line transition-all duration-300 hover:-translate-y-1 hover:border-ink hover:shadow-[0_20px_50px_-20px_rgba(17,17,17,0.28)]"
               >
                 {/* Cover — the event's own creative. Anchored to the top so the
                     title block of the artwork stays in frame when cropped. */}
                 <div className="relative aspect-[16/11] overflow-hidden bg-paper-alt">
-                  <Image
-                    src={e.image}
-                    alt={e.imageAlt}
-                    fill
-                    sizes="(min-width: 1024px) 30vw, 100vw"
-                    quality={90}
-                    className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
-                  />
+                  {e.image ? (
+                    <Image
+                      src={e.image}
+                      alt={e.imageAlt ?? e.title}
+                      fill
+                      sizes="(min-width: 1024px) 30vw, 100vw"
+                      quality={90}
+                      className="object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
+                    />
+                  ) : (
+                    /* Branded fallback until the event creative is supplied. */
+                    <div className="absolute inset-0 flex items-center justify-center overflow-hidden bg-ink p-6 text-center">
+                      <div
+                        aria-hidden="true"
+                        className="globe-motif -top-8 -right-14 h-[12rem] w-[20rem] opacity-25 mix-blend-screen"
+                      />
+                      <span className="relative text-[18px] leading-tight font-extrabold text-white">
+                        {e.title}
+                      </span>
+                    </div>
+                  )}
                   {/* Anchored bottom-left: the creatives carry the TiE logo
                       top-left, so a top chip would sit on top of it. */}
                   <span className="absolute bottom-0 left-0 bg-ink px-2.5 py-1.5 text-[10px] font-bold text-white transition-colors group-hover:bg-tie-red">

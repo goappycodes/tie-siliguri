@@ -22,7 +22,7 @@ export default function CharterMembersPage() {
         <div className="shell">
           <ul className="grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-3">
             {cm.members.map((m, i) => (
-              <Reveal as="li" key={m.name} delay={(i % 3) * 60} className="bg-white">
+              <Reveal as="li" key={`${m.name}-${m.company}`} delay={(i % 3) * 60} className="bg-white">
                 <div className="flex h-full flex-col p-7 lg:p-8">
                   <div className="flex items-center gap-4">
                     <Avatar src={m.photo} name={m.name} size={64} />

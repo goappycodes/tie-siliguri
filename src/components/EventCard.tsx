@@ -17,22 +17,36 @@ export type EventItem = {
   summary?: string;
   audience?: string;
   speaker?: string;
-  image: string;
-  imageAlt: string;
+  image?: string;
+  imageAlt?: string;
 };
 
 export default function EventCard({ event: e }: { event: EventItem }) {
   return (
     <article className="flex h-full flex-col border border-line bg-white">
       <div className="relative aspect-square overflow-hidden bg-paper-alt">
-        <Image
-          src={e.image}
-          alt={e.imageAlt}
-          fill
-          sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
-          quality={90}
-          className="object-contain p-2.5"
-        />
+        {e.image ? (
+          <Image
+            src={e.image}
+            alt={e.imageAlt ?? e.title}
+            fill
+            sizes="(min-width: 1024px) 30vw, (min-width: 640px) 45vw, 100vw"
+            quality={90}
+            className="object-contain p-2.5"
+          />
+        ) : (
+          /* Branded fallback until the event creative is supplied — mirrors the
+             homepage hero treatment so the card reads as intentional. */
+          <div className="absolute inset-0 flex items-center justify-center overflow-hidden bg-ink p-6 text-center">
+            <div
+              aria-hidden="true"
+              className="globe-motif -top-10 -right-16 h-[14rem] w-[22rem] opacity-25 mix-blend-screen"
+            />
+            <h3 className="relative text-[19px] leading-tight font-extrabold text-white max-sm:text-[17px]">
+              {e.title}
+            </h3>
+          </div>
+        )}
         <span className="absolute bottom-0 left-0 bg-ink px-2.5 py-1.5 text-[10px] font-bold tracking-[0.02em] text-white">
           {e.type}
         </span>

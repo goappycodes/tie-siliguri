@@ -16,8 +16,9 @@
   },
   "social": [
     { "label": "LinkedIn", "href": "https://www.linkedin.com/company/tie-siliguri/", "icon": "linkedin" },
-    { "label": "Instagram", "href": "https://www.instagram.com/tiesiliguri/", "icon": "instagram" },
-    { "label": "Facebook", "href": "https://www.facebook.com/tiesiliguri/", "icon": "facebook" }
+    { "label": "Instagram", "href": "https://www.instagram.com/tie.siliguri/", "icon": "instagram" },
+    { "label": "Facebook", "href": "https://www.facebook.com/profile.php?id=61577723283750", "icon": "facebook" },
+    { "label": "X", "href": "https://x.com/tiesiliguri", "icon": "x" }
   ],
   "nav": [
     {
