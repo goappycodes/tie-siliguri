@@ -90,27 +90,10 @@ export default function Hero() {
             </Link>
           </div>
 
-          {/* Chapter stats. The launch/hub line rides on the same row on wide
-              screens, which removes a whole stacked block from the hero. */}
-          <div className="mt-7 flex flex-wrap items-end gap-x-10 gap-y-5 sm:mt-8 sm:gap-x-12">
-            <dl className="grid w-full grid-cols-3 gap-x-3 sm:flex sm:w-auto sm:flex-wrap sm:gap-x-11 sm:gap-y-5">
-              {hero.stats.map((s) => (
-                /* Explicit grid rows: the figure sits on row 1 while dt/dd
-                   keep DOM order, so the label is announced once and the
-                   figures stay top-aligned whatever the label wraps to. */
-                <div key={s.label} className="grid">
-                  <dt className="row-start-2 mt-1.5 text-[9.5px] leading-tight font-semibold tracking-[0.05em] text-white/60 sm:max-w-[8.5rem] sm:text-[10.5px]">
-                    {s.label}
-                  </dt>
-                  <dd className="row-start-1 text-[1.5rem] leading-none font-extrabold text-white sm:text-[2.125rem]">
-                    {s.value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-
-            {/* Detail line — desktop only, to keep the phone hero quiet. */}
-            <p className="hidden text-[11px] font-medium text-white/45 sm:block">
+          {/* Launch / hub detail line (chapter stats now live in the red strip
+              below the hero). */}
+          <div className="mt-7 sm:mt-8">
+            <p className="text-[11px] font-medium text-white/45">
               {site.chapter.foundedLabel} · Hub chapter: {site.chapter.hubChapter}
             </p>
           </div>

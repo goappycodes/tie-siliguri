@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { getSite } from "@/lib/content";
+import { SocialIcon } from "@/components/Icons";
 
 const site = getSite();
 
@@ -37,6 +38,17 @@ export default function Footer() {
                   {site.contact.email}
                 </a>
               </dd>
+              {site.contact.managerEmail && (
+                <dd className="mt-1">
+                  <a
+                    href={`mailto:${site.contact.managerEmail}`}
+                    className="font-semibold text-white transition-colors hover:text-tie-red"
+                  >
+                    {site.contact.managerEmail}
+                  </a>
+                  <span className="ml-2 text-[11px] font-medium text-white/45">Chapter Manager</span>
+                </dd>
+              )}
             </div>
             <div className="flex flex-wrap gap-x-4">
               <dt className="sr-only">Phone</dt>
@@ -61,9 +73,10 @@ export default function Footer() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-white/15 px-4 py-2 text-[11px] font-bold transition-colors hover:border-tie-red hover:bg-tie-red hover:text-white"
+                aria-label={s.label}
+                className="flex h-9 w-9 items-center justify-center border border-white/15 text-white/80 transition-colors hover:border-tie-red hover:bg-tie-red hover:text-white"
               >
-                {s.label}
+                <SocialIcon name={s.icon} />
               </a>
             ))}
           </div>

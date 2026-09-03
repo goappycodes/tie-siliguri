@@ -1,13 +1,15 @@
 import Image from "next/image";
-import { Calendar, Clock, Pin } from "@/components/Icons";
+import Link from "next/link";
+import { ArrowRight, Calendar, Clock, Pin } from "@/components/Icons";
 
 /**
  * Event card, used on the Events section pages. Upcoming events carry a summary,
  * time and audience; past events carry a speaker instead. Both share the cover
  * creative + type chip, so one component renders either — fields render only
- * when present. Events have no individual detail routes in the sitemap, so the
- * card is a static article, not a link.
+ * when present. Past events with a photo gallery link to their gallery page.
  */
+export type GalleryImage = { src: string; w: number; h: number; alt: string };
+
 export type EventItem = {
   title: string;
   type: string;
@@ -19,6 +21,8 @@ export type EventItem = {
   speaker?: string;
   image?: string;
   imageAlt?: string;
+  slug?: string;
+  gallery?: GalleryImage[];
 };
 
 export default function EventCard({ event: e }: { event: EventItem }) {
@@ -96,6 +100,13 @@ export default function EventCard({ event: e }: { event: EventItem }) {
             </div>
           )}
         </dl>
+
+        {e.slug && e.gallery?.length ? (
+          <Link href={e.slug} className="link-arrow mt-5">
+            View photos ({e.gallery.length})
+            <ArrowRight />
+          </Link>
+        ) : null}
       </div>
     </article>
   );

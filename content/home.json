@@ -15,8 +15,8 @@
    "href": "/membership/apply"
   },
   "secondaryCta": {
-   "label": "Explore Our Programs",
-   "href": "/programs"
+   "label": "Explore upcoming events",
+   "href": "/events/upcoming"
   },
   "stats": [
    {
@@ -35,23 +35,19 @@
   "subheadShort": "The world's largest entrepreneurial network, now in North Bengal — connecting the region's founders to mentorship, capital and a global stage."
  },
  "globalBar": {
-  "label": "Part of TiE Global",
+  "label": "TiE Siliguri so far",
   "stats": [
    {
     "value": "60+",
-    "label": "Chapters worldwide"
+    "label": "Charter & Associate Members"
    },
    {
-    "value": "14",
-    "label": "Countries"
+    "value": "22",
+    "label": "Sessions in year one"
    },
    {
-    "value": "500K+",
-    "label": "Global community"
-   },
-   {
-    "value": "50K+",
-    "label": "Entrepreneurs & mentors"
+    "value": "8",
+    "label": "Sectors represented"
    }
   ]
  },
@@ -242,7 +238,6 @@
     "companies": [
      "Kreativ Street",
      "MTC Buildmart",
-     "Shivalaya",
      "Premier Sports & Fitness",
      "Krishyam"
     ]
@@ -515,6 +510,22 @@
    {
     "src": "/images/launch-audience.webp",
     "alt": "A full room at a TiE Siliguri session"
+   },
+   {
+    "src": "/images/launch-chapter-group.webp",
+    "alt": "Charter Members and guests together at the TiE Siliguri launch"
+   },
+   {
+    "src": "/images/launch-speaker.webp",
+    "alt": "A speaker addressing the audience at a TiE Siliguri session"
+   },
+   {
+    "src": "/images/community-group.webp",
+    "alt": "The TiE Siliguri community gathered together"
+   },
+   {
+    "src": "/images/launch-memento.webp",
+    "alt": "A memento presented at the TiE Siliguri chapter launch"
    }
   ]
  },

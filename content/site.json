@@ -11,7 +11,8 @@
   },
   "contact": {
     "email": "president@siliguri.tie.org",
-    "phones": ["+91 93392 25458", "+91 79088 40815"],
+    "managerEmail": "pm@siliguri.tie.org",
+    "phones": ["+91 78109 56385"],
     "city": "Siliguri, West Bengal, India"
   },
   "social": [
@@ -27,8 +28,7 @@
       "children": [
         { "label": "About TiE Global", "href": "/about/tie-global" },
         { "label": "Our Chapter", "href": "/about/our-chapter" },
-        { "label": "Leadership Team", "href": "/about/leadership" },
-        { "label": "Chapter Manager", "href": "/about/chapter-manager" }
+        { "label": "Leadership Team", "href": "/about/leadership" }
       ]
     },
     {

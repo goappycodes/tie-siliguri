@@ -33,10 +33,6 @@ const HEROES: Record<string, Hero> = {
     src: `${REAL}/launch-stage-group.webp`,
     alt: "TiE Siliguri office bearers and charter members on stage at the chapter launch",
   },
-  "/about/chapter-manager": {
-    src: `${REAL}/members-portrait.webp`,
-    alt: "TiE Siliguri members at a chapter gathering",
-  },
   "/about/tie-global": {
     src: `${REAL}/launch-felicitation.webp`,
     alt: "The Chairman of the TiE Global Board of Trustees felicitated at the TiE Siliguri launch",

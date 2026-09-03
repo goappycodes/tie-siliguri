@@ -23,7 +23,7 @@ export default function GlobalBar() {
             {globalBar.label}
           </h2>
 
-          <dl className="grid flex-1 grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-4 lg:gap-x-8">
+          <dl className="grid flex-1 grid-cols-3 gap-x-6 gap-y-5 lg:gap-x-8">
             {globalBar.stats.map((s) => (
               <div key={s.label} className="grid gap-0.5">
                 <dt className="row-start-2 text-[11.5px] leading-tight font-medium text-white/75">

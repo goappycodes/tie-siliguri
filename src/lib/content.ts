@@ -42,7 +42,7 @@ export type Site = {
     logo: string;
     logoStacked: string;
   };
-  contact: { email: string; phones: string[]; city: string };
+  contact: { email: string; managerEmail?: string; phones: string[]; city: string };
   social: { label: string; href: string; icon: string }[];
   nav: NavItem[];
   cta: Link;

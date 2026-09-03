@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { getSite } from "@/lib/content";
 import type { NavItem } from "@/lib/content";
+import { SocialIcon } from "@/components/Icons";
 
 const site = getSite();
 
@@ -172,7 +173,7 @@ export default function Header() {
               {site.contact.email}
             </a>
             <span className="h-3 w-px bg-white/20" />
-            <div className="flex items-center gap-3.5">
+            <div className="flex items-center gap-3">
               {site.social.map((s) => (
                 <a
                   key={s.label}
@@ -180,9 +181,9 @@ export default function Header() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={s.label}
-                  className="text-[11px] font-medium text-white/60 transition-colors hover:text-white"
+                  className="text-white/60 transition-colors hover:text-white"
                 >
-                  {s.label}
+                  <SocialIcon name={s.icon} className="h-[15px] w-[15px]" />
                 </a>
               ))}
             </div>

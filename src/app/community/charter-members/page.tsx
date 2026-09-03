@@ -3,6 +3,7 @@ import { getCommunity } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
 import Avatar from "@/components/Avatar";
 import Reveal from "@/components/Reveal";
+import { SocialIcon } from "@/components/Icons";
 
 const { charterMembers: cm } = getCommunity();
 
@@ -24,14 +25,27 @@ export default function CharterMembersPage() {
             {cm.members.map((m, i) => (
               <Reveal as="li" key={`${m.name}-${m.company}`} delay={(i % 3) * 60} className="bg-white">
                 <div className="flex h-full flex-col p-7 lg:p-8">
-                  <div className="flex items-center gap-4">
-                    <Avatar src={m.photo} name={m.name} size={64} />
-                    <div className="min-w-0">
-                      <h2 className="text-[17px] leading-tight font-bold text-ink">{m.name}</h2>
-                      <p className="mt-1 text-[13px] leading-snug font-semibold text-tie-red">
-                        {m.company}
-                      </p>
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="flex items-center gap-4">
+                      <Avatar src={m.photo} name={m.name} size={64} />
+                      <div className="min-w-0">
+                        <h2 className="text-[17px] leading-tight font-bold text-ink">{m.name}</h2>
+                        <p className="mt-1 text-[13px] leading-snug font-semibold text-tie-red">
+                          {m.company}
+                        </p>
+                      </div>
                     </div>
+                    {(m as { linkedin?: string }).linkedin && (
+                      <a
+                        href={(m as { linkedin?: string }).linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${m.name} on LinkedIn`}
+                        className="flex-none text-slate transition-colors hover:text-tie-red"
+                      >
+                        <SocialIcon name="linkedin" className="h-[18px] w-[18px]" />
+                      </a>
+                    )}
                   </div>
                   {m.bio && (
                     <p className="mt-5 text-[14px] leading-relaxed text-ink-600">{m.bio}</p>

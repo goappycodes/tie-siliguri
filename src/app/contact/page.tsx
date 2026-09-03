@@ -4,7 +4,7 @@ import { getContact, getSite } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
-import { ArrowRight } from "@/components/Icons";
+import { ArrowRight, SocialIcon } from "@/components/Icons";
 
 const c = getContact();
 
@@ -54,6 +54,17 @@ export default function ContactPage() {
                       {site.contact.email}
                     </a>
                   </dd>
+                  {site.contact.managerEmail && (
+                    <dd className="mt-1.5">
+                      <a
+                        href={`mailto:${site.contact.managerEmail}`}
+                        className="font-bold text-ink underline decoration-tie-red decoration-2 underline-offset-4 hover:text-tie-red"
+                      >
+                        {site.contact.managerEmail}
+                      </a>
+                      <span className="ml-2 text-[11px] font-medium text-slate">Chapter Manager</span>
+                    </dd>
+                  )}
                 </div>
                 <div>
                   <dt className="text-[10.5px] font-bold text-slate">
@@ -88,9 +99,10 @@ export default function ContactPage() {
                     href={s.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="border border-line px-4 py-2 text-[11px] font-bold text-ink transition-colors hover:border-tie-red hover:bg-tie-red hover:text-white"
+                    aria-label={s.label}
+                    className="flex h-10 w-10 items-center justify-center border border-line text-ink transition-colors hover:border-tie-red hover:bg-tie-red hover:text-white"
                   >
-                    {s.label}
+                    <SocialIcon name={s.icon} />
                   </a>
                 ))}
               </div>

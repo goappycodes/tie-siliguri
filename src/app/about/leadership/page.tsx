@@ -3,6 +3,7 @@ import { getAbout, getHome, getCommunity } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
 import Avatar from "@/components/Avatar";
 import Reveal from "@/components/Reveal";
+import { SocialIcon } from "@/components/Icons";
 
 const { leadership: meta } = getAbout();
 
@@ -17,19 +18,22 @@ export const metadata: Metadata = {
  * from the community roster rather than duplicated — a single source of truth,
  * keyed by name. Anyone without a roster bio simply shows none.
  */
-function buildBioLookup() {
+function buildLookups() {
   const { charterMembers, associateMembers } = getCommunity();
-  const map = new Map<string, string>();
+  const bio = new Map<string, string>();
+  const linkedin = new Map<string, string>();
   for (const m of [...charterMembers.members, ...associateMembers.members]) {
-    if ("bio" in m && m.bio) map.set(m.name, m.bio);
+    if ("bio" in m && m.bio && !bio.has(m.name)) bio.set(m.name, m.bio);
+    const li = (m as { linkedin?: string }).linkedin;
+    if (li && !linkedin.has(m.name)) linkedin.set(m.name, li);
   }
-  return map;
+  return { bio, linkedin };
 }
 
 export default function LeadershipPage() {
   const { leadership } = getHome();
   const [president, ...rest] = leadership.members;
-  const bioByName = buildBioLookup();
+  const { bio: bioByName, linkedin: liByName } = buildLookups();
 
   return (
     <>
@@ -63,6 +67,18 @@ export default function LeadershipPage() {
                       {bioByName.get(president.name)}
                     </p>
                   )}
+                  {liByName.get(president.name) && (
+                    <a
+                      href={liByName.get(president.name)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${president.name} on LinkedIn`}
+                      className="mt-6 inline-flex items-center gap-2 text-[12px] font-bold text-white/80 transition-colors hover:text-white"
+                    >
+                      <SocialIcon name="linkedin" className="h-4 w-4" />
+                      Connect on LinkedIn
+                    </a>
+                  )}
                 </div>
                 <p className="mt-10 border-t border-white/12 pt-6 text-[12px] font-medium text-white/40">
                   {meta.ecLabel}
@@ -90,6 +106,17 @@ export default function LeadershipPage() {
                         <p className="mt-3 text-[13px] leading-relaxed text-ink-600">
                           {bioByName.get(m.name)}
                         </p>
+                      )}
+                      {liByName.get(m.name) && (
+                        <a
+                          href={liByName.get(m.name)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${m.name} on LinkedIn`}
+                          className="mt-3 inline-flex text-slate transition-colors hover:text-tie-red"
+                        >
+                          <SocialIcon name="linkedin" className="h-[17px] w-[17px]" />
+                        </a>
                       )}
                     </div>
                   </div>

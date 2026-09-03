@@ -27,11 +27,6 @@
         "title": "Leadership Team",
         "body": "The Executive Committee for 2026–2027 — entrepreneurs who run businesses in this region, giving their time to build the ecosystem.",
         "href": "/about/leadership"
-      },
-      {
-        "title": "Chapter Manager",
-        "body": "The team that runs the chapter day to day — your first point of contact for membership, events and everything in between.",
-        "href": "/about/chapter-manager"
       }
     ]
   },
@@ -107,26 +102,13 @@
         { "value": "1:2", "label": "Charter-to-Associate ratio" }
       ]
     },
-    "momentum": {
-      "eyebrow": "How we got here",
-      "headline": "The road to launch",
-      "subhead": "Pre-launch sessions hosted with TiE Kolkata through 2025 built the energy and community that became TiE Siliguri.",
-      "events": [
-        { "date": "12 Feb 2025", "title": "Siliguri Meet-Up on TiE", "with": "with Kamal Agarwala" },
-        { "date": "22 Mar 2025", "title": "Storytelling for Growth", "with": "with Pradeep Yuvaraj" },
-        { "date": "19 Apr 2025", "title": "AI, Entrepreneurship & Career Opportunities", "with": "with Kashi K S" },
-        { "date": "10 May 2025", "title": "The 10X Leap", "with": "with Srish Agrawal" },
-        { "date": "14 Jun 2025", "title": "How to Build a $100M Pipeline", "with": "with Kapildev" },
-        { "date": "30 Jul 2025", "title": "TiE Siliguri Chapter Launch", "with": "North Bengal's chapter goes live" }
-      ],
-      "galleryLabel": "The pre-launch sessions",
-      "gallery": [
-        { "image": "/images/momentum/siliguri-meetup.webp", "alt": "Siliguri Meet-Up with Kamal Agarwala at Inspiria Knowledge Campus" },
-        { "image": "/images/momentum/storytelling.webp", "alt": "Storytelling for Growth workshop with Pradeep Yuvaraj" },
-        { "image": "/images/momentum/ai-careers.webp", "alt": "AI, Entrepreneurship & Career Opportunities with Kashi K S" },
-        { "image": "/images/momentum/10x-leap.webp", "alt": "The 10X Leap workshop with Srish Agrawal" },
-        { "image": "/images/momentum/100m-pipeline.webp", "alt": "How to Build a $100M Pipeline with Kapildev" },
-        { "image": "/images/momentum/gtm-sales.webp", "alt": "Designing Your GTM & Organizing Sales masterclass" }
+    "opportunity": {
+      "eyebrow": "Why North Bengal",
+      "headline": "A region ready for its entrepreneurial moment",
+      "body": [
+        "Siliguri sits at the crossroads of North Bengal, the Northeast, Nepal, Bhutan and Bangladesh — a natural hub for trade, education, healthcare, hospitality and the tea economy, with a young, ambitious population and a fast-growing base of first-generation founders.",
+        "What the region has lacked is structured entrepreneurial support: mentors who have built at scale, access to capital, and a bridge to national and global networks. Too often, talented founders have had to leave for the metros to find it.",
+        "That is the gap TiE Siliguri exists to close — bringing the world's largest entrepreneurial network to North Bengal so founders can learn, raise capital, connect and grow without leaving home, and put the region firmly on India's entrepreneurial map."
       ]
     },
     "cadence": {
@@ -155,26 +137,5 @@
     "summary": "The Executive Committee for 2026–2027 — entrepreneurs who run businesses in this region, giving their time to build the ecosystem around them.",
     "ecLabel": "Executive Committee 2026–2027",
     "note": "Guided by our Hub Chapter, TiE Kolkata — whose mentors sit alongside our EC through the chapter's first two years."
-  },
-
-  "chapterManager": {
-    "slug": "/about/chapter-manager",
-    "eyebrow": "Chapter Manager",
-    "title": "The team behind the chapter",
-    "summary": "Every TiE chapter runs on a small operational team that keeps the mission moving — the first people you talk to as a member or a prospective one.",
-    "intro": [
-      "The Chapter Manager is your day-to-day point of contact at TiE Siliguri. Where the Executive Committee sets direction, the manager makes it happen — coordinating events, onboarding members, answering questions and keeping the chapter running smoothly.",
-      "Whether you are weighing up membership, planning to attend an event, or want to get involved as a volunteer or partner, this is the desk to reach."
-    ],
-    "responsibilities": {
-      "eyebrow": "What the desk handles",
-      "items": [
-        "Membership enquiries, applications and onboarding for Charter and Associate Members.",
-        "Event scheduling, registrations and logistics across the monthly calendar.",
-        "The link between members and the Executive Committee.",
-        "Coordination with our Hub Chapter, TiE Kolkata, and the wider TiE Global network."
-      ]
-    },
-    "contactLabel": "Reach the chapter office"
   }
 }

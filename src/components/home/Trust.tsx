@@ -15,7 +15,6 @@ export default function Trust() {
             <p className="eyebrow">{trust.eyebrow}</p>
             <h2 className="display-2 mt-5">{trust.headline}</h2>
             <p className="lede mt-6">{trust.body}</p>
-            <p className="mt-7 text-lg leading-snug font-bold text-tie-red">{trust.punchline}</p>
           </Reveal>
 
           <Reveal delay={120}>
@@ -70,6 +69,17 @@ export default function Trust() {
                 </li>
               ))}
             </ul>
+
+            {/* Become a sponsor */}
+            <div className="mt-8 flex flex-col items-start gap-4 border border-line bg-paper-alt p-7 sm:flex-row sm:items-center sm:justify-between">
+              <p className="text-[15px] leading-snug font-semibold text-ink">
+                Interested in backing North Bengal&apos;s entrepreneurs?
+              </p>
+              <Link href="/contact" className="btn btn-primary flex-none">
+                Become a sponsor
+                <ArrowRight />
+              </Link>
+            </div>
           </div>
         </Reveal>
       </div>

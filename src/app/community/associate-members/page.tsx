@@ -4,7 +4,7 @@ import { getCommunity } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
 import Avatar from "@/components/Avatar";
 import Reveal from "@/components/Reveal";
-import { ArrowRight } from "@/components/Icons";
+import { ArrowRight, SocialIcon } from "@/components/Icons";
 
 const { associateMembers: am } = getCommunity();
 
@@ -43,17 +43,30 @@ export default function AssociateMembersPage() {
               {am.members.map((m, i) => (
                 <Reveal as="li" key={`${m.name}-${m.company}`} delay={(i % 3) * 60} className="bg-white">
                   <div className="flex h-full flex-col p-7 lg:p-8">
-                    <div className="flex items-center gap-4">
-                      <Avatar src={m.photo} name={m.name} size={64} />
-                      <div className="min-w-0">
-                        <h3 className="text-[17px] leading-tight font-bold text-ink">{m.name}</h3>
-                        <p className="mt-1 text-[13px] leading-snug font-semibold text-tie-red">
-                          {m.company}
-                        </p>
-                        {m.role && (
-                          <p className="mt-0.5 text-[12.5px] leading-snug text-slate">{m.role}</p>
-                        )}
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-center gap-4">
+                        <Avatar src={m.photo} name={m.name} size={64} />
+                        <div className="min-w-0">
+                          <h3 className="text-[17px] leading-tight font-bold text-ink">{m.name}</h3>
+                          <p className="mt-1 text-[13px] leading-snug font-semibold text-tie-red">
+                            {m.company}
+                          </p>
+                          {m.role && (
+                            <p className="mt-0.5 text-[12.5px] leading-snug text-slate">{m.role}</p>
+                          )}
+                        </div>
                       </div>
+                      {(m as { linkedin?: string }).linkedin && (
+                        <a
+                          href={(m as { linkedin?: string }).linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${m.name} on LinkedIn`}
+                          className="flex-none text-slate transition-colors hover:text-tie-red"
+                        >
+                          <SocialIcon name="linkedin" className="h-[18px] w-[18px]" />
+                        </a>
+                      )}
                     </div>
                     {m.bio && (
                       <p className="mt-5 text-[14px] leading-relaxed text-ink-600">{m.bio}</p>

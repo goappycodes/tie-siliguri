@@ -107,6 +107,7 @@
     "eyebrow": "Apply for Membership",
     "title": "Become a member",
     "summary": "Joining TiE Siliguri is a short conversation away. Tell us a little about you and the chapter team will guide you through the right membership for your stage.",
+    "associateFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeK9Fb25BDqz_XNoHPxvJ7ZC3bKcchFe77fxmqi5QjjlpuEWA/viewform",
     "steps": {
       "eyebrow": "How it works",
       "items": [

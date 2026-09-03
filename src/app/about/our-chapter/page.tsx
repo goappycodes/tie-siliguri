@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { getAbout } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
@@ -68,61 +67,20 @@ export default function OurChapterPage() {
         </div>
       </section>
 
-      {/* Momentum timeline */}
+      {/* Why North Bengal */}
       <section className="bg-white py-14 sm:py-20 lg:py-28">
-        <div className="shell">
-          <Reveal className="max-w-2xl">
-            <p className="eyebrow">{c.momentum.eyebrow}</p>
-            <h2 className="display-2 mt-5">{c.momentum.headline}</h2>
-            <p className="lede mt-6">{c.momentum.subhead}</p>
+        <div className="shell grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+          <Reveal>
+            <p className="eyebrow">{c.opportunity.eyebrow}</p>
+            <h2 className="display-2 mt-5">{c.opportunity.headline}</h2>
           </Reveal>
-          <ol className="mt-12 border-l-2 border-line">
-            {c.momentum.events.map((e, i) => {
-              const isLaunch = i === c.momentum.events.length - 1;
-              return (
-                <Reveal as="li" key={e.title} delay={i * 50} className="relative pl-8 pb-9 last:pb-0">
-                  <span
-                    aria-hidden="true"
-                    className={`absolute top-1 -left-[7px] h-3 w-3 rounded-full ring-4 ring-white ${
-                      isLaunch ? "bg-tie-red" : "bg-line-strong"
-                    }`}
-                  />
-                  <p className="text-[11.5px] font-bold text-tie-red">
-                    {e.date}
-                  </p>
-                  <h3
-                    className={`mt-1.5 text-[17px] leading-snug font-bold ${
-                      isLaunch ? "text-tie-red" : "text-ink"
-                    }`}
-                  >
-                    {e.title}
-                  </h3>
-                  <p className="mt-1 text-[14px] font-normal text-slate">{e.with}</p>
-                </Reveal>
-              );
-            })}
-          </ol>
-
-          {/* Pre-launch session creatives */}
-          <div className="mt-14">
-            <p className="eyebrow-plain">{c.momentum.galleryLabel}</p>
-            <ul className="mt-7 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:gap-6">
-              {c.momentum.gallery.map((gm, i) => (
-                <Reveal as="li" key={gm.image} delay={(i % 3) * 60}>
-                  <div className="relative aspect-square overflow-hidden border border-line bg-paper-alt">
-                    <Image
-                      src={gm.image}
-                      alt={gm.alt}
-                      fill
-                      sizes="(min-width: 1024px) 30vw, 45vw"
-                      quality={90}
-                      className="object-contain"
-                    />
-                  </div>
-                </Reveal>
+          <Reveal delay={100}>
+            <div className="space-y-6">
+              {c.opportunity.body.map((p) => (
+                <p key={p} className="lede">{p}</p>
               ))}
-            </ul>
-          </div>
+            </div>
+          </Reveal>
         </div>
       </section>
 

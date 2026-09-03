@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getMembership, getSite } from "@/lib/content";
 import PageHeader from "@/components/PageHeader";
-import ContactForm from "@/components/ContactForm";
 import Reveal from "@/components/Reveal";
+import { ArrowRight } from "@/components/Icons";
 
 const { apply: a } = getMembership();
 
@@ -63,21 +64,39 @@ export default function ApplyPage() {
             </Reveal>
           </div>
 
-          {/* Application form */}
-          <aside>
-            <div className="border-t-2 border-tie-red bg-paper-alt p-8 lg:p-10">
-              <p className="eyebrow-plain">{a.contactLabel}</p>
-              <p className="mt-4 text-[15px] leading-relaxed text-ink-600">
-                Tell us a little about you and the chapter team will get back to you about the right
-                membership.
+          {/* Application paths */}
+          <aside className="space-y-8">
+            {/* Associate Members — apply directly */}
+            <div className="border-t-2 border-tie-red bg-paper-alt p-6 lg:p-8">
+              <p className="eyebrow-plain">Associate Membership</p>
+              <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
+                Aspiring entrepreneurs and professionals can apply directly. Fill out our short
+                application form and it comes straight to the chapter team.
               </p>
-              <div className="mt-7">
-                <ContactForm
-                  subject="TiE Siliguri — Membership application"
-                  interests={["Charter Member", "Associate Member", "Not sure yet"]}
-                  submitLabel="Submit application"
-                />
-              </div>
+              {a.associateFormUrl && (
+                <a
+                  href={a.associateFormUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary mt-6"
+                >
+                  Fill out the application form
+                  <ArrowRight />
+                </a>
+              )}
+            </div>
+
+            {/* Charter Members — by invitation */}
+            <div className="border border-line p-6 lg:p-8">
+              <p className="eyebrow-plain">Charter Membership</p>
+              <p className="mt-3 text-[15px] leading-relaxed text-ink-600">
+                Charter Membership is by invitation. Send us an enquiry with a little about yourself
+                and the chapter team will guide you through the process.
+              </p>
+              <Link href="/contact" className="link-arrow mt-5">
+                Enquire about Charter Membership
+                <ArrowRight />
+              </Link>
               <p className="mt-6 text-[13px] text-slate">
                 Prefer email?{" "}
                 <a
